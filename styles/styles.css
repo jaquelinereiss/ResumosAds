@@ -1,0 +1,31 @@
+@import url("home.css");
+@import url("cardsResumos.css");
+@import url("resumo1.css");
+@import url("page0111.css");
+@import url("resumos012.css");
+@import url("page00.css");
+
+:root {
+    /*--cor-de-fundo: #F5EFE7;*/
+    --cor-principal: #5b55ad;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #659fe1;
+    --cor-quartaria: #FFFFFF;
+    --cor-quintaria: #F5EFE7;
+    --cor-sextaria: #7f7f7f;
+    --cor-setima: #003566;
+    --degrade: linear-gradient(97.54deg, #5b55ad 25%, #659fe1 175%);
+    --font-principal: "Bricolage Grotesque";
+    --fonte-secundaria: "Outfit";
+}
+
+body {
+    background: var(--cor-quartaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--cor-principal);
+}

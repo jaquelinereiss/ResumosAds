@@ -1,0 +1,107 @@
+.sessao-banner {
+    background-color: #cfd9e9;
+    display: flex;
+    align-items: center;
+    padding: 5em 10em 5em 10em;
+}
+.sessao__banner__conteudo-titulo {
+    font-family: var(--font-principal);
+    color: var(--cor-secundaria);
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+}
+
+.sessao__banner__conteudo-sub-titulo {
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 1em 0 1em;
+    line-height: 1.5em;
+    color: var(--cor-setima);
+}
+
+.banner__conteudo-descrição {
+    color: #666666;
+}
+
+.conteudo__fundamentos,
+.conteudo__funcoes,
+.conteudo__linguagem-maquina {
+    font-family: var(--font-secundaria);
+    padding: 2em 0;
+}
+
+.conteudo__fundamentos__titulo,
+.conteudo__funcoes-titulo,
+.conteudo__linguagem-maquina-titulo {
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+    font-size: 26px;
+    font-weight: 600;
+    border-bottom: 0.08em solid var(--cor-principal);
+    padding: 0 0 0.5em 0;
+}
+.conteudo__fundamentos__paragrafo,
+.conteudo__funcoes-paragrafo,
+.conteudo__linguagem-maquina-paragrafo{
+    text-align: justify;
+    color: var(--cinza);
+    line-height: 1.5em;
+}
+.conteudo__citacao {
+    margin: 10em;
+    padding: auto;
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+}
+.conteudo__fundamentos-basicos {
+    display: block;
+    align-items: center;
+    margin-bottom: 5em;
+    color: var(--cor-secundaria); 
+}
+
+.conteudo__fundamentos-lista {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.conteudo__fundamentos-lista img {
+    width: 0.8em;
+}
+
+.conteudo__fundamentos__exemplo-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5em;
+    margin: 2em;
+    color: var(--cor-sextaria);
+}
+
+.conteudo__funcoes__basicas-lista,
+.conteudo__funcoes__exemplos-lista,
+.conteudo__funcoes-basicas  {
+    display: block;
+    justify-content: space-between;
+    line-height: 1.8em;
+    margin: 2em;
+}
+
+.conteudo__funcoes__basicas-lista img {
+    width: 0.8em;
+}
+
+.conteudo__funcoes__basicas__lista-item strong {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--cor-setima);
+}
+
+.conteudo__linguagem-maquina-imagem {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,56 @@
+.conteudo-semestre-resumo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+.conteudo-semestre-titulo-resumo {
+    font-family: var(--font-principal);
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.conteudo-semestre-materia-resumo-card {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    font-family: var(--font-secundaria);
+    color: var(--cor-sextaria);
+    margin: 2em;
+}
+.conteudo-semestre-materia-resumo-card h3 {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 1em;
+}
+.conteudo-semestre-materia-resumo-card a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    margin: 1em;
+    border-radius: 8px;
+    padding: 1.5em;
+}
+.conteudo-semestre-materia-resumo-card p {
+    border-bottom: 0.08em solid var(--cor-principal);
+    padding-bottom: 1em;
+    line-height: 1.5em;
+}
+.conteudo-semestre-materia-resumo-card p strong {
+    color: var(--cor-principal);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.conteudo-semestre-materia-resumo-card-ancora {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--cor-sextaria);
+    letter-spacing: 2px;
+}
+.conteudo-semestre-materia-resumo-card-ancora:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quartaria);
+    letter-spacing: 2px;
+}

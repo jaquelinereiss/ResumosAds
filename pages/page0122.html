@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo 2 - Redes de Computadores</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="../src/img/icon_folha.png" alt="Imagem em ícone na cor preta de uma folha de papel com um lápis">
+        <nav class="cabecalho__menu">
+            <a href="../index.html" class="cabecalho__menu-item">Início</a>
+            <a href="../pages/page00.html" class="cabecalho__menu-item">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <section class="conteudo">
+            <h1 class="conteudo-titulo">Redes de Computadores</h1>
+            <img class="conteudo__cabecalho-imagem" src="../src/img/computadorServicosDeRede.png" alt="ilustração">
+            <section class="conteudo__protocolos">
+                <h2 class="conteudo__protocolos__titulo">Protocolos e serviços de rede</h2>
+                <p class="conteudo__protocolos__paragrafo">Padronizar a forma das pessoas se comunicarem pode garantir que as informações sejam passadas e compreendidas de forma correta. Os processos necessários para a padronização podem variar conforme o tipo de aplicação ou entidade que fará os estudos e análises.</p>
+                <div class="carrossel__protocolos" id="carrossel_1">
+                    <div class="carrossel__protocolos-lista">
+                        <div class="Text">
+                            <p class="carrossel__protocolos">ISO (Internacional Organizantion for Standardization) – organização não governamental responsável pela padronização, sendo dividida em:</p>
+                            <ul>
+                                <li class="carrossel__protocolos__lista-itens"><strong>ANSI</strong> (American National Standards Institute)</li>
+                                <li class="carrossel__protocolos__lista-itens"><strong>ABNT</strong> (Associação Brasileira de Normas Técnicas)</li>
+                                <li class="carrossel__protocolos__lista-itens"><strong>ANFOR</strong> (Associação Francesa)</li>
+                                <li class="carrossel__protocolos__lista-itens"><strong>DIN</strong> (Associação Alemã)</li>
+                            </ul>
+                        </div>
+                        <div class="Text">
+                            <p><strong>EIA</strong> (Eletronic Industries Association) – grupo que visa a padronizações das transmissões elétricas.</p>
+                        </div>
+                        <div class="Text">
+                            <p><strong>IEEE</strong> (Institute of Eletrical and Eletronics Engineers) – a maior organização internacional de desenvolvimento e padronização nas áreas de engenharia elétrica e computação.</p>
+                        </div>
+                        <div class="Text">
+                            <p><strong>ITU-T</strong> (Telecommunication Standardization Sector) – entidade responsável pela padronização dos assuntos relacionados a telecomunicações.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carrossel__protocolos_botoes">
+                    <button id="prev1">Anterior</button>
+                    <button id="next1">Próximo</button>
+                </div>
+                <p class="conteudo__protocolos__paragrafo">Segundo Tanenbaum (1997), o desejo da ISO era desenvolver um modelo para interconexão de sistemas abertos. Para isso, foi desenhado um modelo em sete camadas  que deveriam atender os seguintes requisitos:</p>
+                <div class="conteudo__protocolos-lista">
+                    <ul class="conteudo__protocolo__lista">
+                        <li class="conteudo__protocolo__lista-itens">
+                            <p>A função das camadas deve ser escolhida em razão dos protocolos que foram padronizados</p>
+                        </li>
+                        <li class="conteudo__protocolo__lista-itens">
+                            <p>Cada camada deve executar a função a qual foi destinada</p>
+                        </li>
+                        <li>
+                            <p class="conteudo__protocolo__lista-itens">Os limites entre as camadas devem ser escolhidos de forma que minimize os esforços ao fluxo das mensagens pelas interfaces</p>
+                        </li>
+                        <li>
+                            <p class="conteudo__protocolo__lista-itens">O número de camadas deve ser do tamanho suficiente para alocar todas as funcionalidades possíveis nas redes</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="conteudo__protocolos__paragrafo">Segundo Tanenbaum (1997), o modelo de referência OSI efetua todos os processos necessários para que ocorra a transmissão de dados, fazendo com que as camadas (ou layers) nele existentes efetuem a divisão dos processos lógicos.</p>
+                    <p class="conteudo__protocolos__paragrafo">Dessa forma, a ISO desenvolveu o modelo de referência OSI (Open Systems Interconnection – Sistemas Abertos de Conexão), que foi um marco para o desenvolvimento dos protocolos de comunicação que são utilizados nos serviços consumidos diariamente pela internet. A arquitetura do modelo é a seguinte:</p>
+                    <img class="conteudo__protocolos__exemplo-imagem" src="../src/img/modeloDeReferenciaOSI.png" alt="ilustração do modelo de referência OSI">
+                    <p class="conteudo__protocolos__paragrafo">A partir de 1984, os fabricantes de hardwares e desenvolvedores de softwares entenderam que o modelo proposto em camadas tinha como intuito permitir a interoperabilidade entre equipamentos de diferentes origens, o que poderia dar uma vantagem competitiva no mercado, abrindo espaço para parcerias e novos desenvolvimentos.</p>
+                </div>
+            </section>
+            <section class="conteudo__modelo-referencia">
+                <h2 class="conteudo__modelo-referencia-titulo">O Modelo de Referência ISO/OSI</h2>
+                <div>
+                    <h3 class="conteudo__modelo-referencia__sub-titulo">Hierarquia e interfaces dos protocolos nos serviços de redes</h3>
+                    <p class="conteudo__modelo-referencia__paragrafo"> Para isso, o mecanismo utilizado faz com que a camada “n” de um dispositivo se comunique com a camada “n” de outro dispositivo. Basicamente, o protocolo efetua a “negociação” entre as partes para que seja provida a comunicação, conforme pode ser observado na figura a seguir:</p>
+                    <div>
+                        <h4 class="conteudo__modelo-referencia__sub-titulo-h4">Camadas e Interfaces</h4>
+                        <img class="conteudo__modelo-referencia__exemplo-imagem" src="../src/img/exemploCamadasEInterfaces.jpg" alt="ilustração do meio de transmissão">
+                    </div>
+                    <p class="conteudo__modelo-referencia__paragrafo">Quando os dados são transferidos, cada camada processa o seu serviço respectivo. Para que isso ocorra, a cada par de camadas existe uma interface responsável por definir as operações e os serviços que a camada inferior tem que encaminhar à layer superior.</p>
+                </div>
+                <div>
+                    <p class="conteudo__modelo-referencia__paragrafo">Agora conheça os protocolos definidos por Tanenbaum:</p>
+                    <div class="carrossel__protocolos" id="carrossel_2">
+                        <div class="carrossel__protocolos-lista">
+                            <div class="Text">
+                                <p><strong>HTTP:</strong> trata-se de um protocolo utilizado para acessar conteúdo web na rede mundial de computadores. Permite que ocorra a transferência ponto a ponto entre clientes e servidores de serviços do tipo elástico e streaming multimídia.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>SMTP: </strong> é a sigla para Simple Mail Transfer Protocol (Protocolo Simples de Transferência de E-mail). É o protocolo utilizado para efetuar o envio e recebimento de e-mail de um servidor a outro.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>SSH (Secure SHell):</strong> utilizado para efetuar acesso remoto em outro dispositivo, por meio de um terminal, como o prompt de comando do DOS. A grande diferença das outras técnicas (Telnet e RSH) de acesso remoto está na segurança. Ao fazer um acesso remoto em um dispositivo, a transmissão de dados recebe uma criptografia que pode variar conforme o algoritmo de encriptação das mensagens, garantindo assim a integridade do que é compartilhado.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>RTP:</strong> é o protocolo de transporte utilizado na camada de aplicação para prover streaming de áudio e vídeo. A sua sigla significa Real-Time Transfer Protocol, ou seja: protocolo de transferência em tempo real.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>SIP (Session Initiation Protocol):</strong> apesar deste protocolo não pertencer à camada de aplicação e sim à de sessão, vale ressaltar seu grau de importância para os serviços multimídia. Este protocolo é responsável pela criação, modificação e finalização de sessões de transferência de arquivos de serviços multimídia.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>POP3:</strong> essa expressão pode ser traduzida como protocolo de correio (Post Office Protocol), já disponível em sua terceira versão. Ele permite que o usuário descarregue as mensagens que estejam localizadas em um servidor de e-mail em seu dispositivo. Essa ferramenta permite o recebimento das mensagens, mas não o envio.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>IMAP:</strong> este protocolo, assim como ocorre com o POP3, sincroniza as mensagens que estão alocadas em um servidor de e-mail. Entretanto, o IMAP se mantém conectado, a fim de sincronizar, em tempo real, as mensagens recebidas.</p>
+                            </div>
+                            <div class="Text">
+                                <p><strong>NTP:</strong> sua sigla significa Network Time Protocol (Protocolo de Tempo de Redes). Ele tem como função sincronizar os relógios dos servidores, roteadores e computadores das redes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__protocolos_botoes">
+                        <button id="prev2">Anterior</button>
+                        <button id="next2">Próximo</button>
+                    </div>
+                   <div>
+                    <h4 class="conteudo__modelo-referencia__sub-titulo-h4">A hierarquia dos domínios é dividida em três categorias</h4>
+                    <ul class="conteudo__modelo-referencia__lista">
+                        <li class="conteudo__modelo-referencia__lista-itens">
+                            <p class="conteudo__modelo-referencia__lista__itens-paragrafo"><strong>Domínio Genérico:</strong> São definidos os registros conforme o segmento do site, podendo ser: .com, .net, .org, .edu, .gov, entre outros.</p>
+                        </li>
+                        <li class="conteudo__modelo-referencia__lista-itens">
+                            <p class="conteudo__modelo-referencia__lista__itens-paragrafo"><strong>Domínio de Países:</strong> É utilizada a abreviatura com dois caracteres para identificar em qual país o domínio foi registrado, podendo ser: .br (Brasil), .us (Estados Unidos), .ar (Argentina), entre outros.</p>
+                        </li>
+                        <li class="conteudo__modelo-referencia__lista-itens">
+                            <p class="conteudo__modelo-referencia__lista__itens-paragrafo"><strong>Domínio Reverso:</strong> Faz o processo reverso a consulta ao servidor DNS. Quando um servidor recebe uma solicitação, é feita uma consulta em sua “tabela”, que por sua vez encaminha o pedido do cliente ao servidor relacionado à URL digitada pelo usuário, sendo utilizado o endereço IP.</p>
+                        </li>
+                    </ul>
+                   </div>
+                </div>   
+            </section>
+            <section class="conteudo__protocolo-TCP-IP">
+                <h2 class="conteudo__protocolo-TCP-IP-titulo">O Protocolo TCP/IP</h2>
+                <p class="conteudo__protocolo-TCP-IP-paragrafo">Filippetti (2008) afirma que o padrão TCP/IP foi desenvolvido pelo DOD (Departamento de Defesa dos EUA) para garantir a integridade das mensagens enviadas em caso de guerra. Isso é compreensível, pois, em razão do envolvimento em diversos conflitos ao longo dos tempos, o exército necessitou de técnicas relacionadas à comunicação.</p>
+                <p class="conteudo__protocolo-TCP-IP-paragrafo">A arquitetura do protocolo TCP/IP foi desenvolvida em quatro camadas, e um conjunto de processos – ou aplicações – e utilizado para prover diversos serviços. Para compreender suas camadas, observe a imagem ao lado, que compara o modelo de referência OSI e o protocolo TCP/IP:</p>
+                    <p class="conteudo__protocolo-TCP-IP-paragrafo">O roteador forma tabelas lógicas dos equipamentos disponíveis nas redes, como: roteador, switch, computadores, dispositivos móveis, impressoras IP e câmeras IP. Para auxiliar nesse processo é utilizado um mecanismo de descoberta de dispositivos “vizinhos”, que é efetuado por roteadores e switches por meio dos protocolos de comunicação:</p>
+                    <img class="conteudo__protocolo-TCP-IP__exemplo-imagem" src="../src/img/exemploDiferencasModeloOSIeTCPIP.png" alt="">
+                    <div>
+                        <p class="conteudo__protocolo-TCP-IP-paragrafo">Para isso podemos definir a função de cada uma das camadas do protocolo TCP/IP como:</p>
+                        <div class="carrossel__protocolos" id="carrossel_3">
+                            <div class="carrossel__protocolos-lista">
+                                <div class="Text">
+                                    <p><strong>Camada de Aplicação (Application Layer):</strong> nesta camada define-se como os programas vão se comunicar com as diversas aplicações disponíveis nas redes. Ainda é de responsabilidade desta camada efetuar o gerenciamento da interface pela qual o usuário vai interagir com a aplicação.</p>
+                                </div>
+                                <div class="Text">
+                                    <p><strong>Camada de Transporte (Host-to-host Layer):</strong> é idêntica à camada de transporte do modelo de referência OSI, ou seja, responsável por prover, gerenciar e encerrar uma conexão ponto a ponto. Ao efetuar o gerenciamento da conexão, visa-se garantir a integridade dos dados pelo sequenciamento dos pacotes segmentados para efetuar o envio/recebimento das mensagens.</p>
+                                </div>
+                                <div class="Text">
+                                    <p><strong>Camada de Rede (Internet Layer):</strong> tem o mesmo objetivo da camada de rede do modelo de referência OSI, sendo responsável por definir o endereçamento dos dispositivos por meio do IP e garantir o roteamento dos pacotes nas redes.</p>
+                                </div>
+                                <div class="Text">
+                                    <p><strong>Camada de Acesso à Rede (Network Access Layer):</strong> desempenha a mesma função das camadas de enlace e física do modelo de referência OSI. Efetua o monitoramento do tráfego e analisa o endereçamento de hardware antes da transmissão pelo meio físico.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrossel__protocolos_botoes">
+                            <button id="prev3">Anterior</button>
+                            <button id="next3">Próximo</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="conteudo__protocolo-TCP-IP-paragrafo">Podemos destacar algumas semelhanças entre o modelo OSI e o protocolo TCP/IP:</p>
+                        <ul class="conteudo__protocolo-TCP-IP-lista">
+                            <li class="conteudo__protocolo-TCP-IP__lista-itens">
+                                <p><strong>-</strong> Divisão em camadas;</p>
+                            </li>
+                            <li class="conteudo__protocolo-TCP-IP__lista-itens">
+                                <p><strong>-</strong> As camadas de transporte e rede são equivalentes;</p>
+                            </li>
+                            <li class="conteudo__protocolo-TCP-IP__lista-itens">
+                                <p><strong>-</strong> A comutação de pacotes é definida no modelo e efetuada no protocolo;</p>
+                            </li>
+                            <li class="conteudo__protocolo-TCP-IP__lista-itens">
+                                <p><strong>-</strong> Os profissionais de redes necessitam conhecer ambos.</p>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Página desenvolvida apenas para fins de estudos.</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

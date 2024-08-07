@@ -1,0 +1,197 @@
+.conteudo-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    font-family: var(--font-principal);
+    color: #fca311;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.conteudo-sub-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.2em;
+    margin-bottom: 2em;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 1em 0 1em;
+    line-height: 1.5em;
+    color: #003566;
+}
+
+.conteudo__sinais__titulo,
+.conteudo__componentes-titulo,
+.conteudo__topologias-titulo,
+.conteudo__protocolos__titulo,
+.conteudo__modelo-referencia-titulo,
+.conteudo__protocolo-TCP-IP-titulo {
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-top: 2em;
+    line-height: 1.5em;
+    color: #003566;
+    border-bottom: 0.08em solid #fca311;
+}
+
+.conteudo__sinais__titulo strong,
+.conteudo__topologias-titulo strong {
+    color: #669bbc;
+}
+
+.conteudo__sinal__analogico-sub-titulo,
+.conteudo__sinal__Digital-sub-titulo,
+.conteudo__componentes__placas-rede-sub-titulo,
+.conteudo__componentes__modem-sub-titulo,
+.conteudo__componentes__hub-sub-titulo,
+.conteudo__topologias-sub-titulo,
+.conteudo__modelo-referencia__sub-titulo  {
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 1em 0 1em;
+    line-height: 1.5em;
+    color: #669bbc;
+}
+
+.conteudo__modelo-referencia__sub-titulo-h4 {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 1em 0 1em;
+    color: #fca311;
+}
+
+.conteudo__sinais__paragrafo,
+.conteudo__sinal__analogico-paragrafo,
+.conteudo__sinal__Digital-paragrafo,
+.conteudo__componentes-paragrafo,
+.conteudo__componentes__placas-rede-paragrafo,
+.conteudo__componentes__modem-paragrafo,
+.conteudo__componentes__hub-paragrafo,
+.conteudo__topologias-paragrafo,
+.conteudo__protocolos__paragrafo,
+.conteudo__modelo-referencia__paragrafo,
+.conteudo__protocolo-TCP-IP-paragrafo {
+    text-align: justify;
+    color: var(--cinza);
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+.conteudo__componentes-paragrafo strong,
+.conteudo__topologias-paragrafo strong,
+.conteudo__modelo-referencia__lista-itens strong {
+    font-weight: 500;
+    color: #669bbc;
+}
+
+.conteudo__sinal__analogico__lista-itens,
+.conteudo__sinal__Digital__lista-itens,
+.conteudo__componentes__lista-itens,
+.conteudo__topologias__lista-itens,
+.conteudo__protocolo__lista-itens,
+.conteudo__modelo-referencia__lista-itens,
+.conteudo__protocolo-TCP-IP__lista-itens {
+    display: block;
+    justify-content: space-between;
+    margin: 2em;
+    line-height: 1.5em;
+}
+
+.conteudo__protocolo-TCP-IP__lista-itens strong {
+    font-weight: 700;
+    color: #fca311;
+}
+.conteudo__sinal__Digital__lista-itens img  {
+    width: 0.8em;
+}
+
+.conteudo__protocolo__lista-itens {
+    color: #003566;
+    background-color: #669bbc;
+    padding: 2em;
+}
+
+.conteudo__sinal__analogico__lista-itens strong,
+.conteudo__componentes__lista-itens strong,
+.conteudo__topologias__lista-itens strong {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #fca311;
+}
+
+.conteudo__cabecalho-imagem, 
+.conteudo__componentes__exemplo-imagem,
+.conteudo__protocolos__exemplo-imagem,
+.conteudo__modelo-referencia__exemplo-imagem,
+.conteudo__protocolo-TCP-IP__exemplo-imagem {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.conteudo__componentes__carrossel__exemplo-imagem {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    max-height: 70%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.carrossel__protocolos-lista {
+    width: 100%;
+    height: 12em;
+    line-height: 1.5em;
+    overflow: hidden; /* Para ocultar o conteúdo fora da altura fixa */
+    position: relative;
+    border: 3px solid #669bbc;
+    
+}
+  
+.carrossel__protocolos-lista .Text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2em;
+}
+ 
+.carrossel__protocolos-lista .Text p {
+    max-height: 100%;
+    overflow-y: auto; /* Ativa a rolagem vertical quando o conteúdo exceder a altura máxima */
+}
+
+.carrossel__protocolos-lista strong {
+    font-weight: 500;
+    color: #fca311;
+}
+
+.carrossel__protocolos_botoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+.carrossel__protocolos_botoes button {
+    margin: 1em;
+    padding: 10px 20px;
+    background-color: #669bbc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.carrossel__protocolos_botoes button:hover {
+    background-color: #fca311;
+}
