@@ -12,7 +12,7 @@
 <body>
     <header class="cabecalho"></header>
     <main>
-        <!--atenção: necessário implementar melhorias-->
+        <!--Atenção: necessário implementação de melhorias-->
         <section class="sessao-banner">
             <div class="banner-conteudo">
                 <h1 class="sessao__banner__conteudo-titulo">Arquitetura e Organização de Computadores</h1>
@@ -21,6 +21,7 @@
             </div>
             <img class="banner__conteudo-imagem" src="../src/img/cpu_imagem.png" alt="imagem processador cpu">
         </section>
+
         <section class="conteudo">
             <section class="conteudo conteudo__fundamentos">
                 <h2 class="conteudo conteudo__fundamentos__titulo">Unidade Central de Processamento (CPU)</h2>
@@ -31,7 +32,7 @@
                 <div class="conteudo__fundamentos-basicos">
                     <ul class="conteudo__funcoes__basicas-lista">
                         <li class="conteudo__funcoes__basicas__lista-item">
-                            <img src="../src/img/pontoAmarelo.png"><strong>UC: Unidade de Controle –</strong> circuito que gera sinais elétricos para organizar como e quando as instruções devem ser executadas. Esses sinais direcionam a comunicação entre a CPU e componentes como memória RAM e dispositivos de entrada e saída de dados. A unidade de controle (UC) é um componente da CPU que direciona a operação do processador. Uma UC tipicamente usa um decodificador binário para converter instruções codificadas para sinais de controle temporizados que orquestram a operação de outras unidades (memória, unidade lógico-aritmética, periféricos, etc). Sem a UC, o computador seria uma máquina de função única, não sendo possível o processador funcionar com propósito geral. A maior parte dos recursos de um computador são administrados pela UC. Ela direciona o fluxo de dados entre a CPU e os outros componentes do computador. John von Neumann incluiu a UC como parte da arquitetura de von Neumann.Em designs modernos de computador, a unidade de controle é tipicamente uma parte interna da CPU, com a sua função e operações intocadas desde a sua introdução.
+                            <img src="../src/img/pontoAmarelo.png"> <strong>UC: Unidade de Controle –</strong> circuito que gera sinais elétricos para organizar como e quando as instruções devem ser executadas. Esses sinais direcionam a comunicação entre a CPU e componentes como memória RAM e dispositivos de entrada e saída de dados. A unidade de controle (UC) é um componente da CPU que direciona a operação do processador. Uma UC tipicamente usa um decodificador binário para converter instruções codificadas para sinais de controle temporizados que orquestram a operação de outras unidades (memória, unidade lógico-aritmética, periféricos, etc). Sem a UC, o computador seria uma máquina de função única, não sendo possível o processador funcionar com propósito geral. A maior parte dos recursos de um computador são administrados pela UC. Ela direciona o fluxo de dados entre a CPU e os outros componentes do computador. John von Neumann incluiu a UC como parte da arquitetura de von Neumann.Em designs modernos de computador, a unidade de controle é tipicamente uma parte interna da CPU, com a sua função e operações intocadas desde a sua introdução.
                         </li>
                         <li class="conteudo__funcoes__basicas__lista-item">
                             <img src="../src/img/pontoAzul.png"> <strong>ULA: Unidade Lógica e Aritmética –</strong> um circuito responsável por executar operações lógicas, cálculos como adição e multiplicação, além de operações booleanas complexas. A unidade lógica e aritmética (ULA), em inglês arithmetic logic unit (ALU), é um circuito digital que realiza operações de adição e booleana AND. A ULA é uma peça fundamental da unidade central de processamento (UCP), e até dos mais simples microprocessadores. É na verdade uma grande calculadora eletrônica. 
@@ -42,6 +43,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="conteudo__funcoes">
                 <h2 class="conteudo__funcoes-titulo">Barramentos</h2>
                 <p class="conteudo__funcoes-paragrafo">os componentes de um computador, como processadores, memórias, placas de vídeo e diversos outros, são conectados à placa-mãe a partir do que chamamos de barramento. Os barramentos são o encaixe que cada peça precisa para funcionar corretamente.</p>
@@ -60,6 +62,7 @@
                     </ul>
                 </div>
             </section>
+            
             <section class="conteudo__linguagem-maquina">
                 <h2 class="conteudo__linguagem-maquina-titulo">Tecnologias empregadas nos processadores</h2>
                 <ul class="conteudo__funcoes__basicas-lista">
@@ -75,9 +78,37 @@
             <section class="conteudo__fundamentos">
                 <h2 class="conteudo__fundamentos__titulo">Memória Principal</h2>
                 <p class="conteudo__fundamentos_paragrafo">Conheça os papéis das memórias de um computador navegando com o mouse em cada uma delas:</p>
+                <div class="memory-container">
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Memória Cache</div>
+                            <div class="memory-back">A memória cache é uma memória de acesso rápido que armazena dados frequentemente utilizados para melhorar o desempenho do sistema. Agiliza a comunicação do processador com a memória principal, proporcionando um processamento mais eficiente</div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Registradores</div>
+                            <div class="memory-back">Os registradores são uma pequena quantidade de memória de alta velocidade localizada na CPU, usada para armazenar dados temporários e instruções de programas em execução. Uma função básica da memória do computador é de armazenas dados que serão processados, os registrados são os locais de memória onde esses dados ficam armazenados para que o processamento aconteça.</div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Memória Principal</div>
+                            <div class="memory-back">A memória principal é uma forma de memória de acesso aleatório, também chamada de Memória RAM, usada para armazenar dados e instruções que são acessados e processados pela CPU.</div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Memória ROM</div>
+                            <div class="memory-back">A memória ROM (Read-Only Memory) é um tipo de memória de armazenamento de computador que armazena dados permanentes e que não podem ser modificados ou apagados. A Memória ROM, que também é uma memória principal, é onde são gravados os programas de inicialização de um computador, chamados de Firmwares, e seus principais tipos de aplicação.</div>
+                        </div>
+                    </div>
+                </div>
                 <style>
                     .memory-container {
                         display: flex;
+                        justify-content: center;
+                        padding: 2em;
                     }
                 
                     .memory {
@@ -126,42 +157,11 @@
                         transform: rotateY(180deg);
                     }
                 </style>
-                </head>
-                <body>
-                
-                <div class="memory-container">
-                    <div class="memory">
-                        <div class="memory-card">
-                            <div class="memory-front">Memória Cache</div>
-                            <div class="memory-back">A memória cache é uma memória de acesso rápido que armazena dados frequentemente utilizados para melhorar o desempenho do sistema. Agiliza a comunicação do processador com a memória principal, proporcionando um processamento mais eficiente</div>
-                        </div>
-                    </div>
-                    <div class="memory">
-                        <div class="memory-card">
-                            <div class="memory-front">Registradores</div>
-                            <div class="memory-back">Os registradores são uma pequena quantidade de memória de alta velocidade localizada na CPU, usada para armazenar dados temporários e instruções de programas em execução. Uma função básica da memória do computador é de armazenas dados que serão processados, os registrados são os locais de memória onde esses dados ficam armazenados para que o processamento aconteça.</div>
-                        </div>
-                    </div>
-                    <div class="memory">
-                        <div class="memory-card">
-                            <div class="memory-front">Memória Principal</div>
-                            <div class="memory-back">A memória principal é uma forma de memória de acesso aleatório, também chamada de Memória RAM, usada para armazenar dados e instruções que são acessados e processados pela CPU.</div>
-                        </div>
-                    </div>
-                    <div class="memory">
-                        <div class="memory-card">
-                            <div class="memory-front">Memória ROM</div>
-                            <div class="memory-back">A memória ROM (Read-Only Memory) é um tipo de memória de armazenamento de computador que armazena dados permanentes e que não podem ser modificados ou apagados. A Memória ROM, que também é uma memória principal, é onde são gravados os programas de inicialização de um computador, chamados de Firmwares, e seus principais tipos de aplicação.</div>
-                        </div>
-                    </div>
-                </div>
             </section>
-
 
             <section class="conteudo__linguagem-maquina">
                 <h2 class="conteudo__linguagem-maquina-titulo">Memória Secundária</h2>
-                <p class="conteudo__fundamentos_paragrafo">Memória Secundária é onde as informações são gravadas para uso posterior. São geralmente dispositivos de memória, como HDs, cartões de memória e outros que possam desempenhar esta função.</p>
-        
+                <p class="conteudo__fundamentos_paragrafo">Memória Secundária é onde as informações são gravadas para uso posterior. São geralmente dispositivos de memória, como HDs, cartões de memória e outros que possam desempenhar esta função.</p>       
                 <div class="container">
                     <div class="retangulo" onclick="toggleDescricao(this)">
                         <h2>Padrão SCSI</h2>
@@ -180,42 +180,39 @@
                         <p class="descricao">Os SSDs (Solid State Drives) são dispositivos de armazenamento de dados que usam memória flash NAND para armazenar dados de forma permanente. Eles são mais rápidos, silenciosos e duráveis do que os discos rígidos tradicionais, mas geralmente têm capacidade de armazenamento menor e custo mais alto por gigabyte. Dispositivos para armazenamento de dados (como os HDs). Formados por chips de memória Flash para realizar o armazenamento de dados. São mais econômicos no consumo de energia.</p>
                     </div>
                 </div>
+
+                <style>
+                    .container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+        
+                .retangulo {
+                    width: 300px;
+                    height: 50px;
+                    background-color: lightblue;
+                    margin: 10px;
+                    cursor: pointer;
+                    text-align: center;
+                    transition: height 0.3s;
+                }
+        
+                .descricao {
+                    display: none;
+                    background-color: lightgray;
+                    padding: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+        
+                .retangulo.expandido {
+                    height: auto;
+                }
+                </style> 
             </section>
             
-            <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .retangulo {
-            width: 300px;
-            height: 50px;
-            background-color: lightblue;
-            margin: 10px;
-            cursor: pointer;
-            text-align: center;
-            transition: height 0.3s;
-        }
-
-        .descricao {
-            display: none;
-            background-color: lightgray;
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .retangulo.expandido {
-            height: auto;
-        }
-    </style>
-            
-            
-   <!----------------------------------------------->
-            
-        <section class="conteudo__linguagem-maquina">
+            <section class="conteudo__linguagem-maquina">
             <h2 class="conteudo__linguagem-maquina-titulo">Dispositivos de entrada e saída</h2>
             <p class="conteudo__entrada-saida-paragrafo">Os dispositivos de entrada e saída (E/S) são componentes fundamentais de um sistema de computador. Eles permitem que os usuários interajam com o computador, enviando dados para dentro e recebendo dados de volta para fora do sistema.</p>
 
@@ -243,53 +240,49 @@
                 </div>
             </div>
             
-  
-        </section>
-
-        <style>
-    .carrossel-container {
-        display: flex;
-    }
-
-    .carrossel {
-        flex: 1;
-        margin: 0 10px;
-        overflow: hidden; /* Esconde o conteúdo fora do contêiner */
-        position: relative;
-    }
-
-    .carrossel-conteudo {
-        display: flex;
-        transition: transform 0.5s ease; /* Adiciona uma transição suave */
-    }
-
-    .carrossel-slide {
-        min-width: 300px;
-        padding: 10px;
-    }
-
-    .card {
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    h2 {
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin: 0;
-    }
-
-</style>
-     
-</main>
-<footer class="rodape"></footer>
-<script src="../js/header.js"></script>
-<script src="../js/footer.js"></script>
-
+            <style>
+                .carrossel-container {
+                    display: flex;
+                }
+            
+                .carrossel {
+                    flex: 1;
+                    margin: 0 10px;
+                    overflow: hidden; /* Esconde o conteúdo fora do contêiner */
+                    position: relative; /* Posição relativa para posicionamento absoluto dos botões */
+                }
+            
+                .carrossel-conteudo {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                }
+            
+                .carrossel-slide {
+                    min-width: 300px;
+                    padding: 10px;
+                }
+            
+                .card {
+                    background-color: #f0f0f0;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    padding: 20px;
+                    text-align: center;
+                }
+            
+                h2 {
+                    margin-bottom: 10px;
+                }
+            
+                p {
+                    margin: 0;
+                }
+            </style>
+            </section>
+        </section>   
+    </main>
+    <footer class="rodape"></footer>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
 </body>
 </html>
