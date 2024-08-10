@@ -1,210 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumo 1 - Redes de Computadores</title>
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="cabecalho">
-        <img class="cabecalho__imagem" src="../src/img/icon_folha.png" alt="Imagem em ícone na cor preta de uma folha de papel com um lápis">
-        <nav class="cabecalho__menu">
-            <a href="../index.html" class="cabecalho__menu-item">Início</a>
-            <a href="../pages/page00.html" class="cabecalho__menu-item">Sobre</a>
-        </nav>
-    </header>
-    <main>
-        <section class="conteudo">
-            <h1 class="conteudo-titulo">Redes de Computadores</h1>
-            <h2 class="conteudo-sub-titulo">Introdução à comunicação de dados e teleprocessamento</h2>
-            <img class="conteudo__cabecalho-imagem" src="../src/img/computadoresConectados.png" alt="ilustração">
-            <section class="conteudo__sinais">
-                <h2 class="conteudo__sinais__titulo">Sinais <strong>analógicos</strong> e <strong>digitais</strong></h2>
-                <p class="conteudo__sinais__paragrafo">Os tipos de sinais utilizados na comunicação podem ser divididos em dois: analógicos e digitais. Em redes de computadores esses dois sinais também estão presentes nos tipos de transmissão e determinam a qualidade do serviço.</p>
-                <div class="conteudo__sinal-analogico">
-                    <h3 class="conteudo__sinal__analogico-sub-titulo">Sinal Analógico</h3>
-                    <p class="conteudo__sinal__analogico-paragrafo">Segundo Tanenbaum (2003), os sinais analógicos são ondas eletromagnéticas que assumem infinitos valores ao longo do tempo. Esse sinal é representado por uma onda senoidal com as seguintes características:</p>
-                    <div class="conteudo__sinal__analogico-lista">
-                        <ul class="conteudo__sinal__analogico__lista-itens">
-                            <li>
-                                <p><strong>Amplitude:</strong> representa intensidade mais alta dos sinais elétricos (volts).</p>
-                            </li>
-                            <li>
-                                <p><strong>Frequência:</strong> é medida em hertz, define a quantidade de ciclos em um intervalo de tempo.</p>
-                            </li>
-                            <li>
-                                <p><strong>Fase:</strong> define o formato da onda senoidal, pode ser medida em graus ou radianos.</p>
-                            </li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resumo 1: Redes de Computadores</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho"></header>
+        <main>
+            <section class="conteudo">
+                <h1 class="conteudo-titulo">Redes de Computadores</h1>
+                <h2 class="conteudo-sub-titulo">Introdução à comunicação de dados e teleprocessamento</h2>
+                <img class="conteudo__cabecalho-imagem" src="../src/img/computadoresConectados.png" alt="ilustração">
+                <section class="conteudo__sinais">
+                    <h2 class="conteudo__sinais__titulo">Sinais <strong>analógicos</strong> e <strong>digitais</strong></h2>
+                    <p class="conteudo__sinais__paragrafo">Os tipos de sinais utilizados na comunicação podem ser divididos em dois: analógicos e digitais. Em redes de computadores esses dois sinais também estão presentes nos tipos de transmissão e determinam a qualidade do serviço.</p>
+                    <div class="conteudo__sinal-analogico">
+                        <h3 class="conteudo__sinal__analogico-sub-titulo">Sinal Analógico</h3>
+                        <p class="conteudo__sinal__analogico-paragrafo">Segundo Tanenbaum (2003), os sinais analógicos são ondas eletromagnéticas que assumem infinitos valores ao longo do tempo. Esse sinal é representado por uma onda senoidal com as seguintes características:</p>
+                        <div class="conteudo__sinal__analogico-lista">
+                            <ul class="conteudo__sinal__analogico__lista-itens">
+                                <li>
+                                    <p><strong>Amplitude:</strong> representa intensidade mais alta dos sinais elétricos (volts).</p>
+                                </li>
+                                <li>
+                                    <p><strong>Frequência:</strong> é medida em hertz, define a quantidade de ciclos em um intervalo de tempo.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Fase:</strong> define o formato da onda senoidal, pode ser medida em graus ou radianos.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="conteudo__sinal__analogico-exemplo">
+                            <p class="conteudo__sinal__analogico-paragrafo">Para uma melhor compreensão do sinal analógico, observe o sinal produzido pela voz humana na figura a seguir:</p>
+                            <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemplo_sinal_analogico.jpeg" alt="ilustração">
+                        </div>
                     </div>
-                    <div class="conteudo__sinal__analogico-exemplo">
-                        <p class="conteudo__sinal__analogico-paragrafo">Para uma melhor compreensão do sinal analógico, observe o sinal produzido pela voz humana na figura a seguir:</p>
-                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemplo_sinal_analogico.jpeg" alt="ilustração">
+                    <div class="conteudo__sinal-Digital">
+                        <h3 class="conteudo__sinal__Digital-sub-titulo">Sinal Digital</h3>
+                        <p class="conteudo__sinal__Digital-paragrafo">Em contrapartida, o sinal digital é representado por 0s e 1s, ou seja, é um sinal binário. A representação dos seus valores é dada como discreta ao longo do tempo e amplitude. Então, é possível diminuir a taxa de oscilação, fenômeno este responsável pelo aumento da qualidade de serviço. Quando ocorre uma transmissão de dados, ocorre um processo de codificação (digitalização) desse sinal. Com isso, os sinais digitais:</p>
+                        <div class="conteudo__sinal__Digital-lista">
+                            <ul class="conteudo__sinal__Digital__lista-itens">
+                                <li>
+                                    <img src="../src/img/pontoAmarelo.png"> Não sofrem degradação dos serviços por interferência ou ruídos.
+                                </li>
+                                <li>
+                                    <img src="../src/img/pontoAmarelo.png"> Pode ser transmitida maior quantidade de informações.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="conteudo__sinal__Digital-exemplo">
+                            <p class="conteudo__sinal__Digital-paragrafo">Observe a figura a seguir com as características do sinal digital:</p>
+                            <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemplo_sinal_digital.jpeg" alt="ilustração">
+                        </div>
                     </div>
-                </div>
-                <div class="conteudo__sinal-Digital">
-                    <h3 class="conteudo__sinal__Digital-sub-titulo">Sinal Digital</h3>
-                    <p class="conteudo__sinal__Digital-paragrafo">Em contrapartida, o sinal digital é representado por 0s e 1s, ou seja, é um sinal binário. A representação dos seus valores é dada como discreta ao longo do tempo e amplitude. Então, é possível diminuir a taxa de oscilação, fenômeno este responsável pelo aumento da qualidade de serviço. Quando ocorre uma transmissão de dados, ocorre um processo de codificação (digitalização) desse sinal. Com isso, os sinais digitais:</p>
-                    <div class="conteudo__sinal__Digital-lista">
-                        <ul class="conteudo__sinal__Digital__lista-itens">
-                            <li>
-                                <img src="../src/img/pontoAmarelo.png"> Não sofrem degradação dos serviços por interferência ou ruídos.
-                            </li>
-                            <li>
-                                <img src="../src/img/pontoAmarelo.png"> Pode ser transmitida maior quantidade de informações.
-                            </li>
-                        </ul>
+                    <p>Os modos de transmissão dos sinais nas redes de comunicação de dados podem variar conforme o sentido em que ocorrem as trocas de mensagens, o número de bits enviados simultaneamente e a sincronização entre computador e servidor.</p>
+                </section>
+                <section class="conteudo__componentes">
+                    <h2 class="conteudo__componentes-titulo">Componentes de uma rede</h2>
+                    <p class="conteudo__componentes-paragrafo"> Para estruturar as redes, existem alguns componentes de hardware que são essenciais para prover a comunicação entre os dispositivos: <strong>Placas de rede</strong>, <strong>Modem</strong> e <strong>Hub</strong></p>
+                    <div class="conteudo__componentes__placas-rede">
+                        <h3 class="conteudo__componentes__placas-rede-sub-titulo">Placas de rede</h3>
+                        <p class="conteudo__componentes__placas-rede-paragrafo">O controlador de interface da rede (NIC – Network Interface Controller) pode estar ou não integrado à placa-mãe.</p>
+                        <p class="conteudo__componentes__placas-rede-paragrafo">A arquitetura de seu barramento pode ser na forma PCI, PCI Express, ISA e USB, ou seja, o formato de encaixe na placa-mãe. A sua função lógica é efetuar o tratamento de endereçamentos no envio e recebimento das mensagens.</p>
+                        
+                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploPlacaDeRede.jpeg" alt="">
                     </div>
-                    <div class="conteudo__sinal__Digital-exemplo">
-                        <p class="conteudo__sinal__Digital-paragrafo">Observe a figura a seguir com as características do sinal digital:</p>
-                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemplo_sinal_digital.jpeg" alt="ilustração">
+                    <div class="conteudo__componentes__modem">
+                        <h3 class="conteudo__componentes__modem-sub-titulo">Modem</h3>
+                        <p class="conteudo__componentes__modem-paragrafo">O modem tem a função de fazer a modulação e demodulação das mensagens, e também é conhecido como transceptor.</p>
+                        <p class="conteudo__componentes__modem-paragrafo">Em sua forma analógica, os dados são transmitidos pelo canal de voz; já na sua forma digital, é feita a codificação da banda base. Esse equipamento está entre os mais populares dos hardwares encontrados nas redes.</p>
+                        
+                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploModem.jpeg" alt="imagem de um modem na cor preta com duas antenas e luzes na cor verde">
                     </div>
-                </div>
-                <p>Os modos de transmissão dos sinais nas redes de comunicação de dados podem variar conforme o sentido em que ocorrem as trocas de mensagens, o número de bits enviados simultaneamente e a sincronização entre computador e servidor.</p>
+                    <div class="conteudo__componentes__hub">
+                        <h3 class="conteudo__componentes__hub-sub-titulo">Hub</h3>
+                        <p class="conteudo__componentes__hub-paragrafo">O hub pode conter várias linhas de entrada que são responsáveis por distribuir conexão. Esse equipamento assume o papel de um repetidor, pois a mensagem ao chegar é replicada para todas as portas.</p>
+                        <p class="conteudo__componentes__hub-paragrafo">Por ter o comportamento de repetidor dentro de uma rede e pelo motivo de replicar uma mensagem para todos os dispositivos conectados a ele, deve-se evitar o cascateamento.</p>
+                        
+                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploHub.jpg" alt="imagem do aparelho Hub">
+                    </div>
+                    <p class="conteudo__componentes-paragrafo">Em uma rede privada os recursos e sistemas compartilhados ficam restritos à organização e podem estar estruturados de duas formas. Veja:</p>
+                    <div class="conteudo__componentes-carrossel-4" id="carrossel_4">
+                        <div class="carrossel__protocolos-lista-4">
+                          <div class="conteudo__componentes-carrossel__Lista-itens">
+                            <p class="conteudo__componentes-paragrafo"><strong>Intranet:</strong> Compreende uma rede privada que utiliza em sua estrutura física e lógica o modelo de internet. No entanto, os serviços de rede, como servidores de arquivos e impressão, servidor web e as aplicações são de uso interno.</p>
+                            <img class="conteudo__componentes__carrossel__exemplo-imagem" src="../src/img/exemploIntranet.jpeg">
+                          </div>
+                          <div class="conteudo__componentes-carrossel__Lista-itens">
+                            <p class="conteudo__componentes-paragrafo"><strong>Extranet:</strong> Conhecida popularmente como internet. A diferença é que os recursos só podem ser acessados com autorização de um administrador da rede de uma companhia.</p>
+                            <img class="conteudo__componentes__carrossel__exemplo-imagem" src="../src/img/exemploExtranet.jpeg">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carrossel__protocolos_botoes">
+                        <button id="prev4">Anterior</button>
+                        <button id="next4">Próximo</button>
+                    </div>
+                </section>
+                <section class="conteudo__topologias">
+                    <h2 class="conteudo__topologias-titulo">Topologias de redes: <strong>Roteador</strong>, <strong>Switch</strong>, <strong>Bridges (Pontes)</strong> e <strong>Gateway</strong></h2>
+                    <p class="conteudo__topologias-paragrafo">As redes utilizadas diariamente possuem em suas infraestruturas alguns equipamentos essenciais para prover a comunicação entre os dispositivos, independentemente da sua localização geográfica. Tais equipamentos e as suas respectivas configurações são imperceptíveis para o usuário final, porém o desempenho dos seus serviços pode ser sentido (positivamente ou negativamente).</p>
+                    <div class="conteudo__topologias-roteador">
+                        <h2 class="conteudo__topologias-sub-titulo">Roteador</h2>
+                        <p class="conteudo__topologias-paragrafo">O roteador forma tabelas lógicas dos equipamentos disponíveis nas redes, como: roteador, switch, computadores, dispositivos móveis, impressoras IP e câmeras IP. Para auxiliar nesse processo é utilizado um mecanismo de descoberta de dispositivos “vizinhos”, que é efetuado por roteadores e switches por meio dos protocolos de comunicação:</p>
+                        <div class="conteudo__topologias-lista">
+                            <ul class="conteudo__topologias__lista-itens">
+                                <li>
+                                    <h4><strong>ICMP</strong></h4>
+                                    <p>Esse protocolo faz o diagnóstico da rede, bem como relata os erros de recebimento de pacotes e no informe de características da rede.</p>
+                                </li>
+                                <li>
+                                    <h4><strong>ARP</strong></h4>
+                                    <p>Efetua o mapeamento dos endereços físicos (MAC) por meio do endereço lógico.</p>
+                                </li>
+                                <li>
+                                    <h4><strong>RARP</strong></h4>
+                                    <p>Faz o inverso do ARP, associando um endereço lógico ao físico.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="conteudo__topologias-paragrafo">Dessa forma, um roteador envia periodicamente um protocolo de atualização de vizinhança aos roteadores conhecidos, e um vai enviando a atualização aos outros sucessivamente, fazendo com que a tabela lógica de endereçamento dos equipamentos continue sempre atualizada.</p>
+                        <div class="conteudo__citacao">
+                            <p class="conteudo__citacao-paragrafo">Segundo Kurose (2006), o roteador (sem fio) recebe a mensagem pela porta de entrada, repassa o pacote para o processador que efetua o roteamento, no qual ocorre a análise do endereçamento destino, e encaminha para a porta de saída, apontando a interface de rede (placa ethernet).</p>
+                        </div>
+                    </div>
+                    <div class="conteudo__topologias-switch">
+                        <h2 class="conteudo__topologias-sub-titulo">Switch</h2>
+                        <p class="conteudo__topologias-paragrafo">Esse tipo de equipamento é comumente encontrado em empresas, faculdades, ou seja, redes que necessitam maior número de dispositivos. Quando a mensagem chega a uma das interfaces de rede, o sistema do equipamento lê o endereço destino do cabeçalho e envia para a interface apropriada.</p>
+                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploSwitch.jpeg" alt="#">
+                    </div>
+                    <div class="conteudo__topologias-bridges ">
+                        <h2 class="conteudo__topologias-sub-titulo">Bridges (Pontes)</h2>
+                        <p class="conteudo__topologias-paragrafo">Quando o administrador de redes necessita conectar duas redes distintas, uma solução viável pode ser utilizada – as Bridges(pontes). Esse tipo de equipamento possui características muito parecidas com o switch.</p>
+                        <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploBridge.jpeg" alt="#">
+                        <p class="conteudo__topologias-paragrafo">Enquanto o <strong>switch</strong> é utilizado para conectar dispositivos da rede, a <strong>Bridge</strong> é utilizada para interligar duas redes (LAN). Mas nada impede que o administrador utilize o switch para interligar duas redes, desde que devidamente configurado e planejado.</p>
+                        <p class="conteudo__topologias-paragrafo">A vantagem em se utilizar as bridges é que a sua configuração é mais simples, necessitando apenas apontar o endereço das interfaces dos equipamentos das redes que estão sendo conectadas. Já ao se utilizar o switch, o ganho no processamento das informações pode proporcionar um ganho de desempenho na comunicação entre os dispositivos de redes distintas.</p>
+                    </div>
+                    <div class="conteudo__topologias-gateway">
+                        <h2 class="conteudo__topologias-sub-titulo">Gateway</h2>
+                        <p class="conteudo__topologias-paragrafo">Este conceito está diretamente ligado a um termo muito utilizado por profissionais de redes de computadores, que é “borda de rede”. O gateway pode ter funções específicas nas redes, dependendo do planejamento do administrador de redes. Entre elas, podemos destacar:</p>
+                        <div class="conteudo__topologias-lista">
+                            <ul class="conteudo__topologias__lista-itens">
+                                <li>
+                                    <h4><strong>Direcionamento</strong></h4>
+                                    <p>No qual todas as mensagens são enviadas para o nodo da rede, podendo ser roteador ou switch.</p>
+                                </li>
+                                <li>
+                                    <h4><strong>Proxy</strong></h4>
+                                    <p>Uma lista de sites cujo acesso é ou não permitido por meio dos dispositivos da rede interna.</p>
+                                </li>
+                                <li>
+                                    <h4><strong>Firewall</strong></h4>
+                                    <p>Um dispositivo de segurança que verifica o conteúdo dos pacotes e efetua seu bloqueio, quando nocivo aos serviços disponíveis na rede.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </section>
-            <section class="conteudo__componentes">
-                <h2 class="conteudo__componentes-titulo">Componentes de uma rede</h2>
-                <p class="conteudo__componentes-paragrafo"> Para estruturar as redes, existem alguns componentes de hardware que são essenciais para prover a comunicação entre os dispositivos: <strong>Placas de rede</strong>, <strong>Modem</strong> e <strong>Hub</strong></p>
-                <div class="conteudo__componentes__placas-rede">
-                    <h3 class="conteudo__componentes__placas-rede-sub-titulo">Placas de rede</h3>
-                    <p class="conteudo__componentes__placas-rede-paragrafo">O controlador de interface da rede (NIC – Network Interface Controller) pode estar ou não integrado à placa-mãe.</p>
-                    <p class="conteudo__componentes__placas-rede-paragrafo">A arquitetura de seu barramento pode ser na forma PCI, PCI Express, ISA e USB, ou seja, o formato de encaixe na placa-mãe. A sua função lógica é efetuar o tratamento de endereçamentos no envio e recebimento das mensagens.</p>
-                    
-                    <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploPlacaDeRede.jpeg" alt="">
-                </div>
-                <div class="conteudo__componentes__modem">
-                    <h3 class="conteudo__componentes__modem-sub-titulo">Modem</h3>
-                    <p class="conteudo__componentes__modem-paragrafo">O modem tem a função de fazer a modulação e demodulação das mensagens, e também é conhecido como transceptor.</p>
-                    <p class="conteudo__componentes__modem-paragrafo">Em sua forma analógica, os dados são transmitidos pelo canal de voz; já na sua forma digital, é feita a codificação da banda base. Esse equipamento está entre os mais populares dos hardwares encontrados nas redes.</p>
-                    
-                    <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploModem.jpeg" alt="imagem de um modem na cor preta com duas antenas e luzes na cor verde">
-                </div>
-                <div class="conteudo__componentes__hub">
-                    <h3 class="conteudo__componentes__hub-sub-titulo">Hub</h3>
-                    <p class="conteudo__componentes__hub-paragrafo">O hub pode conter várias linhas de entrada que são responsáveis por distribuir conexão. Esse equipamento assume o papel de um repetidor, pois a mensagem ao chegar é replicada para todas as portas.</p>
-                    <p class="conteudo__componentes__hub-paragrafo">Por ter o comportamento de repetidor dentro de uma rede e pelo motivo de replicar uma mensagem para todos os dispositivos conectados a ele, deve-se evitar o cascateamento.</p>
-                    
-                    <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploHub.jpg" alt="imagem do aparelho Hub">
-                </div>
-                <p class="conteudo__componentes-paragrafo">Em uma rede privada os recursos e sistemas compartilhados ficam restritos à organização e podem estar estruturados de duas formas. Veja:</p>
-                <div class="conteudo__componentes-carrossel-4" id="carrossel_4">
-                    <div class="carrossel__protocolos-lista-4">
-                      <div class="conteudo__componentes-carrossel__Lista-itens">
-                        <p class="conteudo__componentes-paragrafo"><strong>Intranet:</strong> Compreende uma rede privada que utiliza em sua estrutura física e lógica o modelo de internet. No entanto, os serviços de rede, como servidores de arquivos e impressão, servidor web e as aplicações são de uso interno.</p>
-                        <img class="conteudo__componentes__carrossel__exemplo-imagem" src="../src/img/exemploIntranet.jpeg">
-                      </div>
-                      <div class="conteudo__componentes-carrossel__Lista-itens">
-                        <p class="conteudo__componentes-paragrafo"><strong>Extranet:</strong> Conhecida popularmente como internet. A diferença é que os recursos só podem ser acessados com autorização de um administrador da rede de uma companhia.</p>
-                        <img class="conteudo__componentes__carrossel__exemplo-imagem" src="../src/img/exemploExtranet.jpeg">
-                      </div>
-                    </div>
-                </div>
-                <div class="carrossel__protocolos_botoes">
-                    <button id="prev4">Anterior</button>
-                    <button id="next4">Próximo</button>
-                </div>
-            </section>
-            <section class="conteudo__topologias">
-                <h2 class="conteudo__topologias-titulo">Topologias de redes: <strong>Roteador</strong>, <strong>Switch</strong>, <strong>Bridges (Pontes)</strong> e <strong>Gateway</strong></h2>
-                <p class="conteudo__topologias-paragrafo">As redes utilizadas diariamente possuem em suas infraestruturas alguns equipamentos essenciais para prover a comunicação entre os dispositivos, independentemente da sua localização geográfica. Tais equipamentos e as suas respectivas configurações são imperceptíveis para o usuário final, porém o desempenho dos seus serviços pode ser sentido (positivamente ou negativamente).</p>
-                <div class="conteudo__topologias-roteador">
-                    <h2 class="conteudo__topologias-sub-titulo">Roteador</h2>
-                    <p class="conteudo__topologias-paragrafo">O roteador forma tabelas lógicas dos equipamentos disponíveis nas redes, como: roteador, switch, computadores, dispositivos móveis, impressoras IP e câmeras IP. Para auxiliar nesse processo é utilizado um mecanismo de descoberta de dispositivos “vizinhos”, que é efetuado por roteadores e switches por meio dos protocolos de comunicação:</p>
-                    <div class="conteudo__topologias-lista">
-                        <ul class="conteudo__topologias__lista-itens">
-                            <li>
-                                <h4><strong>ICMP</strong></h4>
-                                <p>Esse protocolo faz o diagnóstico da rede, bem como relata os erros de recebimento de pacotes e no informe de características da rede.</p>
-                            </li>
-                            <li>
-                                <h4><strong>ARP</strong></h4>
-                                <p>Efetua o mapeamento dos endereços físicos (MAC) por meio do endereço lógico.</p>
-                            </li>
-                            <li>
-                                <h4><strong>RARP</strong></h4>
-                                <p>Faz o inverso do ARP, associando um endereço lógico ao físico.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="conteudo__topologias-paragrafo">Dessa forma, um roteador envia periodicamente um protocolo de atualização de vizinhança aos roteadores conhecidos, e um vai enviando a atualização aos outros sucessivamente, fazendo com que a tabela lógica de endereçamento dos equipamentos continue sempre atualizada.</p>
-                    <div class="conteudo__citacao">
-                        <p class="conteudo__citacao-paragrafo">Segundo Kurose (2006), o roteador (sem fio) recebe a mensagem pela porta de entrada, repassa o pacote para o processador que efetua o roteamento, no qual ocorre a análise do endereçamento destino, e encaminha para a porta de saída, apontando a interface de rede (placa ethernet).</p>
-                    </div>
-                </div>
-                <div class="conteudo__topologias-switch">
-                    <h2 class="conteudo__topologias-sub-titulo">Switch</h2>
-                    <p class="conteudo__topologias-paragrafo">Esse tipo de equipamento é comumente encontrado em empresas, faculdades, ou seja, redes que necessitam maior número de dispositivos. Quando a mensagem chega a uma das interfaces de rede, o sistema do equipamento lê o endereço destino do cabeçalho e envia para a interface apropriada.</p>
-                    <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploSwitch.jpeg" alt="#">
-                </div>
-                <div class="conteudo__topologias-bridges ">
-                    <h2 class="conteudo__topologias-sub-titulo">Bridges (Pontes)</h2>
-                    <p class="conteudo__topologias-paragrafo">Quando o administrador de redes necessita conectar duas redes distintas, uma solução viável pode ser utilizada – as Bridges(pontes). Esse tipo de equipamento possui características muito parecidas com o switch.</p>
-                    <img class="conteudo__componentes__exemplo-imagem" src="../src/img/exemploBridge.jpeg" alt="#">
-                    <p class="conteudo__topologias-paragrafo">Enquanto o <strong>switch</strong> é utilizado para conectar dispositivos da rede, a <strong>Bridge</strong> é utilizada para interligar duas redes (LAN). Mas nada impede que o administrador utilize o switch para interligar duas redes, desde que devidamente configurado e planejado.</p>
-                    <p class="conteudo__topologias-paragrafo">A vantagem em se utilizar as bridges é que a sua configuração é mais simples, necessitando apenas apontar o endereço das interfaces dos equipamentos das redes que estão sendo conectadas. Já ao se utilizar o switch, o ganho no processamento das informações pode proporcionar um ganho de desempenho na comunicação entre os dispositivos de redes distintas.</p>
-                </div>
-                <div class="conteudo__topologias-gateway">
-                    <h2 class="conteudo__topologias-sub-titulo">Gateway</h2>
-                    <p class="conteudo__topologias-paragrafo">Este conceito está diretamente ligado a um termo muito utilizado por profissionais de redes de computadores, que é “borda de rede”. O gateway pode ter funções específicas nas redes, dependendo do planejamento do administrador de redes. Entre elas, podemos destacar:</p>
-                    <div class="conteudo__topologias-lista">
-                        <ul class="conteudo__topologias__lista-itens">
-                            <li>
-                                <h4><strong>Direcionamento</strong></h4>
-                                <p>No qual todas as mensagens são enviadas para o nodo da rede, podendo ser roteador ou switch.</p>
-                            </li>
-                            <li>
-                                <h4><strong>Proxy</strong></h4>
-                                <p>Uma lista de sites cujo acesso é ou não permitido por meio dos dispositivos da rede interna.</p>
-                            </li>
-                            <li>
-                                <h4><strong>Firewall</strong></h4>
-                                <p>Um dispositivo de segurança que verifica o conteúdo dos pacotes e efetua seu bloqueio, quando nocivo aos serviços disponíveis na rede.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </section>
-    </main>
-    <footer class="rodape">
-        <p>Página desenvolvida apenas para fins de estudos.</p>
-    </footer>
-    <script>
-        const carrossel4 = document.getElementById("carrossel_4");
-        const prevButton4 = document.getElementById("prev4");
-        const nextButton4 = document.getElementById("next4");
-      
-        let currentSlide4 = 0;
-      
-        function showSlide4() {
-          const slides = carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens");
-          for (let i = 0; i < slides.length; i++) {
-            if (i === currentSlide4) {
-              slides[i].style.display = "block";
-            } else {
-              slides[i].style.display = "none";
+        </main>
+        <footer class="rodape"></footer>
+        <script>
+            const carrossel4 = document.getElementById("carrossel_4");
+            const prevButton4 = document.getElementById("prev4");
+            const nextButton4 = document.getElementById("next4");
+          
+            let currentSlide4 = 0;
+          
+            function showSlide4() {
+              const slides = carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens");
+              for (let i = 0; i < slides.length; i++) {
+                if (i === currentSlide4) {
+                  slides[i].style.display = "block";
+                } else {
+                  slides[i].style.display = "none";
+                }
+              }
             }
-          }
-        }
-      
-        function nextSlide4() {
-          currentSlide4 = (currentSlide4 + 1) % carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length;
-          showSlide4();
-        }
-      
-        function prevSlide4() {
-          currentSlide4 = (currentSlide4 - 1 + carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length) % carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length;
-          showSlide4();
-        }
-      
-        prevButton4.addEventListener("click", prevSlide4);
-        nextButton4.addEventListener("click", nextSlide4);
-      
-        showSlide4();
-      </script>
-</body>
+          
+            function nextSlide4() {
+              currentSlide4 = (currentSlide4 + 1) % carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length;
+              showSlide4();
+            }
+          
+            function prevSlide4() {
+              currentSlide4 = (currentSlide4 - 1 + carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length) % carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length;
+              showSlide4();
+            }
+          
+            prevButton4.addEventListener("click", prevSlide4);
+            nextButton4.addEventListener("click", nextSlide4);
+          
+            showSlide4();
+          </script>
+          <script src="../js/header.js"></script>
+          <script src="../js/footer.js"></script>
+    </body>
 </html>

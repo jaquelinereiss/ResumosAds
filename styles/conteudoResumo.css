@@ -1,0 +1,66 @@
+.conteudo-semestre-resumo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.conteudo-semestre-semestres-resumo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-semestre-titulo-resumo {
+    font-weight: 700;
+    font-size: 2em;
+    font-family: var(--font-principal);
+}
+
+.conteudo-semestre-materia-resumo-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    width: 80%;
+    font-family: var(--font-secundaria);
+    color: var(--cor-sextaria);
+}
+
+.conteudo-semestre-materia-resumo-card h3 {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-right: 1em;
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+}
+
+.conteudo-semestre-materia-resumo-card p {
+    padding-bottom: 1em;
+    line-height: 1.5em;
+    border-bottom: 0.08em solid var(--cor-principal);
+}
+
+.conteudo-semestre-materia-resumo-card p strong {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--cor-principal);
+}
+
+.conteudo-semestre-materia-resumo-card-ancora {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 2em;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 1em 2em;
+    color: var(--cor-sextaria);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.5s, color 0.3s;
+}
+
+.conteudo-semestre-materia-resumo-card-ancora:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quintaria);
+}

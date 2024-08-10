@@ -39,7 +39,7 @@
     font-family: var(--font-secundaria);
     padding: 2em 0;
 }
-.conteudo__variaveis__titulo,
+.titulo, .conteudo__variaveis__titulo,
 .conteudo__operadores-titulo,
 .conteudo__estruturas-condicionais-titulo,
 .conteudo__funcoes-titulo {
