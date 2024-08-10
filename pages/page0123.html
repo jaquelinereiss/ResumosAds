@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resumo 3: Redes de Computadores</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho"></header>
+        <main>
+            <section class="conteudo">
+                <h1 class="conteudo-titulo">Redes de Computadores</h1>
+                <p>O endereçamento IP e as suas técnicas de sub-redes são um dos mais importantes tópicos relacionados à rede de computadores.</p>
+                <section class="conteudo__fundamentos">
+                    <h2 class="conteudo__fundamentos__titulo">Redes e Sub-redes</h2>
+                    <div class="conteudo__citacao">
+                        <p class="conteudo__citacao-paragrafo">Segundo Kurose (2006), o Internet Protocol, ou simplesmente IP, é o endereço lógico feito para que um dispositivo possa se comunicar com qualquer outro dispositivo, independentemente de sua localização geográfica. O protocolo está definido na camada de rede, sendo o seu pacote denominado datagrama.</p>
+                    </div>
+                    <p class="conteudo__fundamentos_paragrafo">A notação de um endereço IP é separada por ponto, identificando uma parte como a rede (net), e a outra como o dispositivo (host). Veja os exemplos: </p>
+                    <div class="conteudo__fundamentos-basicos">
+                        <ul class="conteudo__funcoes__basicas-lista">
+                            <li class="conteudo__funcoes__basicas__lista-item">
+                                <img src="../src/img/pontoAmarelo.png"> <strong>172.16 –</strong> Identifica a qual rede o dispositivo pertence.
+                            </li>
+                            <li class="conteudo__funcoes__basicas__lista-item">
+                                <img src="../src/img/pontoAzul.png"> <strong>30.110 -</strong> Identifica o endereço do dispositivo.
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="conteudo__fundamentos_paragrafo">Além disso, a utilização do IP deve obdecer os seguintes critérios: </p>
+                    <div class="conteudo__fundamentos-basicos">
+                        <ul class="conteudo__funcoes__basicas-lista">
+                            <li class="conteudo__funcoes__basicas__lista-item">
+                                <img src="../src/img/pontoAmarelo.png"> <strong>IP para Rede Privada:</strong> números de IP reservados para utilização dentro das LANs.
+                            </li>
+                            <li class="conteudo__funcoes__basicas__lista-item">
+                                <img src="../src/img/pontoAzul.png"> <strong>IP para Rede Pública:</strong> são faixas de números de IP utilizados para dispositivos acessíveis pela internet.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="conteudo__linguagem-maquina">
+                    <h2 class="conteudo__linguagem-maquina-titulo">Ethernet</h2>
+                    <div class="conteudo__citacao">
+                        <p class="conteudo__citacao-paragrafo">Segundo Filippetti (2008), o tipo de tecnologia aplicada ao cabeamento irá ditar a velocidade que cada um deles pode chegar a atingir.</p>
+                    </div>
+                    <p>Confira abaixo as mais utilizadas nas aplicações IEEE 802.3:</p>
+                    <p class="conteudo__topologias-paragrafo">O roteador forma tabelas lógicas dos equipamentos disponíveis nas redes, como: roteador, switch, computadores, dispositivos móveis, impressoras IP e câmeras IP. Para auxiliar nesse processo é utilizado um mecanismo de descoberta de dispositivos “vizinhos”, que é efetuado por roteadores e switches por meio dos protocolos de comunicação:</p>
+                        <div class="conteudo__topologias-lista">
+                            <ul class="conteudo__topologias__lista-itens">
+                                <li>
+                                    <h4><strong>Fast Ethernet:</strong></h4>
+                                    <p>Definida como IEEE 802.3u, que permitiu que a velocidade de transmissão atingisse 100 megabits.</p>
+                                </li>
+                                <li>
+                                    <h4><strong>Ethernet Gigabit:</strong></h4>
+                                    <p> Dez vezes superior à Fast Ethernet, essa versão permite velocidades de transmissão de até 1000 megabits.</p>
+                                </li>
+                                <li>
+                                    <h4><strong>Ethernet 10 Gigabit:</strong></h4>
+                                    <p>Da mesma forma como ocorreu na versão anterior, esse padrão multiplicou a sua capacidade em 10 vezes, permitindo atingir uma velocidade de 10 Gigabit Ethernet, também conhecido como 10G.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="conteudo__linguagem-maquina-titulo">Métodos de transmissão Ethernet</h2>
+                        <div class="conteudo__citacao">
+                            <p class="conteudo__citacao-paragrafo">Tanenbaum (1997) define que as comunicações desse tipo de rede são efetuadas pelo protocolo Carrier Sense Multiple Access with Collision Detection (CSMA/CD), permitindo que qualquer dispositivo da rede possa efetuar uma transmissão sem hierarquizar quem tem prioridade.</p>
+                        </div>
+                    <p class="conteudo__linguagem-maquina-paragrafo">Basicamente, para o funcionamento do protocolo, os dispositivos verificam se não há nenhuma comunicação ocorrendo para assim fazer uma transmissão.</p>
+                    <p class="conteudo__linguagem-maquina-paragrafo">Caso acorra de dois dispositivos emitirem, simultaneamente, uma mensagem um para o outro, uma colisão acontece e a transmissão é interrompida, sendo retomada em um tempo aleatório.</p>
+                </section>
+            </main>
+        <footer class="rodape"></footer>
+        <script src="../js/header.js"></script>
+        <script src="../js/footer.js"></script>
+    </body>
+</html>
