@@ -8,6 +8,6 @@ O projeto consiste em um site para armazenar resumos dos conteúdos vistos no cu
 
 ▫️ Prévia:
 <br><br>
-![resumosAds-1](https://github.com/user-attachments/assets/2c889f19-17dd-475c-905e-a50b9c9985e6)
+![resumosAds-1](https://github.com/user-attachments/assets/0313c964-be96-4d5f-901c-5769c0d33971)
 <br><br>
 ![resumosAds-2](https://github.com/user-attachments/assets/7e739850-acc7-4072-ac9b-c13f1043ee6d)
