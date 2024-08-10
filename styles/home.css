@@ -1,21 +1,3 @@
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 10em 1em 10em;
-    background: var(--degrade);
-    color: var(--cor-quintaria);
-}
-.cabecalho__imagem {
-    height: 72px;
-}
-.cabecalho__menu-item {
-    text-decoration: none;
-    color: var(--branco);
-    padding: 1em;
-    cursor: pointer;
-}
 .conteudo__principal {
     display: flex;
     flex-direction: row;
@@ -23,71 +5,78 @@
     justify-content: space-around;
     padding: 1em 10em 1em 10em;  
 }
+
 .conteudo__principal-escrito {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
+
 .conteudo__principal__escrito-titulo {
     font-family: var(--font-principal);
     font-weight: 700;
     font-size: 3em;
     color: var(--cor-secundaria);
 }
+
 .conteudo__principal__escrito-subtitulo, .conteudo-principal-escrito-paragrafo {
     font-family: var(--font-secundaria);
     font-weight: 400;
     font-size: 1em;
     color: var(--cor-secundaria);
 }
+
 .conteudo__principal__escrito-subtitulo strong {
     color: var(--cor-terciaria);
     font-weight: 700;
     letter-spacing: 2px;
 }
+
 .conteudo__principal-imagem {
     height: 23em;
 }
+
 .conteudo__semestre {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3em;
 }
+
 .conteudo__semestre-titulo {
     border-top: 0.08em solid var(--cor-terciaria);
-    padding-top: 1.5em;
+    padding-top: 0.8em;
     font-family: var(--font-principal);
     font-weight: 400;
     font-size: 1.5em;
+    margin-top: 0.5em;
     margin-bottom: 1em;
     color: var(--cor-principal);
 }
+
 .conteudo__semestre-semestres,
 .conteudo__semestre-materias {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .conteudo__semestre-semestres a,
 .conteudo__semestre-materias a {
     text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-family: var(--font-secundaria);
-    color: var(--cor-sextaria);
     font-weight: 400;
     border-radius: 8px;
     margin: 2em;
     padding: 2em;
+    font-family: var(--font-secundaria);
+    color: var(--cor-sextaria);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.5s, color 0.3s;
 }
+
 .conteudo__semestre-semestres a:hover,
 .conteudo__semestre-materias a:hover {
     background-color: var(--cor-terciaria);
     color: var(--cor-quintaria);
 }
-.rodape {
-    text-align: center;
-    padding: 1em;
-    background: var(--degrade);
-    color: var(--cor-quintaria);
-}
+

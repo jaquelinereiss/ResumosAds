@@ -1,201 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumo 1 - Linguagem de Programação</title>
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="cabecalho">
-        <img class="cabecalho__imagem" src="../src/img/icon_folha.png" alt="Imagem em ícone na cor preta de uma folha de papel com um lápis">
-        <nav class="cabecalho__menu">
-            <a href="../index.html" class="cabecalho__menu-item">Início</a>
-            <a href="../pages/page00.html" class="cabecalho__menu-item">Sobre</a>
-        </nav>
-    </header>
-    <main>
-        <section class="banner">
-            <div class="banner-conteudo">
-                <h1 class="banner__conteudo-titulo">Python</h1>
-                <h2 class="banner__conteudo-sub-titulo">Uma poderosa linguagem de programação orientada a objetos</h2>
-                <p class="banner__conteudo-descrição">Python é uma linguagem de programação orientada a objetos. Sua essência foi criada para ter comandos e estruturas simples, de fácil leitura e compreensão. A seguir, conheça as principais características dessa linguagem.</p>
-                
-            </div>
-            <img class="banner__conteudo-imagem" src="../src/img/logoPython.png" alt="imagem Python">
-        </section>
-        <section class="conteudo">
-            <section class="conteudo__variaveis">
-                <h2 class="conteudo__variaveis__titulo">Variáveis e tipos básicos de dados em Python</h2>
-                <p class="conteudo__variaveis__paragrafo">A construção de um algoritmo envolve entrada, processamento e saída. Para que o processamento ocorra, é necessário um meio de armazenar valores temporariamente, razão pela qual surge o conceito de variáveis. <strong>Uma variável é um espaço alocado na memória RAM.</strong></p>
-                <p class="conteudo__variaveis__paragrafo">Na linguagem Python, o tipo de variável é identificado no momento que se atribui um valor a ela. Portanto, uma variável refere-se a um valor. Sendo assim, diferente da muitas linguagens de programação onde possuem variáveis com tipo primitivo, como int, ou string. <strong>Em Python não há a necessidade de definir estaticamente o tipo de variável, como em outras linguagens de programação.</strong></p>
-                <div class="conteudo__citacao">
-                    <p class="conteudo__citacao-paragrafo">“O modelo de dados do Python (Python Data Model, em inglês) adota como paradigma que todo dado em um programa escrito com Python é representado por um objeto”.</p>
-                    <p class="conteudo__citacao-autor">- Banin (2018)</p>
-                </div>
-                <div class="conteudo__variaveis-aspectos">
-                    <h3 class="conteudo__variaveis__aspectos-sub-titulo">Todo objeto Python tem três aspectos:</h3>
-                    <ul class="conteudo__variaveis__aspectos-lista">
-                        <li>
-                            <img src="../src/img/pontoAmarelo.png" alt=""> Um identificador.
-                        </li>
-                        <li>
-                            <img src="../src/img/pontoAzul.png" alt=""> Um tipo.
-                        </li>
-                        <li>
-                            <img src="../src/img/pontoAmarelo.png" alt=""> Um conteúdo.
-                        </li>
-                    </ul>
-                </div>
-                <div class="conteudo__variaveis-exemplo">
-                    <p class="conteudo__variaveis__exemplo-paragrafo"><strong>Os códigos a seguir exibem o resultado para três objetos:</strong> int, string e float (tipos de variáveis), sem declaração do tipo.</p>
-                    <ul class="conteudo__variaveis__exemplo-lista">
-                        <li class="conteudo__variaveis__exemplo__lista-item"><strong>print(‘olá’)</strong><br>#string</li>
-                        <li class="conteudo__variaveis__exemplo__lista-item"><strong>print(10)</strong><br>#inteiro</li>
-                        <li class="conteudo__variaveis__exemplo__lista-item"><strong>print(3.141592)</strong><br>#float</li>
-                    </ul>
-                    <p class="conteudo__variaveis__exemplo-paragrafo">Em outras linguagens de programação, tais objetos seriam variáveis primitivas. Por serem objetos, tais tipos possuem métodos e comportamentos que outras linguagens não suportam – por exemplo, multiplicar uma string por um valor inteiro.</p>
-                </div>
-            </section>
-            <section class="conteudo__operadores">
-                <h2 class="conteudo__operadores-titulo">Operadores numéricos</h2>
-                <p class="conteudo__operadores-paragrafo">Como já destacamos, todo objeto em Python possui um identificador (o nome), um tipo e o conteúdo. Diferentes tipos de objetos vão suportar diferentes operações. E cada uma destas deve ser escolhida de acordo com o problema a ser resolvido.</p>
-                <div class="conteudo__operadores-tipos-numericos">
-                    <p class="conteudo__operadores__tipos-numericos-paragrafo">Os tipos numéricos, naturalmente, suportam operações matemáticas entre si, devendo ser respeitada a ordem de precedência dos operadores:</p>
-                </div>
-                <div class="conteudo__operadores__tipos-numericos-ordemProcedencia">
-                    <ul class="conteudo__operadores__tipos-numericos-lista">
-                        <li class="conteudo__operadores__tipos-numericos__lista-item">
-                            <img src="../src/img/pontoAmarelo.png"> Primeiro resolvem-se os parênteses, do mais interno para o mais externo.
-                        </li>
-                        <li class="conteudo__operadores__tipos-numericos__lista-item">
-                            <img src="../src/img/pontoAzul.png"> Exponenciação.
-                        </li>
-                        <li class="conteudo__operadores__tipos-numericos__lista-item">
-                            <img src="../src/img/pontoAmarelo.png"> Multiplicação e divisão.
-                        </li>
-                        <li class="conteudo__operadores__tipos-numericos__lista-item">
-                            <img src="../src/img/pontoAzul.png"> Soma e subtração.
-                        </li>
-                    </ul>
-                    <img class="conteudo__operadores__tipos-numericos-ordemProcedencia-imagem" src="../src/img/personagem_resumo_computador.png" alt="ilustração">
-                </div>
-            </section>
-            <section class="conteudo__estruturas-condicionais">
-                <h2 class="conteudo__estruturas-condicionais-titulo">Estruturas condicionais de <strong class="destaque__repeticao">repetição</strong> e <strong class="destaque__logicas">lógicas</strong></h2>
-                <p class="conteudo__estruturas-condicionais-paragrafo">Em geral, em um programa você tem opções de caminhos ou lista de comandos que nada mais são que trechos de códigos que podem ser executados, devendo-se tomar decisões sobre qual trecho de código será executado em um determinado momento. Em Python estas estruturas são bem definidas, veja seguir:</p>
-                <div class="conteudo__estruturas-condicionais-comandos">
-                    <h2 class="conteudo__estruturas-condicionais__comandos-titulo">Estruturas condicionais em Python: <strong>if</strong>,<strong> elif</strong>,<strong> else</strong></h2>
-                    <p class="conteudo__estruturas-condicionais__comandos-paragrafo">Uma estrutura condicional verifica a condição dos argumentos passados e executa um comando caso a condição seja verdadeira. Para a construção de estruturas condicionais em Python são utilizados os comandos:</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resumo 1: Linguagem de Programação</title>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho"></header>
+        <main>
+            <section class="banner">
+                <div class="banner-conteudo">
+                    <h1 class="banner__conteudo-titulo">Python</h1>
+                    <h2 class="banner__conteudo-sub-titulo">Uma poderosa linguagem de programação orientada a objetos</h2>
+                    <p class="banner__conteudo-descrição">Python é uma linguagem de programação orientada a objetos. Sua essência foi criada para ter comandos e estruturas simples, de fácil leitura e compreensão. A seguir, conheça as principais características dessa linguagem.</p>
                     
-                    <div class="conteudo__estruturas-condicionais__comandos">
-                        <ul class="conteudo__estruturas-condicionais__comandos-lista">
-                            <li class="conteudo__estruturas-condicionais__comandos__lista-item">
-                                <img src="../src/img/pontoAzul.png" alt="ilustração"><strong> if</strong> - Por padrão, o bloco de instrução que estiver abaixo da instrução if será executado quando a expressão contida na estrutura if  for verdadeira.
+                </div>
+                <img class="banner__conteudo-imagem" src="../src/img/logoPython.png" alt="imagem Python">
+            </section>
+            <section class="conteudo">
+                <section class="conteudo__variaveis">
+                    <h2 class="conteudo__variaveis__titulo">Variáveis e tipos básicos de dados em Python</h2>
+                    <p class="conteudo__variaveis__paragrafo">A construção de um algoritmo envolve entrada, processamento e saída. Para que o processamento ocorra, é necessário um meio de armazenar valores temporariamente, razão pela qual surge o conceito de variáveis. <strong>Uma variável é um espaço alocado na memória RAM.</strong></p>
+                    <p class="conteudo__variaveis__paragrafo">Na linguagem Python, o tipo de variável é identificado no momento que se atribui um valor a ela. Portanto, uma variável refere-se a um valor. Sendo assim, diferente da muitas linguagens de programação onde possuem variáveis com tipo primitivo, como int, ou string. <strong>Em Python não há a necessidade de definir estaticamente o tipo de variável, como em outras linguagens de programação.</strong></p>
+                    <div class="conteudo__citacao">
+                        <p class="conteudo__citacao-paragrafo">“O modelo de dados do Python (Python Data Model, em inglês) adota como paradigma que todo dado em um programa escrito com Python é representado por um objeto”.</p>
+                        <p class="conteudo__citacao-autor">- Banin (2018)</p>
+                    </div>
+                    <div class="conteudo__variaveis-aspectos">
+                        <h3 class="conteudo__variaveis__aspectos-sub-titulo">Todo objeto Python tem três aspectos:</h3>
+                        <ul class="conteudo__variaveis__aspectos-lista">
+                            <li>
+                                <img src="../src/img/pontoAmarelo.png" alt=""> Um identificador.
                             </li>
-                            <li class="conteudo__estruturas-condicionais__comandos__lista-item">
-                                <img src="../src/img/pontoAmarelo.png" alt="ilustração"><strong> else</strong> - Instrução complementar da estrutura if, deve ser executada quando a expressão definida for igual a falso.
+                            <li>
+                                <img src="../src/img/pontoAzul.png" alt=""> Um tipo.
                             </li>
-                            <li class="conteudo__estruturas-condicionais__comandos__lista-item">
-                                <img src="../src/img/pontoAzul.png" alt="ilustração"><strong> elif</strong> - Trata-se de uma abreviação do else if usado para fazer as condições intermediárias.
+                            <li>
+                                <img src="../src/img/pontoAmarelo.png" alt=""> Um conteúdo.
                             </li>
                         </ul>
-                            <div class="conteudo__citacao">
-                                <p class="conteudo__citacao-paragrafo">“Generalizando, em Python, todo conjunto de comandos subordinados deve estar identado em relação ao seu comando proprietário. Isso vale para if-else, while, for, try, def e qualquer outro em que exista a relação de subordinação”</p>
-                                <p class="conteudo__citacao-autor">(BANIN, 2018, p. 51)</p>
+                    </div>
+                    <div class="conteudo__variaveis-exemplo">
+                        <p class="conteudo__variaveis__exemplo-paragrafo"><strong>Os códigos a seguir exibem o resultado para três objetos:</strong> int, string e float (tipos de variáveis), sem declaração do tipo.</p>
+                        <ul class="conteudo__variaveis__exemplo-lista">
+                            <li class="conteudo__variaveis__exemplo__lista-item"><strong>print(‘olá’)</strong><br>#string</li>
+                            <li class="conteudo__variaveis__exemplo__lista-item"><strong>print(10)</strong><br>#inteiro</li>
+                            <li class="conteudo__variaveis__exemplo__lista-item"><strong>print(3.141592)</strong><br>#float</li>
+                        </ul>
+                        <p class="conteudo__variaveis__exemplo-paragrafo">Em outras linguagens de programação, tais objetos seriam variáveis primitivas. Por serem objetos, tais tipos possuem métodos e comportamentos que outras linguagens não suportam – por exemplo, multiplicar uma string por um valor inteiro.</p>
+                    </div>
+                </section>
+                <section class="conteudo__operadores">
+                    <h2 class="conteudo__operadores-titulo">Operadores numéricos</h2>
+                    <p class="conteudo__operadores-paragrafo">Como já destacamos, todo objeto em Python possui um identificador (o nome), um tipo e o conteúdo. Diferentes tipos de objetos vão suportar diferentes operações. E cada uma destas deve ser escolhida de acordo com o problema a ser resolvido.</p>
+                    <div class="conteudo__operadores-tipos-numericos">
+                        <p class="conteudo__operadores__tipos-numericos-paragrafo">Os tipos numéricos, naturalmente, suportam operações matemáticas entre si, devendo ser respeitada a ordem de precedência dos operadores:</p>
+                    </div>
+                    <div class="conteudo__operadores__tipos-numericos-ordemProcedencia">
+                        <ul class="conteudo__operadores__tipos-numericos-lista">
+                            <li class="conteudo__operadores__tipos-numericos__lista-item">
+                                <img src="../src/img/pontoAmarelo.png"> Primeiro resolvem-se os parênteses, do mais interno para o mais externo.
+                            </li>
+                            <li class="conteudo__operadores__tipos-numericos__lista-item">
+                                <img src="../src/img/pontoAzul.png"> Exponenciação.
+                            </li>
+                            <li class="conteudo__operadores__tipos-numericos__lista-item">
+                                <img src="../src/img/pontoAmarelo.png"> Multiplicação e divisão.
+                            </li>
+                            <li class="conteudo__operadores__tipos-numericos__lista-item">
+                                <img src="../src/img/pontoAzul.png"> Soma e subtração.
+                            </li>
+                        </ul>
+                        <img class="conteudo__operadores__tipos-numericos-ordemProcedencia-imagem" src="../src/img/personagem_resumo_computador.png" alt="ilustração">
+                    </div>
+                </section>
+                <section class="conteudo__estruturas-condicionais">
+                    <h2 class="conteudo__estruturas-condicionais-titulo">Estruturas condicionais de <strong class="destaque__repeticao">repetição</strong> e <strong class="destaque__logicas">lógicas</strong></h2>
+                    <p class="conteudo__estruturas-condicionais-paragrafo">Em geral, em um programa você tem opções de caminhos ou lista de comandos que nada mais são que trechos de códigos que podem ser executados, devendo-se tomar decisões sobre qual trecho de código será executado em um determinado momento. Em Python estas estruturas são bem definidas, veja seguir:</p>
+                    <div class="conteudo__estruturas-condicionais-comandos">
+                        <h2 class="conteudo__estruturas-condicionais__comandos-titulo">Estruturas condicionais em Python: <strong>if</strong>,<strong> elif</strong>,<strong> else</strong></h2>
+                        <p class="conteudo__estruturas-condicionais__comandos-paragrafo">Uma estrutura condicional verifica a condição dos argumentos passados e executa um comando caso a condição seja verdadeira. Para a construção de estruturas condicionais em Python são utilizados os comandos:</p>
+                        
+                        <div class="conteudo__estruturas-condicionais__comandos">
+                            <ul class="conteudo__estruturas-condicionais__comandos-lista">
+                                <li class="conteudo__estruturas-condicionais__comandos__lista-item">
+                                    <img src="../src/img/pontoAzul.png" alt="ilustração"><strong> if</strong> - Por padrão, o bloco de instrução que estiver abaixo da instrução if será executado quando a expressão contida na estrutura if  for verdadeira.
+                                </li>
+                                <li class="conteudo__estruturas-condicionais__comandos__lista-item">
+                                    <img src="../src/img/pontoAmarelo.png" alt="ilustração"><strong> else</strong> - Instrução complementar da estrutura if, deve ser executada quando a expressão definida for igual a falso.
+                                </li>
+                                <li class="conteudo__estruturas-condicionais__comandos__lista-item">
+                                    <img src="../src/img/pontoAzul.png" alt="ilustração"><strong> elif</strong> - Trata-se de uma abreviação do else if usado para fazer as condições intermediárias.
+                                </li>
+                            </ul>
+                                <div class="conteudo__citacao">
+                                    <p class="conteudo__citacao-paragrafo">“Generalizando, em Python, todo conjunto de comandos subordinados deve estar identado em relação ao seu comando proprietário. Isso vale para if-else, while, for, try, def e qualquer outro em que exista a relação de subordinação”</p>
+                                    <p class="conteudo__citacao-autor">(BANIN, 2018, p. 51)</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="conteudo__estruturas-condicionais__estruturas-repeticoes">
-                    <h2 class="conteudo__estruturas-condicionais__estruturas-repeticoes-titulo">Estruturas de repetição: o comando <strong>for</strong></h2>
-                    <p class="conteudo__estruturas-condicionais__estruturas-repeticoes-paragrafo">A instrução for em Python faz uma iteração sobre os itens de qualquer sequência – por exemplo, iterar sobre os caracteres de uma palavra, já que esta é um tipo de sequência. O bloco de comandos a ser executado deve ser identado em razão da relação e da subordinação.</p>
-                    <div class="conteudo__estruturas-condicionais__estruturas-repeticoes-sintaxe">
-                        <p class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-paragrafo"><strong>A sintaxe do comando envolve:</strong> for, in e ..:</p>
-                        <ul class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-lista">
-                            <li class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-item">
-                                <p><strong>for</strong> - A palavra reservada “for” seguido de uma variável de controle; </p>
-                            </li>
-                            <li class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-item">
-                                <p><strong>in</strong> - A palavra reservada “in”; </p>
-                            </li>
-                            <li class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-item">
-                                <p><strong>..:</strong> - Uma sequência acompanhada por dois-pontos. </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="conteudo__estruturas-condicionais__estruturas-repeticoes">
-                    <h2 class="conteudo__estruturas-condicionais__estruturas-repeticoes-titulo">Estruturas de repetição: o comando <strong>while</strong></h2>
-                    <p class="conteudo__estruturas-condicionais__estruturas-repeticoes-paragrafo">O comando while deve ser utilizado para construir e controlar a estrutura decisão, sempre que o número de repetições não seja conhecido. Por exemplo, quando queremos solicitar e testar se o número digitado pelo usuário é par ou ímpar. Quando ele digitar zero, o programa se encerra. Não sabemos quando o usuário irá digitar, portanto somente o while é capaz de solucionar esse problema.</p>
-                    <p class="conteudo__estruturas-condicionais__estruturas-repeticoes-paragrafo">Em Python, quando a mesma instrução precisa ser executada várias vezes seguidas podemos utilizar loop. Esse comando permite executar um bloco de código repetidas vezes, até que uma dada condição seja atendida.</p>
-                </div>
-                <div class="conteudo__estruturas-condicionais__estruturas-logicas">
-                    <h2 class="conteudo__estruturas-condicionais__estruturas-logicas-titulo">Estruturas lógicas em python: <strong>and</strong>, <strong>or</strong>, <strong>not</strong></h2>
-                    <p class="conteudo__estruturas-condicionais__estruturas-logicas-paragrafo">Em Python utilizamos operadores booleanos para construir estruturas de decisões mais complexas. Nesses operadores o Verdadeiro é chamado de True (igual a 1) e o Falso é chamado False (igual a 0).</p>
-                    <p class="conteudo__estruturas-condicionais__estruturas-logicas-paragrafo">Os tipos de estruturas aqui apresentados, condicionais e de repetição, representam uma parte fundamental da linguagem de programação em Python, sendo assim, é muito importante conhecer a sintaxe e o funcionamento dessas estruturas. </p>
-                </div>
-            </section>
-            <section class="conteudo__funcoes">
-                <h2 class="conteudo__funcoes-titulo">Funções em Python</h2>
-                <p class="conteudo__funcoes-paragrafo">Uma função é uma forma de organização, usada para delimitar ou determinar quais tarefas podem ser realizadas por uma determinada divisão. Em linguagem de programação, uma função é uma sequência de instruções que processa um ou mais resultados que são chamados de parâmetros. Em Python temos as funções built-in e as funções definidas pelo usuário. </p>
-                <div class="conteudo__funcoes-python">
-                    <h2 class="conteudo__funcoes-python-titulo">Funções em Python: <strong>built-in</strong></h2>
-                    <p class="conteudo__funcoes-python-paragrafo">Uma função built-in é um objeto que está integrado ao núcleo do interpretador Python. Ou seja, não precisa ser feita nenhuma instalação adicional, já está pronto para uso. </p>
-                    <p class="conteudo__funcoes-python-paragrafo">O interpretador Python possui várias funções disponíveis, conforme podemos conservar na tabela de Funções built-in em Python.</p>
-                    <div class="conteudo__funcoes-python-exemplos">
-                        <p class="conteudo__funcoes-python__exemplos-paragrafo">Veja a descrição de algumas dessas funções:</p>
-                        <ul class="conteudo__funcoes-python__exemplos-lista">
-                            <li class="conteudo__funcoes-python__exemplos__lista-item">
-                                <p><strong>print()</strong> - Usada para imprimir um valor na tela.</p>
-                            </li>
-                            <li class="conteudo__funcoes-python__exemplos__lista-item">
-                                <p><strong>input()</strong> - Usada para capturar um valor digitado no teclado.</p>
-                            </li>
-                            <li class="conteudo__funcoes-python__exemplos__lista-item">
-                                <p><strong>type()</strong> - Usada para saber qual é o tipo de um objeto (variável).</p>
-                            </li>
-                            <li class="conteudo__funcoes-python__exemplos__lista-item">
-                                <p><strong>int()</strong> e <strong>float()</strong> - Usadas para converter um valor no tipo inteiro ou float.</p>
-                            </li>
-                            <li class="conteudo__funcoes-python__exemplos__lista-item">
-                                <p><strong>enumarate()</strong> - Usada para retornar a posição de um valor em uma sequência.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="conteudo__funcoes">
-                        <h2 class="conteudo__funcoes-usuarios-titulo">Função definidas pelo <strong>usuário</strong></h2>
-                        <p class="conteudo__funcoes-usuarios-paragrafo">Além das Funções built-in, muitas vezes as soluções exigem a implementação de funções específicas, as quais são chamadas de funções definidas pelo usuário. </p>
-                        <div class="conteudo__funcoes-usuarios-sintaxe">
-                            <p class="conteudo__funcoes-usuarios__sintaxe-paragrafo">A sintaxe de uma função em Python é feita com:</p>
-                            <ul class="conteudo__funcoes-usuarios__sintaxe-lista">
-                                <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
-                                    <img src="../src/img/pontoAmarelo.png" alt="icone"> A palavra reservada <strong>def</strong>.
+                    <div class="conteudo__estruturas-condicionais__estruturas-repeticoes">
+                        <h2 class="conteudo__estruturas-condicionais__estruturas-repeticoes-titulo">Estruturas de repetição: o comando <strong>for</strong></h2>
+                        <p class="conteudo__estruturas-condicionais__estruturas-repeticoes-paragrafo">A instrução for em Python faz uma iteração sobre os itens de qualquer sequência – por exemplo, iterar sobre os caracteres de uma palavra, já que esta é um tipo de sequência. O bloco de comandos a ser executado deve ser identado em razão da relação e da subordinação.</p>
+                        <div class="conteudo__estruturas-condicionais__estruturas-repeticoes-sintaxe">
+                            <p class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-paragrafo"><strong>A sintaxe do comando envolve:</strong> for, in e ..:</p>
+                            <ul class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-lista">
+                                <li class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-item">
+                                    <p><strong>for</strong> - A palavra reservada “for” seguido de uma variável de controle; </p>
                                 </li>
-                                <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
-                                    <img src="../src/img/pontoAzul.png" alt="icone"> O nome da função.
+                                <li class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-item">
+                                    <p><strong>in</strong> - A palavra reservada “in”; </p>
                                 </li>
-                                <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
-                                    <img src="../src/img/pontoAmarelo.png" alt="icone"> Os parênteses que indicam se existem ou não parâmetros para a função.
-                                </li>
-                                <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
-                                    <img src="../src/img/pontoAzul.png" alt="icone"> E o comando <strong>return</strong> (que é opcional);
+                                <li class="conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-item">
+                                    <p><strong>..:</strong> - Uma sequência acompanhada por dois-pontos. </p>
                                 </li>
                             </ul>
                         </div>
-                    <div class="conteudo__funcoes">
-                        <h2 class="conteudo__funcoes-anonimas-titulo">Funções <strong>anônimas</strong> em Python</h2>
-                        <p class="conteudo__funcoes-anonimas-paragrafo">Expressões lambda (às vezes chamadas de formas lambda) são usadas para criar funções anônimas. Uma função anônima é uma função que não é construída com o <b>"def"</b> e que, por isso, não possui nome. Esse tipo de construção é útil quando a função faz somente uma ação e é usada uma única vez.</p>
                     </div>
-                </div>
+                    <div class="conteudo__estruturas-condicionais__estruturas-repeticoes">
+                        <h2 class="conteudo__estruturas-condicionais__estruturas-repeticoes-titulo">Estruturas de repetição: o comando <strong>while</strong></h2>
+                        <p class="conteudo__estruturas-condicionais__estruturas-repeticoes-paragrafo">O comando while deve ser utilizado para construir e controlar a estrutura decisão, sempre que o número de repetições não seja conhecido. Por exemplo, quando queremos solicitar e testar se o número digitado pelo usuário é par ou ímpar. Quando ele digitar zero, o programa se encerra. Não sabemos quando o usuário irá digitar, portanto somente o while é capaz de solucionar esse problema.</p>
+                        <p class="conteudo__estruturas-condicionais__estruturas-repeticoes-paragrafo">Em Python, quando a mesma instrução precisa ser executada várias vezes seguidas podemos utilizar loop. Esse comando permite executar um bloco de código repetidas vezes, até que uma dada condição seja atendida.</p>
+                    </div>
+                    <div class="conteudo__estruturas-condicionais__estruturas-logicas">
+                        <h2 class="conteudo__estruturas-condicionais__estruturas-logicas-titulo">Estruturas lógicas em python: <strong>and</strong>, <strong>or</strong>, <strong>not</strong></h2>
+                        <p class="conteudo__estruturas-condicionais__estruturas-logicas-paragrafo">Em Python utilizamos operadores booleanos para construir estruturas de decisões mais complexas. Nesses operadores o Verdadeiro é chamado de True (igual a 1) e o Falso é chamado False (igual a 0).</p>
+                        <p class="conteudo__estruturas-condicionais__estruturas-logicas-paragrafo">Os tipos de estruturas aqui apresentados, condicionais e de repetição, representam uma parte fundamental da linguagem de programação em Python, sendo assim, é muito importante conhecer a sintaxe e o funcionamento dessas estruturas. </p>
+                    </div>
+                </section>
+                <section class="conteudo__funcoes">
+                    <h2 class="conteudo__funcoes-titulo">Funções em Python</h2>
+                    <p class="conteudo__funcoes-paragrafo">Uma função é uma forma de organização, usada para delimitar ou determinar quais tarefas podem ser realizadas por uma determinada divisão. Em linguagem de programação, uma função é uma sequência de instruções que processa um ou mais resultados que são chamados de parâmetros. Em Python temos as funções built-in e as funções definidas pelo usuário. </p>
+                    <div class="conteudo__funcoes-python">
+                        <h2 class="conteudo__funcoes-python-titulo">Funções em Python: <strong>built-in</strong></h2>
+                        <p class="conteudo__funcoes-python-paragrafo">Uma função built-in é um objeto que está integrado ao núcleo do interpretador Python. Ou seja, não precisa ser feita nenhuma instalação adicional, já está pronto para uso. </p>
+                        <p class="conteudo__funcoes-python-paragrafo">O interpretador Python possui várias funções disponíveis, conforme podemos conservar na tabela de Funções built-in em Python.</p>
+                        <div class="conteudo__funcoes-python-exemplos">
+                            <p class="conteudo__funcoes-python__exemplos-paragrafo">Veja a descrição de algumas dessas funções:</p>
+                            <ul class="conteudo__funcoes-python__exemplos-lista">
+                                <li class="conteudo__funcoes-python__exemplos__lista-item">
+                                    <p><strong>print()</strong> - Usada para imprimir um valor na tela.</p>
+                                </li>
+                                <li class="conteudo__funcoes-python__exemplos__lista-item">
+                                    <p><strong>input()</strong> - Usada para capturar um valor digitado no teclado.</p>
+                                </li>
+                                <li class="conteudo__funcoes-python__exemplos__lista-item">
+                                    <p><strong>type()</strong> - Usada para saber qual é o tipo de um objeto (variável).</p>
+                                </li>
+                                <li class="conteudo__funcoes-python__exemplos__lista-item">
+                                    <p><strong>int()</strong> e <strong>float()</strong> - Usadas para converter um valor no tipo inteiro ou float.</p>
+                                </li>
+                                <li class="conteudo__funcoes-python__exemplos__lista-item">
+                                    <p><strong>enumarate()</strong> - Usada para retornar a posição de um valor em uma sequência.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="conteudo__funcoes">
+                            <h2 class="conteudo__funcoes-usuarios-titulo">Função definidas pelo <strong>usuário</strong></h2>
+                            <p class="conteudo__funcoes-usuarios-paragrafo">Além das Funções built-in, muitas vezes as soluções exigem a implementação de funções específicas, as quais são chamadas de funções definidas pelo usuário. </p>
+                            <div class="conteudo__funcoes-usuarios-sintaxe">
+                                <p class="conteudo__funcoes-usuarios__sintaxe-paragrafo">A sintaxe de uma função em Python é feita com:</p>
+                                <ul class="conteudo__funcoes-usuarios__sintaxe-lista">
+                                    <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
+                                        <img src="../src/img/pontoAmarelo.png" alt="icone"> A palavra reservada <strong>def</strong>.
+                                    </li>
+                                    <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
+                                        <img src="../src/img/pontoAzul.png" alt="icone"> O nome da função.
+                                    </li>
+                                    <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
+                                        <img src="../src/img/pontoAmarelo.png" alt="icone"> Os parênteses que indicam se existem ou não parâmetros para a função.
+                                    </li>
+                                    <li class="conteudo__funcoes-usuarios__sintaxe__lista-item">
+                                        <img src="../src/img/pontoAzul.png" alt="icone"> E o comando <strong>return</strong> (que é opcional);
+                                    </li>
+                                </ul>
+                            </div>
+                        <div class="conteudo__funcoes">
+                            <h2 class="conteudo__funcoes-anonimas-titulo">Funções <strong>anônimas</strong> em Python</h2>
+                            <p class="conteudo__funcoes-anonimas-paragrafo">Expressões lambda (às vezes chamadas de formas lambda) são usadas para criar funções anônimas. Uma função anônima é uma função que não é construída com o <b>"def"</b> e que, por isso, não possui nome. Esse tipo de construção é útil quando a função faz somente uma ação e é usada uma única vez.</p>
+                        </div>
+                    </div>
+                </section>
             </section>
-        </section>
-    </main>
-    <footer class="rodape">
-        <p>Página desenvolvida apenas para fins de estudos.</p>
-    </footer>
-</body>
+        </main>
+        <footer class="rodape"></footer>
+        <script src="../js/header.js"></script>
+        <script src="../js/footer.js"></script>
+    </body>
 </html>

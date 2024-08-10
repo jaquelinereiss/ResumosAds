@@ -1,7 +1,9 @@
 @import url("home.css");
-@import url("cardsResumos.css");
+@import url("conteudoResumo.css");
+@import url("cardMateria.css");
 @import url("resumo1.css");
 @import url("page0111.css");
+@import url("page0112.css");
 @import url("resumos012.css");
 @import url("page00.css");
 
@@ -22,8 +24,6 @@
 body {
     background: var(--cor-quartaria);
     font-family: var(--fonte-secundaria);
-    font-size: 18px;
-    font-weight: 400;
 }
 
 h1 {

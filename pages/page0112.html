@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo 2: Arquitetura e Organização de Computadores</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho"></header>
+    <main>
+        <!--atenção: necessário implementar melhorias-->
+        <section class="sessao-banner">
+            <div class="banner-conteudo">
+                <h1 class="sessao__banner__conteudo-titulo">Arquitetura e Organização de Computadores</h1>
+                <h2 class="sessao__banner__conteudo-sub-titulo">Conteúdos abordados neste resumo:</h2>
+                <p class="banner__conteudo-descrição">Unidade Central de Processamento (CPU). Unidade lógica e aritmética, unidade de controle. Barramentos: barramentos de dados, barramento de endereços e barramento de controle. Tecnologias empregadas em processaodres: CISC e RISC. Memória Principal. Memória Segundária. Dispositivos de entrada e saída.</p>  
+            </div>
+            <img class="banner__conteudo-imagem" src="../src/img/cpu_imagem.png" alt="imagem processador cpu">
+        </section>
+        <section class="conteudo">
+            <section class="conteudo conteudo__fundamentos">
+                <h2 class="conteudo conteudo__fundamentos__titulo">Unidade Central de Processamento (CPU)</h2>
+                <div class="conteudo__fundamentos_paragrafo">
+                    <p class="conteudo__fundamentos_paragrafo">A Unidade Central de Processamento, também conhecido como CPU, é um dispositivo responsável pelo processamento de dados em um computador, celular e outros dispositivos eletrônicos, funcionando como o “cérebro” desses equipamentos</p>
+                </div>
+                <p class="conteudo__fundamentos_paragrafo">A Unidade Central de Processamento (CPU) é dividida em três unidades essenciais, sendo elas:</p>
+                <div class="conteudo__fundamentos-basicos">
+                    <ul class="conteudo__funcoes__basicas-lista">
+                        <li class="conteudo__funcoes__basicas__lista-item">
+                            <img src="../src/img/pontoAmarelo.png"><strong>UC: Unidade de Controle –</strong> circuito que gera sinais elétricos para organizar como e quando as instruções devem ser executadas. Esses sinais direcionam a comunicação entre a CPU e componentes como memória RAM e dispositivos de entrada e saída de dados. A unidade de controle (UC) é um componente da CPU que direciona a operação do processador. Uma UC tipicamente usa um decodificador binário para converter instruções codificadas para sinais de controle temporizados que orquestram a operação de outras unidades (memória, unidade lógico-aritmética, periféricos, etc). Sem a UC, o computador seria uma máquina de função única, não sendo possível o processador funcionar com propósito geral. A maior parte dos recursos de um computador são administrados pela UC. Ela direciona o fluxo de dados entre a CPU e os outros componentes do computador. John von Neumann incluiu a UC como parte da arquitetura de von Neumann.Em designs modernos de computador, a unidade de controle é tipicamente uma parte interna da CPU, com a sua função e operações intocadas desde a sua introdução.
+                        </li>
+                        <li class="conteudo__funcoes__basicas__lista-item">
+                            <img src="../src/img/pontoAzul.png"> <strong>ULA: Unidade Lógica e Aritmética –</strong> um circuito responsável por executar operações lógicas, cálculos como adição e multiplicação, além de operações booleanas complexas. A unidade lógica e aritmética (ULA), em inglês arithmetic logic unit (ALU), é um circuito digital que realiza operações de adição e booleana AND. A ULA é uma peça fundamental da unidade central de processamento (UCP), e até dos mais simples microprocessadores. É na verdade uma grande calculadora eletrônica. 
+                        </li>
+                        <li class="conteudo__funcoes__basicas__lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> <strong>Registradores –</strong> tipo de memória rápida e volátil (perdem dados ao ficar sem energia elétrica) usados em pequenas quantidades para armazenamento de dados. A sua função é permitir que a CPU tenham acesso imediato a dados e instruções necessárias para a execução de operações lógicas ou aritméticas. O registrador de uma CPU (unidade central de processamento) é a memória dentro da própria CPU que armazena o número de bits. Os registradores estão no topo da hierarquia de memória, sendo assim, é um tipo de memória mais rápida e financeiramente mais custosa. Apesar do alto custo por bit armazenado, sua velocidade de acesso é essencial para o funcionamento dos computadores modernos e, portanto, são incluídos, ainda que em menor capacidade, mesmo em processadores de baixo custo. Os registradores são circuitos digitais capazes de armazenar e deslocar informações binárias, e são tipicamente usados como um dispositivo de armazenamento temporário. São utilizados na execução de programas de computadores, disponibilizando um local para armazenar dados. Na maioria dos computadores modernos, quando da execução das instruções de um programa, os dados são deslocados da memória principal para todos os registradores. Então, as instruções que utilizam estes dados são executadas pelo processador e, finalmente, os dados são movidos de volta para a memória principal.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="conteudo__funcoes">
+                <h2 class="conteudo__funcoes-titulo">Barramentos</h2>
+                <p class="conteudo__funcoes-paragrafo">os componentes de um computador, como processadores, memórias, placas de vídeo e diversos outros, são conectados à placa-mãe a partir do que chamamos de barramento. Os barramentos são o encaixe que cada peça precisa para funcionar corretamente.</p>
+                <div class="conteudo__funcoes-basicas">
+                    <p class="conteudo__funcoes__basicas-paragrafo">Há três funções distintas nos principais barramentos de um computador, que, em termos simples, conectam o processador, a memória e os outros componentes conectados a ele pelo que chamamos de barramentos de entrada e saída.</p>
+                    <ul class="conteudo__funcoes__basicas-lista">
+                        <li class="conteudo__funcoes__basicas__lista-item">
+                            <img src="../src/img/pontoAzul.png"> <strong>Barramento de dados –</strong> é por este tipo de barramento que ocorre as trocas de dados no computador, tanto enviados quanto recebidos.
+                        </li>
+                        <li class="conteudo__funcoes__basicas__lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> <strong>Barramento de endereços –</strong> atua como um regulador das outras funções, podendo limitá-las ou expandi-las em razão de sua demanda.
+                        </li>
+                        <li class="conteudo__funcoes__basicas__lista-item">
+                            <img src="../src/img/pontoAzul.png"> <strong>Barramento de controle –</strong> Onde acontece o processamento das informações. Exemplo: processador do computador.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="conteudo__linguagem-maquina">
+                <h2 class="conteudo__linguagem-maquina-titulo">Tecnologias empregadas nos processadores</h2>
+                <ul class="conteudo__funcoes__basicas-lista">
+                    <li class="conteudo__funcoes__basicas__lista-item">
+                        <img src="../src/img/pontoAmarelo.png"> <strong>CISC –</strong> O CISC (Complex Instruction Set Computers) é um sistema com um conjuntos de <strong>instruções complexas</strong>, mais usada em computadores e notebooks.
+                    </li>
+                    <li class="conteudo__funcoes__basicas__lista-item">
+                        <img src="../src/img/pontoAzul.png"> <strong>RISC –</strong> O RISC (Reduced Instuction Set Computes) é um sistema com um conjunto de <strong>instruções reduzidas</strong>, mas comum em smartphones e tabletes.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="conteudo__fundamentos">
+                <h2 class="conteudo__fundamentos__titulo">Memória Principal</h2>
+                <p class="conteudo__fundamentos_paragrafo">Conheça os papéis das memórias de um computador navegando com o mouse em cada uma delas:</p>
+                <style>
+                    .memory-container {
+                        display: flex;
+                    }
+                
+                    .memory {
+                        width: 200px;
+                        height: 200px;
+                        margin: 10px;
+                        perspective: 1000px;
+                    }
+                
+                    .memory-card {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        transform-style: preserve-3d;
+                        transition: transform 0.5s;
+                    }
+                
+                    .memory-card:hover {
+                        transform: rotateY(180deg);
+                    }
+                
+                    .memory-front,
+                    .memory-back {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        backface-visibility: hidden;
+                    }
+                
+                    .memory-front {
+                        background-color: #f0f0f0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                    }
+                
+                    .memory-back {
+                        background-color: #333;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        padding: 10px;
+                        transform: rotateY(180deg);
+                    }
+                </style>
+                </head>
+                <body>
+                
+                <div class="memory-container">
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Memória Cache</div>
+                            <div class="memory-back">A memória cache é uma memória de acesso rápido que armazena dados frequentemente utilizados para melhorar o desempenho do sistema. Agiliza a comunicação do processador com a memória principal, proporcionando um processamento mais eficiente</div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Registradores</div>
+                            <div class="memory-back">Os registradores são uma pequena quantidade de memória de alta velocidade localizada na CPU, usada para armazenar dados temporários e instruções de programas em execução. Uma função básica da memória do computador é de armazenas dados que serão processados, os registrados são os locais de memória onde esses dados ficam armazenados para que o processamento aconteça.</div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Memória Principal</div>
+                            <div class="memory-back">A memória principal é uma forma de memória de acesso aleatório, também chamada de Memória RAM, usada para armazenar dados e instruções que são acessados e processados pela CPU.</div>
+                        </div>
+                    </div>
+                    <div class="memory">
+                        <div class="memory-card">
+                            <div class="memory-front">Memória ROM</div>
+                            <div class="memory-back">A memória ROM (Read-Only Memory) é um tipo de memória de armazenamento de computador que armazena dados permanentes e que não podem ser modificados ou apagados. A Memória ROM, que também é uma memória principal, é onde são gravados os programas de inicialização de um computador, chamados de Firmwares, e seus principais tipos de aplicação.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="conteudo__linguagem-maquina">
+                <h2 class="conteudo__linguagem-maquina-titulo">Memória Secundária</h2>
+                <p class="conteudo__fundamentos_paragrafo">Memória Secundária é onde as informações são gravadas para uso posterior. São geralmente dispositivos de memória, como HDs, cartões de memória e outros que possam desempenhar esta função.</p>
+        
+                <div class="container">
+                    <div class="retangulo" onclick="toggleDescricao(this)">
+                        <h2>Padrão SCSI</h2>
+                        <p class="descricao">O Padrão SCSI (Small Computer System Interface) é um conjunto de padrões para conexão e transferência de dados entre dispositivos de computador. Este padrão foi criado para realizar a comunicação entre dispositivos com confiabilidade de transmissão e velocidade rápida.</p>
+                    </div>
+                    <div class="retangulo" onclick="toggleDescricao(this)">
+                        <h2>Padrão IDE/ATA</h2>
+                        <p class="descricao">O Padrão IDE/ATA (Integrated Drive Electronics/AT Attachment) é um padrão de interface para conectar dispositivos de armazenamento de massa, como unidades de disco rígido e unidades de CD/DVD, ao computador. IDE foi o primeiro que integrou ao HD a controladora do dispisitivo, o que representou uma grande inovação, reduzindo os problemas de sicnronismo e tornando seu funcionamento mais rápido.</p>
+                    </div>
+                    <div class="retangulo" onclick="toggleDescricao(this)">
+                        <h2>Padrão SATA</h2>
+                        <p class="descricao">O Padrão SATA (Serial ATA) é um padrão de interface para dispositivos de armazenamento de dados, como discos rígidos e SSDs (Solid State Drives), que oferece taxas de transferência de dados mais rápidas e eficiência energética aprimorada em comparação com padrões anteriores. Sucessor do padrão ATA. Utiliza dois canais, um para enviar e outro para receber dados, reduzindo com isso problemas de sincronização e interfereência.</p>
+                    </div>
+                    <div class="retangulo" onclick="toggleDescricao(this)">
+                        <h2>Dispositivos de memória SSD</h2>
+                        <p class="descricao">Os SSDs (Solid State Drives) são dispositivos de armazenamento de dados que usam memória flash NAND para armazenar dados de forma permanente. Eles são mais rápidos, silenciosos e duráveis do que os discos rígidos tradicionais, mas geralmente têm capacidade de armazenamento menor e custo mais alto por gigabyte. Dispositivos para armazenamento de dados (como os HDs). Formados por chips de memória Flash para realizar o armazenamento de dados. São mais econômicos no consumo de energia.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .retangulo {
+            width: 300px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: height 0.3s;
+        }
+
+        .descricao {
+            display: none;
+            background-color: lightgray;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .retangulo.expandido {
+            height: auto;
+        }
+    </style>
+            
+            
+   <!----------------------------------------------->
+            
+        <section class="conteudo__linguagem-maquina">
+            <h2 class="conteudo__linguagem-maquina-titulo">Dispositivos de entrada e saída</h2>
+            <p class="conteudo__entrada-saida-paragrafo">Os dispositivos de entrada e saída (E/S) são componentes fundamentais de um sistema de computador. Eles permitem que os usuários interajam com o computador, enviando dados para dentro e recebendo dados de volta para fora do sistema.</p>
+
+            <div class="carrossel-container">
+                <div class="carrossel">
+                    <div class="carrossel-conteudo">
+                        <div class="carrossel-slide">
+                            <div class="card">
+                                <h2>Dispositivo de Entrada</h2>
+                                <p>Um dispositivo de entrada é qualquer periférico de computador usado para fornecer dados e controle para o computador. Alguns exemplos comuns incluem teclados, mouse, trackpad, scanner, microfone e câmera.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="carrossel">
+                    <div class="carrossel-conteudo">
+                        <div class="carrossel-slide">
+                            <div class="card">
+                                <h2>Dispositivo de Saída</h2>
+                                <p>Um dispositivo de saída é qualquer periférico de computador usado para fornecer informações ou resultados do computador para o usuário. Alguns exemplos incluem monitores, impressoras, alto-falantes, fones de ouvido e projetores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+  
+        </section>
+
+        <style>
+    .carrossel-container {
+        display: flex;
+    }
+
+    .carrossel {
+        flex: 1;
+        margin: 0 10px;
+        overflow: hidden; /* Esconde o conteúdo fora do contêiner */
+        position: relative;
+    }
+
+    .carrossel-conteudo {
+        display: flex;
+        transition: transform 0.5s ease; /* Adiciona uma transição suave */
+    }
+
+    .carrossel-slide {
+        min-width: 300px;
+        padding: 10px;
+    }
+
+    .card {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+</style>
+     
+</main>
+<footer class="rodape"></footer>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+
+</body>
+</html>

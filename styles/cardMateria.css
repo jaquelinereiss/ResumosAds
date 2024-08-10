@@ -1,0 +1,23 @@
+.conteudo__semestre-materias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conteudo__semestre-materias a {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    width: 200px;
+    height: 90px;
+    color: var(--cor-sextaria);
+}
+
+.numero-materia {
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
