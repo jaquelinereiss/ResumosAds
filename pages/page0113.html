@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo 3: Arquitetura e Organização de Computadores</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="sessao-banner">
+            <div class="banner-conteudo">
+                <h1 class="sessao__banner__conteudo-titulo">Arquitetura e Organização de Computadores</h1>
+                <h2 class="sessao__banner__conteudo-sub-titulo">Conteúdos abordados neste resumo:</h2>
+                <p class="banner__conteudo-descrição">Sistemas Numéricos: Conceitos, Simbologia e Representação de Base Numérica. Conversão entre bases numéricas: decimal para binário, binário para decimal, decimal para hexadecimal, hexadecimal para decimal, decimal para octal, octal para decimal, binário para hexadecimal, hexadecimal para binário, Octal.</p>  
+            </div>
+            <img class="banner__conteudo-imagem" src="../src/img/semestre1/iconNumeroBinario.png" alt="ícone de folha de papel com escrita de número binário">
+        </section>
+
+        <section class="conteudo">
+            <section class="conteudo__sistemasNumericos">
+                <h2 class="conteudo__sistemasNumericos-titulo">Sistemas Numéricos</h2>
+                <p class="conteudo__sistemasNumericos-paragrafo">Para a compreenção deste resumo, precisamos entender que:</p>
+                <div class="conteudo__sistemasNumericos-explicacao">
+                    <p class="conteudo__sistemasNumericos__explicacao-paragrafo">Toda representação de um sistema numérico é formada pelo número correspondente e sua base. A base deve ser sempre representada de forma subscrita, representando o valor da base em questão.</p>
+                    <p class="conteudo__sistemasNumericos__explicacao-paragrafo">O sistema binário é representado por 0 e 1. Por exemplo:</p>
+                    <div class="container">
+                        <div class="container-exemplo card-retangulo-exemplo">
+                            <p class="conteudo__exemplo-item"><strong>1001012</strong></p>
+                        </div>
+                    </div>
+                    <div class="conteudo__informacoes-basicas">
+                        <p class="conteudo__sistemasNumericos__explicacao-paragrafo">Segue abaixo algumas informações importantes:</p>
+                        <ul class="conteudo__sistemasNumericos-lista">
+                            <li class="conteudo__sistemasNumericos__lista-item">
+                                <img src="../src/img/pontoAzul.png"> O sistema <strong>decimal</strong> é representado pela base 10 e possui dígitos de 0 a 9.
+                            </li>
+                            <li class="conteudo__sistemasNumericos__lista-item">
+                                <img src="../src/img/pontoAzul.png"> Já o sistema <strong>octal</strong> possui a base 8 e é representado por dígitos de 0 a 7, ficando assim: 5428.
+                            </li>
+                            <li class="conteudo__sistemasNumericos__lista-item">
+                                <img src="../src/img/pontoAzul.png"> Por último, o sistema <strong>hexadecimal</strong> é representado pela base 16. Seus dígitos são representados de 0 a 9, acrescidos de A, B, C, D, E e F. Sua notação é FA4116.
+                            </li>
+                        </ul>
+                        <p class="conteudo__sistemasNumericos__explicacao-paragrafo">Quando trabalhamos com bases numéricas, temos de considerar que esses números podem ser convertidos entre as bases. Por exemplo, podemos receber um número decimal, como uma temperatura. Esse número pode ser convertido para outras bases, como a binária ou hexadecimal.</p>
+                    </div>  
+                </div>
+            </section>
+
+            <section class="conteudo__bit">
+                <h2 class="conteudo__bit-titulo">BIT e Sistemas Numéricos</h2>
+                <p class="conteudo__bit-paragrafo">Vamos relembrar alguns conceitos básicos sobre <strong>BIT</strong>:</p>
+                <div class="conteudo__bit-info-sistemasNumericos">
+                    <ul class="conteudo__bit-info-sistemasNumericos-lista">
+                        <li class="conteudo__bit-info-sistemasNumericos-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> BIT vem em do termo Binary Digit ou digito binário. Dígito binário é o menor elemento de informação que temos, representado sempre por 0 e 1. 
+                        </li>
+                        <li class="conteudo__bit-info-sistemasNumericos-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> Quando usamos 4 bits, chamamos de nibble.
+                        </li>
+                        <li class="conteudo__bit-info-sistemasNumericos-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> Quando usamos um conjunto de 8 bits, chamamos de byte; logo, chamamos 16 bits de 2 bytes.
+                        </li>
+                    </ul>
+                </div>
+                <p class="conteudo__bit-paragrafo">Vamos relembrar alguns conceitos básicos sobre <strong>Sistemas numéricos</strong>:</p>
+                <div class="conteudo__bit-info">
+                    <ul class="conteudo__bit-info-sistemasNumericos-lista">
+                        <li class="conteudo__bit-info-sistemasNumericos-lista-item">
+                            <img src="../src/img/pontoAzul.png"> São utilizados para representar números. 
+                        </li>
+                        <li class="conteudo__bit-info-sistemasNumericos-lista-item">
+                            <img src="../src/img/pontoAzul.png"> Todos os sistemas numéricos são representados por sua determinada base.
+                        </li>
+                        <li class="conteudo__bit-info-sistemasNumericos-lista-item">
+                            <img src="../src/img/pontoAzul.png"> A base utilizada tem de ser um conjunto de símbolos diferentes entre si.
+                        </li>
+                    </ul>
+                </div>
+                <div class="cartao-container">
+                    <div class="cartao">
+                        <div class="cartao-card">
+                            <div class="cartao-frente">Decimal</div>
+                            <div class="cartao-verso">
+                                - É o sistema mais conhecido<br>
+                                - A base desse sistema é 10<br>
+                                - Símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9<br>
+                                - Notação: 195 (195 na base 10)<br>
+                                - Representação matemática para chegar a um número decimal:<br>
+                                (4 x 10) + (9 x 10) + (3 x 10) = 400 + 90 + 3 = 493 (493 na base 10).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao">
+                        <div class="cartao-card">
+                            <div class="cartao-frente">Binário</div>
+                            <div class="cartao-verso">
+                                - É usado na eletrônica digital e algebra booleana<br>
+                                - A base desse sistema é 2<br>
+                                - Símbolos: 0 e 1<br>
+                                - Notação: 110101102 (11010110 na base 2)<br> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao">
+                        <div class="cartao-card">
+                            <div class="cartao-frente">Octal</div>
+                            <div class="cartao-verso">
+                                - É um meio de diminuir grandes números binários<br>
+                                - Usado em circuitos eletrônicos<br>
+                                - A base desse sistema é 8<br>
+                                - Símbolos: 0, 1, 2, 3, 4, 5, 6 e 7<br>
+                                - Notação: 15748 (1574 na base 8)<br>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartao">
+                        <div class="cartao-card">
+                            <div class="cartao-frente">Hexadecimal</div>
+                            <div class="cartao-verso">
+                                - É o sistema mais usado para diminuir grandes números binários<br>
+                                - Utilizado na programação de microprocessadores<br>
+                                - A base desse sistema é 16<br>
+                                - Símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F<br>
+                                - As letras possuem valores decimais: A – 10  B – 11 C – 12 D – 13 E – 14 F – 15<br>
+                                - Notação: C3B216 (C3B2 na base 16)<br> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="conteudo__conversaoBasesNumericas">
+                <h2 class="conteudo__conversaoBasesNumericas-titulo">Conversão entre bases numéricas</h2>
+                <div class="conteudo__informacoes-basicas">
+                    <p class="conteudo__conversaoBasesNumericas-paragrafo">Agora vamos para as conversões. Clique nos itens abaixo e veja suas respectivas explicações:</p>
+                    <div class="container-card-explicacao">
+                        <div class="card-titulo">Conversão de decimal para binário</div>
+                        <div class="card-conteudo">Se dá pela divisão sucessiva pela base 2 (binário). <br>Quando o quociente chegar a 0, pega-se os restos de baixo para cima, da direita para esquerda.</div>
+                    
+                        <div class="card-titulo">Conversão de binário para decimal</div>
+                        <div class="card-conteudo">Nessa conversão, pega-se os números de forma individual, multiplicando pela base que é 2 − essa base deve estar com a potência da posição do número.<br></div>
+                    
+                        <div class="card-titulo">Conversão de decimal para hexadecimal</div>
+                        <div class="card-conteudo">Aqui fazemos da mesma maneira que a conversão de decimal para binário, porém, a base agora é hexadecimal (16). Além disso, temos os símbolos hexadecimais A, B, C, D, E e F.</div>
+                    
+                        <div class="card-titulo">Conversão de hexadecimal para decimal</div>
+                        <div class="card-conteudo">Como na conversão de binário para decimal, porém agora com base 16 e símbolos de A até F. Pega-se os números de forma individuais, substituindo as letras por seus valores, multiplicando pela base que agora é 16. Essa base deve estar com a potência da posição do número.</div>
+                    </div>
+                    <p class="conteudo__conversaoBasesNumericas-paragrafo">Veja mais alguns tipos de conversões:</p>
+                    <ul class="conteudo__conversaoBasesNumericas-lista">
+                        <li class="conteudo__conversaoBasesNumericas-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> <strong>Decimal para octal:</strong> nesta conversão basta fazer a divisão sucessiva por 8, tendo os  restos como resultado.
+                        </li>
+                        <li class="conteudo__conversaoBasesNumericas-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> <strong>Octal para decimal:</strong> para converter de octal para decimal, deve-se numerar as potências e fazer a soma da multiplicação do dígito octal pela base octal elevada a potência correpondente a posição.
+                        </li>
+                        <li class="conteudo__conversaoBasesNumericas-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> <strong>Binário para hexadecimal:</strong> pode-se utilizar o método de conversão entre bases, convertendo do binário para decimal e depois para hexadecimal. Outra forma de fazer é convertendo direto, separando os bits em grupos de 4, da direita para a esquerda. Se o último grupo da esquerda não possuir 4 dígitos, se completa com zeros a esquerda de forma a ficar o grupo de 4 bits.
+                        </li>
+                        <li class="conteudo__conversaoBasesNumericas-lista-item">
+                            <img src="../src/img/pontoAmarelo.png"> <strong>Hexadecimal para binários:</strong> também possui dois métodos para este tipo de conversão, sendo o primeiro deles a conversão entre bases onde, converte-se de hexadecimal para decimal e depois em binário. A segunda forma de realizar a conversão é convertendo direto, neste caso converte-se utilizando a tabela de valores de bases.
+                        </li>
+                    </ul>
+                    <p class="conteudo__conversaoBasesNumericas-paragrafo">Conheça a tabela de valores entre as bases:</p>
+                    <div class="img-conversaoBasesNumericas img-centralizada">
+                        <img src="../src/img/semestre1/tabelaValoresEntreBasesParaConversao.png" class="img-conversaoBasesNumericas-tabela">
+                    </div>
+                </div>
+
+                <p class="conteudo__conversaoBasesNumericas-paragrafo">Agora vamos verificar como realizar conversões para <strong>Octal</strong>:</p>
+                <div class="conteudo__conversaoBasesNumericas-info">
+                    <ul class="conteudo__conversaoBasesNumericas-lista">
+                        <li class="conteudo__conversaoBasesNumericas__lista-item" style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <div>
+                                <img src="../src/img/pontoAzul.png" style="white-space: nowrap; overflow: hidden;"> Na conversão de <strong>Binário</strong> para <strong>Octal</strong> seguimos os seguintes passos:
+                            </div>
+                            <div class="container-info" style="margin-top: 5px; padding: 5px; height: 100px;">
+                                <div class="container-exemplo info-etapas" style="background-color: transparent;">
+                                    <p class="conteudo__funcoes__basicas__lista-item" style="white-space: nowrap; overflow: hidden;">
+                                        <strong>1.</strong> Separar os dígitos binários, da direita para a esquerda, em grupos de 3 dígitos;<br>
+                                        <strong>2.</strong> No grupo da esquerda, se não estiver com três dígitos, complete com 0 à esquerda;<br>
+                                        <strong>3.</strong> A cada grupo de 3 dígitos, ache o valor octal correspondente na tabela de valores entre as bases.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="conteudo__conversaoBasesNumericas__lista-item" style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <div>
+                                <img src="../src/img/pontoAzul.png" style="white-space: nowrap; overflow: hidden;"> Para converter de <strong>Octal</strong> para <strong>Binário</strong> faremos da seguinte forma:
+                            </div>
+                            <div class="container-info" style="margin-top: 5px; padding: 5px; height: 100px;">
+                                <div class="container-exemplo info-etapas" style="background-color: transparent;">
+                                    <p class="conteudo__conversaoBasesNumericas__lista-item" style="white-space: nowrap; overflow: hidden;">
+                                        <strong>1.</strong> Separar os dígitos octais;<br>
+                                        <strong>2.</strong> Procurar na tabela de valores entre as bases o valor binário correspondente a cada dígito octal.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="conteudo__conversaoBasesNumericas__lista-item" style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <div>
+                                <img src="../src/img/pontoAzul.png" style="white-space: nowrap; overflow: hidden;"> Converter de <strong>Octal</strong> para <strong>Hexadecimal</strong>, deve-se seguir os seguintes passos:
+                            </div>
+                            <div class="container-info" style="margin-top: 5px; padding: 5px; height: 100px;">
+                                <div class="container-exemplo info-etapas" style="background-color: transparent;">
+                                    <p class="conteudo__conversaoBasesNumericas__lista-item" style="white-space: nowrap; overflow: hidden;">
+                                        <strong>1.</strong> Separar cada dígito octal;<br>
+                                        <strong>2.</strong> Achar o correspondente binário na tabela;<br>
+                                        <strong>3.</strong> Separar o binário encontrado em grupos de 4 bits, completando com zeros à esquerda se o grupo da esquerda não tiver 4 dígitos;<br>
+                                        <strong>4.</strong> Achar o valor correspondente do binário em hexadecimal.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="conteudo__conversaoBasesNumericas__lista-item" style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 35px;">
+                            <div>
+                                <img src="../src/img/pontoAzul.png" style="white-space: nowrap; overflow: hidden;"> Para a conversão de <strong>Hexadecimal</strong> para <strong>Octal</strong>, faremos da seguinte forma:
+                            </div>
+                            <div class="container-info" style="margin-top: 5px; padding: 5px; height: 100px;">
+                                <div class="container-exemplo info-etapas" style="background-color: transparent;">
+                                    <p class="conteudo__conversaoBasesNumericas__lista-item" style="white-space: nowrap; overflow: hidden;">
+                                        <strong>1.</strong> Separar cada dígito hexadecimal; <br>
+                                        <strong>2.</strong> Achar o correspondente em binário para o dígito hexadecimal;<br>
+                                        <strong>3.</strong> Com o binário, separar em grupos de 3 bits da direita para a esquerda, completando com zeros se o grupo da esquerda não possuir três bits;<br>
+                                        <strong>4.</strong> Achar o correspondente na tabela para cada grupo de três bits.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="funcion">
+                <script>
+                    function ExpandingCard(index) {
+                        let contents = document.querySelectorAll(".card-conteudo");
+                
+                        contents.forEach((content, i) => {
+                            if (i !== index) {
+                                content.style.display = "none";
+                            }
+                        });
+                
+                        let selectedContent = contents[index];
+                        selectedContent.style.display = selectedContent.style.display === "block" ? "none" : "block";
+                    }
+                
+                    function attachEvents() {
+                        let cards = document.querySelectorAll(".card-titulo");
+                
+                        cards.forEach((card, index) => {
+                            card.onclick = function () {
+                                ExpandingCard(index);
+                            };
+                        });
+                    }
+                
+                    const observer = new MutationObserver(() => {
+                        attachEvents();
+                    });
+                
+                    observer.observe(document.body, { childList: true, subtree: true });
+                
+                    document.addEventListener("DOMContentLoaded", attachEvents);
+                </script>
+            </section>                      
+        </section>   
+    </main>
+</body>
+</html>

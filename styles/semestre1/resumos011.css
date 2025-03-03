@@ -1,0 +1,283 @@
+.sessao-banner {
+    background-color: #cfd9e9;
+    display: flex;
+    align-items: center;
+    padding: 5em 10em 5em 10em;
+}
+.sessao__banner__conteudo-titulo {
+    font-family: var(--font-principal);
+    color: var(--cor-secundaria);
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+}
+
+.sessao__banner__conteudo-sub-titulo {
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 1em 0 1em;
+    line-height: 1.5em;
+    color: var(--cor-setima);
+}
+
+.banner__conteudo-descrição {
+    color: #666666;
+}
+
+.conteudo__fundamentos,
+.conteudo__funcoes,
+.conteudo__linguagem-maquina,
+.conteudo__sistemasNumericos,
+.conteudo__bit,
+.conteudo__conversaoBasesNumericas,
+.conteudo__algebraBooleana,
+.conteudo__expressoesLogicas,
+.conteudo__portasLogicas,
+.conteudo__introducaoCircuitos {
+    font-family: var(--font-secundaria);
+    padding: 2em 0;
+}
+
+.conteudo__fundamentos-titulo,
+.conteudo__funcoes-titulo,
+.conteudo__linguagem-maquina-titulo,
+.conteudo__sistemasNumericos-titulo,
+.conteudo__bit-titulo,
+.conteudo__conversaoBasesNumericas-titulo,
+.conteudo__algebraBooleana-titulo,
+.conteudo__expressoesLogicas-titulo,
+.conteudo__portasLogicas-titulo,
+.conteudo__introducaoCircuitos-titulo {
+    font-family: var(--font-principal);
+    color: var(--cor-principal);
+    font-size: 26px;
+    font-weight: 600;
+    border-bottom: 0.08em solid var(--cor-principal);
+    padding: 0 0 0.5em 0;
+}
+.conteudo__fundamentos__paragrafo,
+.conteudo__funcoes-paragrafo,
+.conteudo__linguagem-maquina-paragrafo,
+.conteudo__sistemasNumericos-paragrafo,
+.conteudo__sistemasNumericos__explicacao-paragrafo,
+.conteudo__bit-paragrafo,
+.conteudo__conversaoBasesNumericas-paragrafo,
+.conteudo__algebraBooleana-paragrafo,
+.conteudo__expressoesLogicas-paragrafo,
+.conteudo__introducaoCircuitos-paragrafo {
+    text-align: justify;
+    color: var(--cinza);
+    line-height: 1.5em;
+    margin: 1em 10em 1em 0em;
+}
+.conteudo__citacao {
+    margin: 10em;
+    padding: auto;
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+}
+.conteudo__fundamentos-basicos {
+    display: block;
+    align-items: center;
+    margin-bottom: 5em;
+    color: var(--cor-secundaria); 
+}
+
+.conteudo__fundamentos-lista {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.conteudo__fundamentos-lista img {
+    width: 0.8em;
+}
+
+.conteudo__fundamentos__exemplo-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5em;
+    margin: 2em;
+    color: var(--cor-sextaria);
+}
+
+.conteudo__funcoes__basicas-lista,
+.conteudo__funcoes__exemplos-lista,
+.conteudo__funcoes-basicas,
+.conteudo__sistemasNumericos-explicacao,
+.conteudo__bit-info-sistemasNumericos-lista,
+.conteudo__sistemasNumericos-lista,
+.conteudo__conversaoBasesNumericas-lista,
+.conteudo__algebraBooleana__lista-item,
+.conteudo__expressoesLogicas-lista,
+.conteudo__portasLogicas-lista,
+.conteudo__introducaoCircuitos-lista {
+    display: block;
+    justify-content: space-between;
+    line-height: 1.8em;
+    margin: 2em;
+}
+
+.conteudo__funcoes__basicas-lista img,
+.conteudo__sistemasNumericos-lista img,
+.conteudo__bit-info-sistemasNumericos-lista img,
+.conteudo__conversaoBasesNumericas-lista img,
+.conteudo__algebraBooleana-lista img,
+.conteudo__expressoesLogicas-lista img,
+.conteudo__introducaoCircuitos-lista img {
+    width: 0.8em;
+}
+
+.conteudo__funcoes__basicas__lista-item strong,
+.conteudo__exemplo-item strong,
+.conteudo__sistemasNumericos__lista-item strong,
+.conteudo__bit-paragrafo strong,
+.conteudo__conversaoBasesNumericas-lista-item strong,
+.conteudo__conversaoBasesNumericas-paragrafo strong,
+.conteudo__conversaoBasesNumericas__lista-item strong,
+.conteudo__algebraBooleana-lista strong,
+.conteudo__algebraBooleana__lista-item strong,
+.conteudo__expressoesLogicas-lista strong,
+.conteudo__expressoesLogicas__lista-item strong,
+.conteudo__portasLogicas__lista-item strong,
+.conteudo__introducaoCircuitos__lista-item strong {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--cor-setima);
+}
+
+.conteudo__linguagem-maquina-imagem {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cartao-container {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.cartao {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    perspective: 1000px;
+}
+
+.cartao-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cartao-card:hover {
+    transform: rotateY(180deg);
+}
+
+.cartao-frente,
+.cartao-verso {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cartao-frente {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.cartao-verso {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 10px;
+    transform: rotateY(180deg);
+}
+
+.container-exemplo,
+.container-card-explicacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(62, 97, 150);
+}
+
+.card-titulo {
+    width: 80%;
+    max-width: 700px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(62, 97, 150) !important;
+    background-color: transparent !important;
+    transition: background-color 0.5s;
+}
+            
+.card-titulo:hover {
+    background-color: rgb(62, 97, 150) !important;
+    color: white;
+}
+            
+.card-conteudo {
+    display: none;
+    width: 80%;
+    max-width: 700px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-top: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-centralizada {
+    display: flex;
+    justify-content: center;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-retangulo-exemplo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 50px;
+    width: 20%;
+    background-color: lightblue;
+    margin: 5% auto;
+    border-radius: 8px;
+}
+
+.container-expressoesLogicas-leisRegrasBooleanas,
+.container-introducaoCirtuitos-TiposCircuitos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    height: 100px;
+}
+
