@@ -1,12 +1,14 @@
 .conteudo {
     padding: 1em 10em 1em 10em;
 }
+
 .banner {
     background-color: #d2e7f4;
     display: flex;
     align-items: center;
     padding: 5em 10em 5em 10em;
 }
+
 .banner__conteudo-titulo {
     font-family: var(--font-principal);
     color: var(--cor-secundaria);
@@ -14,6 +16,7 @@
     font-weight: 700;
     padding: 0.2em;
 }
+
 .banner__conteudo-sub-titulo {
     font-weight: 500;
     font-size: 1.5em;
@@ -21,17 +24,20 @@
     line-height: 1.5em;
     color: var(--cor-terciaria);
 }
+
 .banner__conteudo-descrição {
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
     font-weight: 300;
     line-height: 1.5em;
 }
+
 .banner__conteudo-imagem {
     align-items: center;
     width: 20%;
     padding: 2em;
 }
+
 .conteudo__variaveis,
 .conteudo__operadores,
 .conteudo__estruturas-condicionais,
@@ -39,6 +45,7 @@
     font-family: var(--font-secundaria);
     padding: 2em 0;
 }
+
 .titulo, .conteudo__variaveis__titulo,
 .conteudo__operadores-titulo,
 .conteudo__estruturas-condicionais-titulo,
@@ -50,6 +57,7 @@
     border-bottom: 0.08em solid var(--cor-principal);
     padding: 0 0 0.5em 0;
 }
+
 .conteudo__variaveis__paragrafo,
 .conteudo__operadores-paragrafo,
 .conteudo__operadores-tipos-numericos,
@@ -66,26 +74,31 @@
     padding: 0.5em;
     line-height: 1.5em;
 }
+
 .conteudo__citacao {
-    margin: 10em;
-    padding: auto;
-    background-color: var(--cor-terciaria);
+    margin: 2em 8em 2em 8em;
+    padding: 2em;
+    background-color: #addcfa;
+    color: var(--cor-setima);
     border-radius: 8px;
 }
+
 .conteudo__citacao-paragrafo {
-    text-align: center;
-    padding: 1em;
+    text-align: center;   
 }
+
 .conteudo__citacao-autor {
     text-align: right;
-    padding: 0 1em 1em 0;
+    padding: 0.8em 0.5em 0.5em 0;
 }
+
 .conteudo__variaveis-aspectos {
     display: block;
     align-items: center;
     margin-bottom: 5em;
     color: var(--cor-secundaria); 
 }
+
 .conteudo__variaveis__aspectos-sub-titulo, 
 .conteudo__estruturas-condicionais__comandos-titulo,
 .conteudo__estruturas-condicionais__estruturas-repeticoes-titulo,
@@ -98,11 +111,13 @@
     font-weight: 700;
     margin: 2em 0 1.5em 0;
 }
+
 .conteudo__variaveis__aspectos-lista {
     display: flex;
     justify-content: space-between;
     margin: 2em;
 }
+
 .conteudo__variaveis__aspectos-lista img {
     width: 0.8em;
 }
@@ -112,6 +127,7 @@
 .conteudo__funcoes-usuarios__sintaxe-paragrafo {
     line-height: 1.2em;
 }
+
 .conteudo__variaveis__exemplo-paragrafo strong,
 .conteudo__estruturas-condicionais__comandos__lista-item strong,
 .conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-paragrafo strong,
@@ -119,6 +135,7 @@
 .conteudo__funcoes-usuarios__sintaxe-paragrafo {
     font-weight: 700;
 }
+
 .conteudo__variaveis__exemplo-lista {
     display: flex;
     align-items: center;
@@ -127,6 +144,7 @@
     margin: 2em;
     color: var(--cor-sextaria);
 }
+
 .conteudo__variaveis__exemplo__lista-item strong {
     font-weight: 700;
     color: var(--cor-secundaria);
@@ -144,6 +162,7 @@
     justify-content: space-between;
     margin: 2em;
 }
+
 .conteudo__operadores__tipos-numericos-ordemProcedencia,
 .conteudo__funcoes-usuarios__sintaxe-lista {
     display: flex;
@@ -151,11 +170,13 @@
     justify-content: space-between;
     line-height: 2em;
 }
+
 .conteudo__operadores__tipos-numericos-lista img,
 .conteudo__estruturas-condicionais__comandos-lista img,
 .conteudo__funcoes-usuarios__sintaxe-lista img {
     width: 0.8em;
 }
+
 .conteudo__estruturas-condicionais__comandos-titulo strong,
 .conteudo__estruturas-condicionais__estruturas-repeticoes-titulo strong,
 .conteudo__estruturas-condicionais__estruturas-logicas-titulo strong,
@@ -164,6 +185,7 @@
 .conteudo__funcoes-anonimas-titulo strong {
     color: var(--cor-terciaria);
 }
+
 .conteudo__estruturas-condicionais__comandos-lista {
     display: flex;
     align-items: center;
@@ -171,12 +193,14 @@
     justify-content: space-between;
     line-height: 2em;
 }
+
 .conteudo__estruturas-condicionais__estruturas-repeticoes__sintaxe-lista strong,
 .conteudo__funcoes-python__exemplos__lista-item strong {
     font-weight: 700;
     color: var(--cor-principal);
     line-height: 2em;
 }
+
 .conteudo__funcoes-anonimas-paragrafo b {
     font-weight: 600;
 }
