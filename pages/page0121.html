@@ -163,38 +163,6 @@
                 </section>
             </section>
         </main>
-        <script>
-            const carrossel4 = document.getElementById("carrossel_4");
-            const prevButton4 = document.getElementById("prev4");
-            const nextButton4 = document.getElementById("next4");
-          
-            let currentSlide4 = 0;
-          
-            function showSlide4() {
-              const slides = carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens");
-              for (let i = 0; i < slides.length; i++) {
-                if (i === currentSlide4) {
-                  slides[i].style.display = "block";
-                } else {
-                  slides[i].style.display = "none";
-                }
-              }
-            }
-          
-            function nextSlide4() {
-              currentSlide4 = (currentSlide4 + 1) % carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length;
-              showSlide4();
-            }
-          
-            function prevSlide4() {
-              currentSlide4 = (currentSlide4 - 1 + carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length) % carrossel4.getElementsByClassName("conteudo__componentes-carrossel__Lista-itens").length;
-              showSlide4();
-            }
-          
-            prevButton4.addEventListener("click", prevSlide4);
-            nextButton4.addEventListener("click", nextSlide4);
-          
-            showSlide4();
-          </script>
+        <script type="module" src="../main.js" defer></script>
     </body>
 </html>
