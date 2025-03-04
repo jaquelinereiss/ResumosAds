@@ -70,12 +70,7 @@
     line-height: 1.5em;
     margin: 1em 10em 1em 0em;
 }
-.conteudo__citacao {
-    margin: 10em;
-    padding: auto;
-    background-color: var(--cor-terciaria);
-    border-radius: 8px;
-}
+
 .conteudo__fundamentos-basicos {
     display: block;
     align-items: center;
@@ -280,4 +275,3 @@
     background-color: transparent;
     height: 100px;
 }
-

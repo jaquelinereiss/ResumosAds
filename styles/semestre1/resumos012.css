@@ -29,7 +29,13 @@
 .conteudo__topologias-titulo,
 .conteudo__protocolos__titulo,
 .conteudo__modelo-referencia-titulo,
-.conteudo__protocolo-TCP-IP-titulo {
+.conteudo__protocolo-TCP-IP-titulo,
+.conteudo__ipv6-titulo,
+.conteudo__transmissaoEthernet-titulo,
+.conteudo__redes-titulo,
+.conteudo__gerenciaRedesPadroes-titulo,
+.conteudo__gerenciaFalhaSeguranca-titulo,
+.conteudo__gerenciaDesempenho-titulo {
     font-weight: 500;
     font-size: 1.5em;
     padding-top: 2em;
@@ -49,7 +55,8 @@
 .conteudo__componentes__modem-sub-titulo,
 .conteudo__componentes__hub-sub-titulo,
 .conteudo__topologias-sub-titulo,
-.conteudo__modelo-referencia__sub-titulo  {
+.conteudo__modelo-referencia__sub-titulo,
+.conteudo__transmissaoEthernet-sub-titulo  {
     font-weight: 500;
     font-size: 1.5em;
     padding: 1em 0 1em;
@@ -76,11 +83,42 @@
 .conteudo__topologias-paragrafo,
 .conteudo__protocolos__paragrafo,
 .conteudo__modelo-referencia__paragrafo,
-.conteudo__protocolo-TCP-IP-paragrafo {
+.conteudo__protocolo-TCP-IP-paragrafo,
+.conteudo__ipv6-paragrafo,
+.conteudo__transmissaoEthernet-paragrafo,
+.conteudo__redes-paragrafo,
+.conteudo__gerenciaRedesPadroes-paragrafo,
+.conteudo__gerenciaFalhaSeguranca-paragrafo,
+.conteudo__gerenciaDesempenho-paragrafo {
     text-align: justify;
     color: var(--cinza);
-    padding: 1em;
-    line-height: 1.5em;
+    padding: 0.5em;
+    line-height: 1.2em;
+}
+
+.conteudo__gerenciaFalhaSeguranca__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.conteudo__sinal__analogico__lista-itens,
+.conteudo__sinal__Digital__lista-itens,
+.conteudo__componentes__lista-itens,
+.conteudo__topologias__lista-itens,
+.conteudo__protocolo__lista-itens,
+.conteudo__modelo-referencia__lista-itens,
+.conteudo__protocolo-TCP-IP__lista-itens,
+.conteudo__ipv6__lista-itens,
+.conteudo__transmissaoEthernet__lista-itens,
+.conteudo__redes__lista-item,
+.conteudo__gerenciaRedesPadroes__lista-item,
+.conteudo__gerenciaFalhaSeguranca__lista-item,
+.conteudo__gerenciaDesempenho__lista-item {
+    display: block;
+    justify-content: space-between;
+    margin: 1.5em;
+    line-height: 1em;
 }
 
 .conteudo__componentes-paragrafo strong,
@@ -90,24 +128,32 @@
     color: #669bbc;
 }
 
-.conteudo__sinal__analogico__lista-itens,
-.conteudo__sinal__Digital__lista-itens,
-.conteudo__componentes__lista-itens,
-.conteudo__topologias__lista-itens,
-.conteudo__protocolo__lista-itens,
-.conteudo__modelo-referencia__lista-itens,
-.conteudo__protocolo-TCP-IP__lista-itens {
-    display: block;
-    justify-content: space-between;
-    margin: 2em;
-    line-height: 1.5em;
-}
-
-.conteudo__protocolo-TCP-IP__lista-itens strong {
-    font-weight: 700;
+.conteudo__protocolo-TCP-IP__lista-itens strong,
+.conteudo__ipv6__lista-itens strong,
+.conteudo__transmissaoEthernet__lista-itens strong,
+.conteudo__redes__lista-item strong {
+    font-weight: 600;
     color: #fca311;
 }
-.conteudo__sinal__Digital__lista-itens img  {
+
+.conteudo__gerenciaRedesPadroes__lista-item strong,
+.conteudo__gerenciaFalhaSeguranca__lista-item strong,
+.conteudo__gerenciaFalhaSeguranca__lista strong,
+.conteudo__gerenciaDesempenho__lista-item strong {
+    font-weight: 600;
+    color: #003566;
+}
+
+.conteudo__introducaoCircuitos__lista-item strong {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--cor-setima);
+}
+
+.conteudo__sinal__Digital__lista-itens img,
+.conteudo__redes__lista-item img,
+.conteudo__gerenciaRedesPadroes__lista-item img,
+.conteudo__gerenciaFalhaSeguranca__lista-item img  {
     width: 0.8em;
 }
 
