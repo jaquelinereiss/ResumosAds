@@ -34,3 +34,7 @@ O projeto foi criado com fins de estudo, servindo como um repositório prático 
 ## 👩‍💻 Autora
 
 Desenvolvido por [Jaqueline Reis](https://github.com/jaquelinereiss) – Projeto pessoal para fins de prática e portfólio.
+
+## 📷 Preview
+<img width="1600" height="997" alt="resumosAds_home" src="https://github.com/user-attachments/assets/27e86a6e-091d-4c8c-95ae-6800bd7edfd7" />
+<img width="1600" height="798" alt="resumosAds_materias" src="https://github.com/user-attachments/assets/b9961c31-04d6-42e6-8b7c-d809dcb85704" />
