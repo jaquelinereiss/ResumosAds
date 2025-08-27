@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resumos</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <main class="conteudo">
+    <section class="resumos">
+      <h1 class="cabecalho__titulo mt-1 p-1" id="titulo-materia">Resumos</h1>
+      <h2 class="resumos__titulo h2-h3">Escolha um card para verificar o conteúdo</h2>
+      <div id="lista-resumos" class="resumos__lista"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="fechar-modal" class="close">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+  <script src="./assets/js/uploadResumos.js" defer></script>
+  <script type="module" src="./assets/js/header.js"></script>
+  <script type="module" src="./assets/js/footer.js"></script>
+</body>
+</html>

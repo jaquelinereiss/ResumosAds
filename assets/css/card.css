@@ -1,0 +1,123 @@
+/* ======================== */
+/* Lista de Semestres        */
+/* ======================== */
+.semestres__lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.semestres__lista a {
+  text-decoration: none;
+  font-weight: var(--font-weight-regular);
+  border-radius: var(--border-radius-sm);
+  margin: var(--espaco-xl);
+  padding: var(--espaco-xl);
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-sexta);
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.5s, color 0.3s;
+}
+
+.semestres__lista a:hover {
+  background-color: var(--cor-terceira);
+  color: var(--cor-quarta);
+}
+
+/* ======================== */
+/* Lista de Matérias         */
+/* ======================== */
+.materias__lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-xl);
+  padding: var(--espaco-xl);
+  justify-items: center;
+}
+
+.materias__lista a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 20em;
+  height: 10em;
+
+  padding: var(--espaco-md);
+  border-radius: var(--border-radius-sm);
+
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  color: var(--cor-sexta);
+  text-decoration: none;
+
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.5s, color 0.3s;
+}
+
+.materias__lista a:hover {
+  background-color: var(--cor-terceira);
+  color: var(--cor-quarta);
+}
+
+/* ======================== */
+/* Cards de Resumo           */
+/* ======================== */
+.resumos__lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-lg);
+  justify-items: center;
+  padding: var(--espaco-xl);
+  max-width: 90em;
+  margin: 0 auto;
+}
+
+.card-titulo {
+  width: 100%;
+  background-color: transparent !important;
+  border: 1px solid;
+  color: var(--cor-terceira);
+  border-radius: var(--border-radius-sm);
+  padding: var(--espaco-md);
+  margin: var(--espaco-sm) 0;
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out;
+  box-shadow: var(--box-shadow);
+}
+
+.card-titulo:hover {
+  color: var(--cor-quarta);
+  transform: scale(1.02);
+  background-color: var(--cor-terceira) !important;
+}
+
+.card-titulo h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--espaco-sm);
+}
+
+.card-titulo p {
+  font-size: 14px;
+  color: var(--cor-secunda);
+}
+
+/* Cards específicos de resumo */
+.resumo-card {
+  border: 1px solid;
+  border-radius: var(--border-radius-md);
+  padding: var(--espaco-md);
+  text-align: center;
+  box-shadow: var(--box-shadow-sm);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--cor-quarta);
+}
+
+.resumo-card:hover {
+  transform: translateY(-5px);
+}
