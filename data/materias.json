@@ -74,8 +74,8 @@
       }
       ,
       {
-        "titulo": "Resumo 4:",
-        "conteudo": "O resumo fala de tal assunto.",
+        "titulo": "4 - Metodologias Ágeis",
+        "conteudo": "Tipos de Metodologias Ágeis. Ciclo de Vida de Software. Gerenciamento de Riscos: Principais Etapas. Engenharia de Requisitos: Funcionais e Não Funcionais.",
         "arquivoHTML": "./resumos/semestre1/materia3/resumo4.html"
       }
     ]
