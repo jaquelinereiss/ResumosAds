@@ -63,8 +63,8 @@
         "arquivoHTML": "./resumos/semestre1/materia3/resumo1.html"
       },
       {
-        "titulo": "Resumo 2:",
-        "conteudo": "O resumo fala de tal assunto.",
+        "titulo": "2 - Etapas no Desenvolvimento de Sistemas",
+        "conteudo": "Etapas essenciais para o desenvolvimento de sistemas: Levantamento de Requisitos, Modelagem, Implementação, Testes e Manutenção.",
         "arquivoHTML": "./resumos/semestre1/materia3/resumo2.html"
       },
       {
