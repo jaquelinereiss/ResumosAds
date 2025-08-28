@@ -58,8 +58,8 @@
     "materia": "Projeto de Software",
     "resumos": [
       {
-        "titulo": "Resumo 1:",
-        "conteudo": "O resumo fala de tal assunto.",
+        "titulo": "1 - Gerenciamento de Projetos de Software",
+        "conteudo": "Gerenciamento de projetos e sua evolução: Antiguidade, Início da Gestão Moderna, Surgimento das Metodologias, Formalização do Gerenciamento de Projetos e Transformação Digital e Métodos Ágeis. Estrutura Organizacional. Fases de processos para o gerenciamento de projetos.",
         "arquivoHTML": "./resumos/semestre1/materia3/resumo1.html"
       },
       {
