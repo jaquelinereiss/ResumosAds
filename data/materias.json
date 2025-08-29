@@ -128,8 +128,8 @@
       }
       ,
       {
-        "titulo": "Resumo 4:",
-        "conteudo": "O resumo fala de tal assunto.",
+        "titulo": "4 - Padrões de Navegação e Arquitetura da Informação",
+        "conteudo": "Padrões de Navegação e Arquitetura da Informação. Arquitetura da Informação. Padrões de Navegação. Hierarquia Visual. Consistência dos Padrões. Avaliação da Usabilidade.",
         "arquivoHTML": "../resumos/semestre1/materia5/resumo4.html"
       }
     ]
