@@ -112,8 +112,8 @@
     "materia": "Interface e Usabilidade",
     "resumos": [
       {
-        "titulo": "Resumo 1:",
-        "conteudo": "O resumo fala de tal assunto.",
+        "titulo": "1 - Fundamentos de Interface e Usabilidade",
+        "conteudo": "Conceitos Fundamentais de Interface e Usabilidade. Interação Humano-Computador. Usabilidade. Breve Histórico da Interação Humano-Computador e do Design. Importância da Usabilidade. Usabilidade de Interfaces e Jornada do Usuário.",
         "arquivoHTML": "./resumos/semestre1/materia5/resumo1.html"
       },
       {

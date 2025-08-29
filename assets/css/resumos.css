@@ -34,7 +34,7 @@
 
 .subtitulo-base {
   font-size: var(--font-size-subtitulo) !important;
-  margin-bottom: var(--espaco-sm) !important;
+  margin-bottom: var(--espaco-lg) !important;
   font-weight: var(--font-weight-bold) !important;
 }
 
@@ -75,6 +75,10 @@
   color: var(--cor-primeira);
 }
 
+.destaque-3 {
+  color: var(--cor-terceira);
+}
+
 .destaque {
   display: flex;
   justify-content: center;
@@ -107,6 +111,15 @@
   margin: var(--espaco-md);
   padding: var(--espaco-sm);
   height: 150px;
+}
+
+.imagem-3 {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding: var(--espaco-lg);
+  height: 20em;
 }
 
 /* ======================== */
@@ -293,4 +306,79 @@
   font-size: 14px;
   padding: var(--espaco-sm);
   transform: rotateY(180deg);
+}
+
+/* ======================== */
+/* Efeitos de Expandir      */
+/* ======================== */
+
+.expande-texto-container {
+  position: relative;
+  max-width: 700px;
+  margin: var(--espaco-xl) auto;
+  font-family: var(--fonte-secundaria);
+}
+
+/* Checkbox escondido */
+.expande-texto-checkbox {
+  display: none;
+}
+
+/* Label que age como botão (comum para todas as versões) */
+.expande-texto-label {
+  display: block;
+  cursor: pointer;
+  background: var(--cor-terceira);
+  color: var(--cor-quarta);
+  padding: var(--espaco-sm) var(--espaco-md);
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  font-weight: var(--font-weight-meddium);
+  margin-bottom: var(--espaco-md);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--box-shadow-sm);
+}
+
+.expande-texto-label:hover {
+  background: var(--cor-setima);
+  box-shadow: var(--box-shadow);
+}
+
+/* Conteúdo do texto (comum para todas as versões) */
+.expande-texto-conteudo-1 {
+  line-height: var(--line-height-base);
+  padding: 0 var(--espaco-sm);
+  border-left: 2px solid var(--cor-terceira);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--cor-quarta);
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease, filter 0.5s ease;
+}
+
+/* ---------------------------- */
+/* Versão 1: Texto com desfoque */
+/* ---------------------------- */
+.expande-texto-blur {
+  max-height: 5rem; 
+  filter: blur(2px);
+}
+
+.expande-texto-checkbox:checked ~ .expande-texto-blur {
+  max-height: 1000px;
+  filter: blur(0);
+  transition: max-height 0.8s ease, filter 0.5s ease;
+}
+
+/* ----------------------------------- */
+/* Versão 2: Texto oculto sem desfoque */
+/* ------------------------------------*/
+.expande-texto-hidden {
+  max-height: 0; 
+  padding: 0 var(--espaco-sm);
+}
+
+.expande-texto-checkbox:checked ~ .expande-texto-hidden {
+  max-height: 1000px;
+  padding: var(--espaco-sm);
+  transition: max-height 0.8s ease, padding 0.5s ease;
 }
