@@ -1,0 +1,34 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+.page-titulo {
+    border-top: 0.08em solid var(--cor-terceira);
+    padding-top: 1.5em;
+    font-family: var(--font-primeira);
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: var(--cor-primeira);
+}
+.page-card-botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-card-botao a {
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: var(--font-segunda);
+    color: var(--cor-sexta);
+    font-weight: 400;
+    border-radius: 8px;
+    margin: 2em;
+    padding: 2em;
+}
+.page-card-botao a:hover {
+    background-color: var(--cor-terceira);
+    color: var(--cor-quinta);
+}

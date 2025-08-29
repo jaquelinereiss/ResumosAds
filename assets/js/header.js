@@ -4,7 +4,7 @@ function carregarCabecalho() {
             <img class="cabecalho__imagem" src="../assets/img/diversos/icon_folha.png" alt="Imagem em ícone na cor preta de uma folha de papel com um lápis">
             <nav class="cabecalho__menu">
                 <a href="../index.html" class="cabecalho__menu-item">Início</a>
-                <a href="../pages/page00.html" class="cabecalho__menu-item">Sobre</a>
+                <a href="../page.html" class="cabecalho__menu-item">Sobre</a>
             </nav>
         </header>
     `;
