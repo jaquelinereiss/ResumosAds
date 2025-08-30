@@ -139,8 +139,8 @@
     "materia": "Segurança e Auditoria de Sistemas",
     "resumos": [
       {
-        "titulo": "Resumo 1:",
-        "conteudo": "O resumo fala de tal assunto.",
+        "titulo": "1 - Segurança e Auditoria de Sistemas",
+        "conteudo": "A importância da Segurança e Auditoria de Sistemas. Segurança da Informação e Redes. Pilares da Segurança da Informação. Riscos, Ameaças e Vulnerabilidades. Controles de Segurança. Auditoria e Monitoramento. Criptografia e Proteção de Dados.",
         "arquivoHTML": "../resumos/semestre1/materia6/resumo1.html"
       },
       {
