@@ -155,8 +155,8 @@
       }
       ,
       {
-        "titulo": "Resumo 4:",
-        "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic iure sapiente quas, accusantium explicabo laborum non! Hic possimus nemo quis, ea unde repudiandae inventore odit ratione quos asperiores velit.",
+        "titulo": "4 - Introdução à Auditoria e Auditoria de Sistemas",
+        "conteudo": "Conceitos Fundamentais de Auditoria. Benefícios da Auditoria de Sistemas. Auditoria de Segurança e Controles. Fases do Processo de Auditoria. Técnicas e Ferramentas para Auditoria. Controles Gerais de Auditoria. Importância Estratégica da Auditoria.",
         "arquivoHTML": "./resumos/semestre1/materia6/resumo4.html"
       }
     ]
