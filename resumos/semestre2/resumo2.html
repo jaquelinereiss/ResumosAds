@@ -1,0 +1,120 @@
+<section class="conteudo" id="estruturasAlgoritmosPython">
+  <h2 class="estruturasAlgoritmosPython-titulo titulo-principal destaque-3 bold destaque">Estruturas e Algoritmos em Python</h2>
+  <p style="border: 0.1em solid #659fe1;"></p>
+
+  <article class="estruturasAlgoritmosPython-tuplas">
+    <h3 class="tuplas-subtitulo subtitulo-1">Tuplas (Sequenciais)</h3>
+    
+    <ul class="tuplas-lista lista">
+      <li class="tuplas-lista-item">
+        <span class="mdi mdi-circle-medium destaque-4"></span>
+        As <strong class="destaque-1">tuplas</strong> em Python são coleções <strong class="destaque-1">ordenadas</strong> e <strong class="destaque-1">imutáveis</strong>
+      </li>
+      <li class="tuplas-lista-item">
+        <span class="mdi mdi-circle-medium destaque-4"></span>
+        São declaradas com <strong class="destaque-1">parênteses <code>( )</code></strong> e podem armazenar tipos variados
+      </li>
+      <li class="tuplas-lista-item">
+        <span class="mdi mdi-circle-medium destaque-4"></span>
+        Por serem sequenciais, suportam <strong class="destaque-1">indexação</strong>, <strong class="destaque-1">fatiamento</strong> e <strong class="destaque-1">iteração</strong>
+      </li>
+    </ul>
+    <div class="bloco-codigo">
+        <pre class="base-codigo">
+        <code><span class="keyword">tupla</span> = (<span class="var">10</span>, <span class="var">"python"</span>,<span class="var"> 3.14</span>)
+        <span class="keyword">print</span>(<span class="return">tupla[<span class="number">1</span>]</span>)
+        <span class="comment">#saída: "python"</span></pre>
+    </div>
+  </article>
+
+  <article class="estruturasAlgoritmosPython-set">
+    <h3 class="set-subtitulo subtitulo-1">Set (Conjuntos)</h3>
+    <ul class="set-lista lista">
+        <li class="set-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            Um <strong class="destaque-1">set</strong> é uma coleção <strong class="destaque-1">não ordenada</strong> que <strong class="destaque-1">não permite duplicatas</strong>
+        </li>
+        <li>
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            Útil para operações de conjuntos: <strong class="destaque-1">união</strong>, <strong class="destaque-1">interseção</strong> e <strong class="destaque-1">diferença</strong>
+        </li>
+        <li>
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            Declarado com <strong class="destaque-1"><code>{ }</code></strong> ou pela função <strong class="destaque-1"><code>set()</code></strong>
+        </li>
+    </ul>
+    <div class="bloco-codigo">
+        <pre class="base-codigo">
+        <code><span class="var">conjunto</span> = { <span class="number">10</span>, <span class="number">"python"</span>,<span class="number"> 3.14</span>}
+        <span class="keyword">print</span>(<span class="var">conjunto</span>)
+        <span class="comment">#saída: "python"</span></pre>
+    </div>
+  </article>
+
+  <article class="estruturasAlgoritmosPython-dicionarioPython">
+    <h3 class="dicionarioPython-subtitulo subtitulo-1">Dicionários em Python</h3>
+    <ul class="dicionarioPython-lista lista">
+        <li class="dicionarioPython-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            Estrutura <strong class="destaque-1">chave: valor</strong>, semelhante a mapas/tabelas de hash
+        </li>
+        <li class="dicionarioPython-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1">Mutáveis</strong>: permitem inserir, alterar e remover pares
+        </li>
+        <li class="dicionarioPython-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            Ótimos para organizar e acessar dados rapidamente por chave
+        </li>
+    </ul>
+    <div class="bloco-codigo">
+        <pre class="base-codigo">
+        <code><span class="var">dicionario</span> = { <span class="var">"nome":</span> "Ana", <span class="var">"idade":</span>25 }
+        <span class="keyword">print</span>(<span class="var">dicionario</span>[<span class="var">"nome"</span>])
+        <span class="comment">#saída: Ana</span></pre>
+    </div>
+  </article>
+
+  <article class="estruturasAlgoritmosPython-algoritmoBusca">
+    <h3 class="algoritmoBusca-subtitulo subtitulo-1">Algoritmos de Busca</h3>
+    <h4 class="algoritmoBusca-buscaLinear-subtitulo subtitulo-2">Busca Linear (Sequencial)</h4>
+    <p class="algoritmoBusca-buscaLinear-paragrafo">Percorre os elementos até encontrar o alvo. Simples, porém pode ser ineficiente em listas grandes.</p>
+
+    <div class="bloco-codigo">
+        <pre class="base-codigo">
+        <code>
+        <span class="func">def busca_linear</span> (<span class="var">lista</span>, <span class="var">alvo</span>)
+        <span class="keyword">print</span>(<span class="var">dicionario</span>[<span class="var">"nome"</span>])
+        <span class="keyword">for</span> i, valor <span class="keyword">in</span> <span class="func">enumerate</span>(<span class="var">lista</span>):
+            <span class="keyword">if</span> valor == <span class="var">alvo</span>:
+                <span class="return">return</span> i
+        <span class="return">return</span> <span class="number">-1</span>
+    </div>
+
+    <h4 class="algoritmoBusca-buscaSequencial-subtitulo subtitulo-2">Busca Sequencial em Vetor Ordenado</h4>
+    <p class="algoritmoBusca-buscaSequencial--paragrafo">Iguais à linear, mas aproveita a <strong class="destaque-1">ordem</strong> para <em class="destaque-1">parar mais cedo</em> quando o elemento atual excede o alvo.</p>
+  </article>
+
+  <article class="estruturasAlgoritmosPython-algoritmoOrdenacao">
+    <h3 class="algoritmoOrdenacao-subtitulo subtitulo-1">Algoritmos de Ordenação</h3>
+    <p class="algoritmoOrdenacao-paragrafo">Técnicas para reorganizar elementos de uma lista em ordem crescente ou decrescente.</p>
+    <ul class="algoritmoOrdenacao-lista lista">
+        <li class="algoritmoOrdenacao-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1">Bubble Sort:</strong> compara pares vizinhos e troca quando fora de ordem
+        </li>
+        <li class="algoritmoOrdenacao-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1">Insertion Sort:</strong> insere cada elemento na posição correta de uma parte já ordenada
+        </li>
+        <li class="algoritmoOrdenacao-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1">Merge Sort</strong> e <strong class="destaque-1">Quick Sort:</strong> mais eficientes, baseados em divisão e conquista
+        </li>
+        <li class="algoritmoOrdenacao-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            Em Python, <code class="bold">.sort()</code> e <code class="bold">sorted()</code> usam o eficiente <strong class="destaque-1">Timsort</strong>
+        </li>
+    </ul>
+  </article>
+</section>
