@@ -1,0 +1,372 @@
+<article class="conteudo">
+  <section class="variaveisTiposBasicos">
+    <span class="mdi mdi-snake destaque destaque" style="color: var(--cor-primeira); font-size: 2.5em"></span>
+    <h2 class="variaveisTiposBasicos-titulo titulo-1 destaque">
+      Variáveis e tipos básicos de dados em Python
+    </h2>
+    <p class="variaveisTiposBasicos-paragrafo">
+      A construção de um algoritmo envolve entrada, processamento e saída. Para
+      que o processamento ocorra, é necessário um meio de armazenar valores
+      temporariamente, razão pela qual surge o conceito de variáveis.
+      <strong>Uma variável é um espaço alocado na memória RAM.</strong>
+    </p>
+    <p class="variaveisTiposBasicos-paragrafo">
+      Na linguagem Python, o tipo de variável é identificado no momento que se
+      atribui um valor a ela. Portanto, uma variável refere-se a um valor. Sendo
+      assim, diferente da muitas linguagens de programação onde possuem
+      variáveis com tipo primitivo, como int, ou string.
+      <strong>Em Python não há a necessidade de definir estaticamente o tipo de variável, como em outras linguagens de programação.</strong>
+    </p>
+    <div class="variaveisTiposBasicos-citacao citacao">
+      <p class="variaveisTiposBasicos-citacao">
+        “O modelo de dados do Python (Python Data Model, em inglês) adota como
+        paradigma que todo dado em um programa escrito com Python é representado
+        por um objeto”.
+      </p>
+      <p class="variaveisTiposBasicos-citacao-autor">Banin (2018)</p>
+    </div>
+    <div class="variaveisTiposBasicos-aspectos">
+      <h3 class="variaveisTiposBasicos-aspectos-sub-titulo subtitulo-2">
+        Todo objeto Python tem três aspectos:
+      </h3>
+      <ul class="variaveisTiposBasicos-aspectos-lista lista">
+        <li class="variaveisTiposBasicos-aspectos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-4"></span>
+          Um identificador.
+        </li>
+        <li class="variaveisTiposBasicos-aspectos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-4"></span>
+          Um tipo.
+        </li>
+        <li class="variaveisTiposBasicos-aspectos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-4"></span>
+          Um conteúdo.
+        </li>
+      </ul>
+    </div>
+    <div class="variaveisTiposBasicos-exemplo">
+      <p class="variaveisTiposBasicos-exemplo-paragrafo">
+        <strong class="bold">Os códigos a seguir exibem o resultado para três objetos:</strong>
+        int, string e float (tipos de variáveis), sem declaração do tipo.
+      </p>
+      <ul class="variaveisTiposBasicos-exemplo-lista alinhamento-1">
+        <li>
+          <strong class="destaque-1 bold">print('olá')</strong><br />
+          <span>#string</span>
+        </li>
+        <li>
+          <strong class="destaque-1 bold">print(10)</strong><br />
+          <span>#inteiro</span>
+        </li>
+        <li>
+          <strong class="destaque-1 bold">print(3.141592)</strong><br />
+          <span>#float</span>
+        </li>
+      </ul>
+      <p class="variaveisTiposBasicos-exemplo-paragrafo paragrafo">
+        Em outras linguagens de programação, tais objetos seriam variáveis
+        primitivas. Por serem objetos, tais tipos possuem métodos e
+        comportamentos que outras linguagens não suportam – por exemplo,
+        multiplicar uma string por um valor inteiro.
+      </p>
+    </div>
+  </section>
+
+  <section class="operadoresNumericos">
+    <h2 class="operadoresNumericos-subtitulo titulo-1 destaque alinhamento-1 card-base">
+      Operadores numéricos
+    </h2>
+    <p class="operadoresNumericos-paragrafo paragrafo">
+      Como já destacamos, todo objeto em Python possui um
+      <strong class="bold">identificador</strong>(o nome), um
+      <strong class="bold">tipo</strong> e o
+      <strong class="bold">conteúdo</strong>. Diferentes tipos de objetos vão
+      suportar diferentes operações. E cada uma destas deve ser escolhida de
+      acordo com o problema a ser resolvido.
+    </p>
+    <div class="operadoresNumericos-tiposNumericos">
+      <p class="operadoresNumericos-tiposNumericos-paragrafo paragrafo">
+        Os tipos numéricos, naturalmente, suportam operações matemáticas entre
+        si,
+        <strong class="destaque-1">devendo ser respeitada a ordem de precedência dos operadores</strong>:
+      </p>
+    </div>
+    <div class="operadoresNumericos-tiposNumericos-ordemProcedencia alinhamento-1">
+      <ul class="operadoresNumericos-tiposNumericos-lista lista">
+        <li class="operadoresNumericos-tiposNumericos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-3"></span>
+          Primeiro resolvem-se os parênteses, do mais interno para o mais
+          externo.
+        </li>
+        <li class="operadoresNumericos-tiposNumericos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-3"></span>
+          Exponenciação.
+        </li>
+        <li class="operadoresNumericos-tiposNumericos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-3"></span>
+          Multiplicação e divisão.
+        </li>
+        <li class="operadoresNumericos-tiposNumericos-lista-item">
+          <span class="mdi mdi-circle-medium destaque-3"></span>
+          Soma e subtração.
+        </li>
+      </ul>
+
+      <img
+        class="operadoresNumericos-tiposNumericos-ordemProcedencia-imagem imagem-3"
+        src="/assets/img/semestre2/personagemOperacoesMatematicas_undraw_math_ldpv.png"
+        alt="Ilustração de uma personagem mostrando operadores matemáticos."
+      />
+    </div>
+  </section>
+
+  <section class="estruturasCondicionais">
+    <h2 class="estruturasCondicionais-subtitulo titulo-1 destaque alinhamento-1 card-base">
+      Estruturas condicionais de repetição e lógicas
+    </h2>
+    <p class="estruturasCondicionais-paragrafo paragrafo">
+      Em geral, em um programa você tem opções de caminhos ou lista de comandos
+      que nada mais são que trechos de códigos que podem ser executados,
+      devendo-se tomar decisões sobre qual trecho de código será executado em um
+      determinado momento. Em Python estas estruturas são bem definidas,
+      <strong class="destaque-1">veja a seguir</strong>:
+    </p>
+    <div class="estruturasCondicionais-IfElifElse">
+      <h2 class="estruturasCondicionais-IfElifElse-subtitulo subtitulo-base">
+        Estruturas condicionais em Python: <strong class="destaque-3">if</strong>,<strong class="destaque-3"> elif</strong>,<strong class="destaque-3"> else</strong>
+      </h2>
+      <p class="estruturasCondicionais-IfElifElse-paragrafo paragrafo">
+        Uma estrutura condicional verifica a condição dos argumentos passados e
+        executa um comando caso a condição seja verdadeira. Para a construção de
+        estruturas condicionais em Python são utilizados os comandos:
+      </p>
+      <div class="estruturasCondicionais-IfElifElse">
+        <ul class="estruturasCondicionais-IfElifElse-lista lista">
+          <li class="estruturasCondicionais-IfElifElse-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1 bold">if</strong> - Por padrão, o bloco de
+            instrução que estiver abaixo da instrução if será executado quando a
+            expressão contida na estrutura if for verdadeira.
+          </li>
+          <li class="estruturasCondicionais-IfElifElse-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1 bold"> else</strong> - Instrução
+            complementar da estrutura if, deve ser executada quando a expressão
+            definida for igual a falso.
+          </li>
+          <li class="estruturasCondicionais-IfElifElse-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <strong class="destaque-1 bold"> elif</strong> - Trata-se de uma
+            abreviação do else if usado para fazer as condições intermediárias.
+          </li>
+        </ul>
+      </div>
+      <div class="estruturasCondicionais-citacao citacao">
+        <p class="estruturasCondicionais-citacao-paragrafo">
+          “Generalizando, em Python, todo conjunto de comandos subordinados deve
+          estar identado em relação ao seu comando proprietário. Isso vale para
+          if-else, while, for, try, def e qualquer outro em que exista a relação
+          de subordinação”
+        </p>
+        <p class="estruturasCondicionais-citacao-autor">(BANIN, 2018, p. 51)</p>
+      </div>
+    </div>
+
+    <div class="estruturasRepeticoes-comandoFor">
+      <h2 class="estruturasRepeticoes-comandoFor-subtitulo subtitulo-base">
+        Estruturas de repetição: o comando <strong class="destaque-3">for</strong>
+      </h2>
+      <p class="estruturasRepeticoes-comandoFor-paragrafo paragrafo">
+        A instrução for em Python faz uma iteração sobre os itens de qualquer
+        sequência – por exemplo, iterar sobre os caracteres de uma palavra, já
+        que esta é um tipo de sequência. O bloco de comandos a ser executado
+        deve ser identado em razão da relação e da subordinação.
+      </p>
+      <div class="estruturasRepeticoes-comandoFor-sintaxe">
+        <p class="estruturasRepeticoes-comandoFor-sintaxe-paragrafo page-card-botao">
+          <strong class="destaque-1">A sintaxe do comando envolve:</strong> for, in e ..:
+        </p>
+        <ul class="estruturasRepeticoes-comandoFor-sintaxe-lista lista">
+          <li class="estruturasRepeticoes-comandoFor-sintaxe-lista-item">
+            <p>
+              <strong class="destaque-3 bold">for</strong> - A palavra reservada “for” seguido de uma variável de controle;
+            </p>
+          </li>
+          <li class="estruturasRepeticoes-comandoFor-sintaxe-lista-item">
+            <p>
+              <strong class="destaque-3 bold">in</strong> - A palavra reservada “in”;
+            </p>
+          </li>
+          <li class="estruturasRepeticoes-comandoFor-sintaxe-lista-item">
+            <p>
+              <strong class="destaque-3 bold">..:</strong> - Uma sequência acompanhada por dois-pontos.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="estruturasRepeticoes-comandoWhile">
+      <h2 class="estruturasRepeticoes-comandoWhile-subtitulo subtitulo-base">
+        Estruturas de repetição: o comando <strong class="destaque-3">while</strong>
+      </h2>
+      <p class="estruturasRepeticoes-comandoWhile-paragrafo paragrafo">
+        O comando while deve ser
+        <strong class="destaque-1">utilizado para construir e controlar a estrutura de decisão</strong>, 
+        sempre que o número de repetições não seja conhecido. Por exemplo,
+        quando queremos solicitar e testar se o número digitado pelo usuário é
+        par ou ímpar. Quando ele digitar zero, o programa se encerra. Não
+        sabemos quando o usuário irá digitar, portanto somente o while é capaz
+        de solucionar esse problema.
+      </p>
+      <p class="estruturasRepeticoes-comandoWhile-paragrafo paragrafo">
+        Em Python, quando a mesma instrução precisa ser executada várias vezes
+        seguidas podemos utilizar loop. Esse comando permite executar um bloco
+        de código repetidas vezes, até que uma dada condição seja atendida.
+      </p>
+      <img
+        src="/assets/img/semestre2/personagemLooping_undraw_not-found_6bgl.png"
+        alt="Ilustração de uma personagem segurando um círculo com setas sinalizando um carregamento em looping."
+        class="estruturasRepeticoes-comandoWhile-imagem imagem-3"
+      />
+    </div>
+
+    <div class="estruturaslogicas-AndOrNot">
+      <h2 class="estruturaslogicas-AndOrNot-subtitulo subtitulo-base">
+        Estruturas lógicas em python: <strong class="destaque-3">and</strong>, <strong class="destaque-3">or</strong>, <strong class="destaque-3">not</strong>
+      </h2>
+      <p class="estruturaslogicas-AndOrNot-paragrafo paragrafo">
+        Em Python utilizamos operadores booleanos para construir estruturas de
+        decisões mais complexas. Nesses operadores o Verdadeiro é chamado de
+        True (igual a 1) e o Falso é chamado False (igual a 0).
+      </p>
+      <p class="estruturaslogicas-AndOrNot-paragrafo paragrafo">
+        Os tipos de estruturas aqui apresentados, condicionais e de repetição,
+        representam uma parte fundamental da linguagem de programação em Python,
+        sendo assim, é muito importante conhecer a sintaxe e o funcionamento
+        dessas estruturas.
+      </p>
+    </div>
+  </section>
+
+  <section class="funcoesPython">
+    <h2 class="funcoesPython-subtitulo subtitulo-base">Funções em Python</h2>
+    <p class="funcoesPython-paragrafo">
+      Uma função é uma forma de organização, usada para delimitar ou determinar
+      quais tarefas podem ser realizadas por uma determinada divisão. Em
+      linguagem de programação, uma função é uma sequência de instruções que
+      processa um ou mais resultados que são chamados de parâmetros. Em Python
+      temos as funções built-in e as funções definidas pelo usuário.
+    </p>
+    <div class="funcoesPython">
+      <h2 class="funcoesPython-builtIn-subtitulo subtitulo-base destaque-2">
+        Funções em Python: <strong class="destaque-3">built-in</strong>
+      </h2>
+      <p class="funcoesPython-builtIn-paragrafo">
+        <strong class="destaque-1">Uma função built-in é um objeto que está integrado ao núcleo do 
+        interpretador Python</strong>. Ou seja, não precisa ser feita nenhuma instalação adicional, já está
+        pronto para uso.
+      </p>
+      <p class="funcoesPython-paragrafo">
+        O interpretador Python possui várias funções disponíveis, conforme
+        podemos conservar na tabela de Funções built-in em Python.
+      </p>
+      <div class="funcoesPython-exemplos">
+        <p class="funcoesPython-exemplos-paragrafo bold">
+          Veja a descrição de algumas dessas funções:
+        </p>
+        <ul class="funcoesPython-exemplos-lista lista">
+          <li class="funcoesPython-exemplos-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <p>
+              <strong class="destaque-1 bold">print()</strong> - Usada para
+              imprimir um valor na tela.
+            </p>
+          </li>
+          <li class="funcoesPython-exemplos-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <p>
+              <strong class="destaque-1 bold">input()</strong> - Usada para
+              capturar um valor digitado no teclado.
+            </p>
+          </li>
+          <li class="funcoesPython-exemplos-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <p>
+              <strong class="destaque-1 bold">type()</strong> - Usada para saber
+              qual é o tipo de um objeto (variável).
+            </p>
+          </li>
+          <li class="funcoesPython-exemplos-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <p>
+              <strong class="destaque-1 bold">int()</strong> e
+              <strong class="destaque-1 bold">float()</strong> - Usadas para
+              converter um valor no tipo inteiro ou float.
+            </p>
+          </li>
+          <li class="funcoesPython-exemplos-lista-item">
+            <span class="mdi mdi-circle-medium destaque-4"></span>
+            <p>
+              <strong class="destaque-1 bold">enumarate()</strong> - Usada para
+              retornar a posição de um valor em uma sequência.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="funcoesPython">
+        <h2 class="funcoesPython-usuarios-subtitulo subtitulo-base destaque-2">
+          Funções definidas pelo <strong class="destaque-3">usuário</strong>
+        </h2>
+        <p class="funcoesPython-usuarios-paragrafo">
+          Além das Funções built-in, muitas vezes as soluções exigem a
+          implementação de funções específicas, as quais são chamadas de funções
+          definidas pelo usuário.
+        </p>
+        <div class="funcoesPython-usuarios-sintaxe">
+          <p class="funcoesPython-usuarios-sintaxe- destaque-1 bold">
+            A sintaxe de uma função em Python é feita com:
+          </p>
+          <ul class="funcoesPython-usuarios-sintaxe-lista lista">
+            <li class="funcoesPython-usuarios-sintaxe-lista-item">
+              <span class="mdi mdi-circle-medium destaque-3"></span>
+              A palavra reservada 'def'.
+            </li>
+            <li class="funcoesPython-usuarios-sintaxe-lista-item">
+              <span class="mdi mdi-circle-medium destaque-3"></span>
+              O nome da função.
+            </li>
+            <li class="funcoesPython-usuarios-sintaxe-lista-item">
+              <span class="mdi mdi-circle-medium destaque-3"></span>
+              Os parênteses que indicam se existem ou não parâmetros para a
+              função.
+            </li>
+            <li class="funcoesPython-usuarios-sintaxe-lista-item">
+              <span class="mdi mdi-circle-medium destaque-3"></span>
+              E o comando 'return' (que é opcional).
+            </li>
+          </ul>
+        </div>
+
+        <div class="funcoesPython">
+          <h2 class="funcoesPython-anonimas-subtitulo subtitulo-base destaque-2">
+            Funções <strong class="destaque-3">anônimas</strong> em Python
+          </h2>
+          <p class="funcoesPython-anonimas-paragrafo">
+            Expressões lambda (às vezes chamadas de formas lambda) são usadas
+            para criar funções anônimas. Uma função anônima é uma função que não
+            é construída com <strong class="bold">"def"</strong> e que, por
+            isso, não possui nome. Esse tipo de construção é útil quando a
+            função faz somente uma ação e é usada uma única vez.
+          </p>
+        </div>
+      </div>
+      <img
+        src="/assets/img/semestre2/personagemLogica_undraw_logic_bj1j.png"
+        alt="Ilustração de uma personagem em volta de símbolos geométricos"
+        class="funcoesPython-imagem imagem-3"
+      />
+    </div>
+  </section>
+</article>
