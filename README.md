@@ -16,7 +16,8 @@ O projeto foi criado com fins de estudo, servindo como um repositório prático 
 - HTML5 e CSS3
 - JavaScript
 - JSON (para armazenar os dados de matérias e resumos)
-- [Material Design Icons](https://materialdesignicons.com/) (para ícones visuais)
+- [Material Design Icons](https://materialdesignicons.com/) (ícones visuais)
+- [unDraw](https://undraw.co/illustrations) (imagens)
 
 ## 💡 Funcionalidades
 
