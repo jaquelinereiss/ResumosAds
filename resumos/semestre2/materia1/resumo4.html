@@ -1,0 +1,121 @@
+<article class="conteudo">
+  <section class="comprehensionsAvancadas">
+    <h3 class="comprehensionsAvancadas-titulo titulo titulo-1">
+        <span class="mdi mdi-view-list"></span> 
+        Comprehensions Avançadas
+    </h3>
+    <p class="comprehensionsAvancadas-paragrafo">
+      Listas, sets e dicionários podem ser criados de forma concisa usando comprehensions.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># Lista de quadrados de números pares</strong>
+        <strong class="keyword">quadrados</strong> = [<strong class="keyword">x</strong>**<strong class="number">2</strong> <strong class="keyword">for</strong> <strong class="keyword">x</strong> <strong class="keyword">in</strong> <strong class="func">range</strong>(<strong class="number">10</strong>) <strong class="keyword">if</strong> <strong class="keyword">x</strong> % <strong class="number">2</strong> == <strong class="number">0</strong>]
+        <strong class="func">print</strong>(<strong class="var">quadrados</strong>)
+
+        <strong class="comment"># Dicionário de números e seus quadrados</strong>
+        <strong class="keyword">quadrados_dict</strong> = {<strong class="keyword">x</strong>: <strong class="keyword">x</strong>**<strong class="number">2</strong> <strong class="keyword">for</strong> <strong class="keyword">x</strong> <strong class="keyword">in</strong> <strong class="func">range</strong>(<strong class="number">5</strong>)}
+
+        <strong class="comment"># Set de números únicos ao quadrado</strong>
+        <strong class="keyword">quadrados_set</strong> = {<strong class="keyword">x</strong>**<strong class="number">2</strong> <strong class="keyword">for</strong> <strong class="keyword">x</strong> <strong class="keyword">in</strong> <strong class="func">range</strong>(<strong class="number">5</strong>)}
+    </code></pre>
+  </section>
+
+  <section class="manipulacaoIteraveis">
+    <h3 class="manipulacaoIteraveis-titulo titulo titulo-1">
+        <span class="mdi mdi-code-array"></span> 
+        Manipulação de Iteráveis
+    </h3>
+    <p class="manipulacaoIteraveis-paragrafo">
+      Funções como <code>map</code>, <code>filter</code> e <code>zip</code> permitem transformar, filtrar e combinar iteráveis.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code>
+        <strong class="keyword">numeros</strong> = [<strong class="number">1</strong>, <strong class="number">2</strong>, <strong class="number">3</strong>, <strong class="number">4</strong>, <strong class="number">5</strong>]
+
+        <strong class="comment"># map: aplica função a cada elemento</strong>
+        <strong class="keyword">dobrados</strong> = <strong class="func">list</strong>(<strong class="func">map</strong>(lambda <strong class="keyword">x</strong>: <strong class="keyword">x</strong>*<strong class="number">2</strong>, <strong class="keyword">numeros</strong>))
+
+        <strong class="comment"># filter: filtra elementos pares</strong>
+        <strong class="keyword">pares</strong> = <strong class="func">list</strong>(<strong class="func">filter</strong>(lambda <strong class="keyword">x</strong>: <strong class="keyword">x</strong> % <strong class="number">2</strong> == <strong class="number">0</strong>, <strong class="keyword">numeros</strong>))
+
+        <strong class="comment"># zip: combina iteráveis</strong>
+        <strong class="keyword">nomes</strong> = [<strong class="var">'Ana'</strong>, <strong class="var">'Bruno'</strong>, <strong class="var">'Carlos'</strong>]
+        <strong class="keyword">idades</strong> = [<strong class="number">25</strong>, <strong class="number">30</strong>, <strong class="number">20</strong>]
+        <strong class="keyword">combinados</strong> = <strong class="func">list</strong>(<strong class="func">zip</strong>(<strong class="keyword">nomes</strong>, <strong class="keyword">idades</strong>))
+    </code></pre>
+  </section>
+
+  <section class="geradoresIteradores">
+    <h3 class="geradoresIteradores-titulo titulo titulo-1">
+        <span class="mdi mdi-playlist-play"></span> 
+        Geradores e Iteradores
+    </h3>
+    <p class="geradoresIteradores-paragrafo">
+      Produzem valores sob demanda, economizando memória em grandes coleções.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code>
+        <strong class="comment"># Gerador simples</strong>
+        <strong class="keyword">def</strong> <strong class="func">contador</strong>(<strong class="var">max</strong>):
+            <strong class="var">n</strong> = <strong class="number">0</strong>
+            <strong class="keyword">while</strong> <strong class="var">n</strong> <strong class="var">max</strong>:
+                <strong class="keyword">yield</strong> <strong class="var">n</strong>
+                <strong class="var">n</strong> += <strong class="number">1</strong>
+
+        <strong class="keyword">for</strong> <strong class="var">i</strong> <strong class="keyword">in</strong> <strong class="func">contador</strong>(<strong class="number">5</strong>):
+            <strong class="func">print</strong>(<strong class="var">i</strong>)
+    </code></pre>
+  </section>
+
+  <section class="decoradores">
+    <h3 class="decoradores-titulo titulo titulo-1">
+        <span class="mdi mdi-star-outline"></span> 
+        Decoradores
+    </h3>
+    <p class="decoradores-paragrafo">
+      Modificam o comportamento de funções ou métodos sem alterá-las diretamente.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code>
+        <strong class="keyword">def</strong> <strong class="func">saudacao</strong>(<strong class="var">func</strong>):
+            <strong class="keyword">def</strong> <strong class="func">wrapper</strong>(*<strong class="var">args</strong>, **<strong class="var">kwargs</strong>):
+                <strong class="func">print</strong>(<strong class="var">'Olá!'</strong>)
+                <strong class="return">return</strong> <strong class="var">func</strong>(*<strong class="var">args</strong>, **<strong class="var">kwargs</strong>)
+            <strong class="return">return</strong> <strong class="var">wrapper</strong>
+
+        @saudacao
+        <strong class="keyword">def</strong> <strong class="func">diga_nome</strong>(<strong class="var">nome</strong>):
+            <strong class="func">print</strong>(f"Meu nome é {<strong class="var">nome</strong>}")
+
+        <strong class="func">diga_nome</strong>(<strong class="var">'João'</strong>)
+    </code></pre>
+  </section>
+
+  <section class="contextManagers">
+    <h3 class="contextManagers-titulo titulo titulo-1">
+        <span class="mdi mdi-folder-outline"></span> 
+        Context Managers
+    </h3>
+    <p class="contextManagers-paragrafo">
+      Gerenciam recursos automaticamente, como arquivos e conexões.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code>
+        <strong class="keyword">with</strong> <strong class="func">open</strong>(<strong class="var">'arquivo.txt'</strong>, <strong class="var">'w'</strong>) <strong class="keyword">as</strong> <strong class="var">f</strong>:
+            <strong class="var">f</strong>.<strong class="func">write</strong>(<strong class="var">'Python é incrível!'</strong>)
+    </code></pre>
+  </section>
+
+  <section class="regex">
+    <h3 class="regex-titulo titulo titulo-1">
+        <span class="mdi mdi-text-box-multiple-outline"></span> 
+        Expressões Regulares
+    </h3>
+    <p class="regex-paragrafo">
+      O módulo <strong class="var">re</strong> permite buscar padrões em strings.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code>
+        <strong class="keyword">import</strong> <strong class="var">re</strong>
+
+        <strong class="var">texto</strong> = <strong class="var">'Meu email é exemplo@gmail.com'</strong>
+        <strong class="var">padrao</strong> = <strong class="var">r"\w+@\w+\.\w+"</strong>
+        <strong class="var">email</strong> = <strong class="var">re</strong>.<strong class="func">search</strong>(<strong class="var">padrao</strong>, <strong class="var">texto</strong>).<strong class="func">group</strong>()
+        <strong class="func">print</strong>(<strong class="var">email</strong>)
+    </code></pre>
+  </section>
+</article>
