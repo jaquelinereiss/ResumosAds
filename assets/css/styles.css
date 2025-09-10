@@ -175,6 +175,31 @@ p {
   background-color: var(--cor-terceira);
 }
 
+.btn-1 {
+  padding: 0.5rem 1rem;
+  background-color: var(--cor-quinta);
+  color: var(--cor-setima);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--fonte-secundaria);
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: var(--cor-setima);
+  color: var(--cor-quarta);
+}
+
+.ancora {
+  text-decoration: none;
+}
+
+.ancora:hover {
+  color: var(--cor-terceira);
+}
+
 /* =========================
    FLEX & UTILITÁRIOS
 ========================= */
