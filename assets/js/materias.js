@@ -32,9 +32,9 @@ async function main() {
   }
 
   try {
-    // Ajuste o caminho para onde está seu JSON, aqui assumo pasta data na raiz
+    // Caminho para onde está o JSON
     const materias = await carregarJSON("../data/materias.json");
-    // Filtra só as matérias do semestre selecionado
+    // Filtra pelas matérias do semestre selecionado
     const materiasDoSemestre = materias.filter(m => m.semestre == semestre);
 
     if (materiasDoSemestre.length === 0) {
