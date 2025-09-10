@@ -176,8 +176,8 @@
         "arquivoHTML": "./resumos/semestre2/materia1/resumo2.html"
       },
       {
-        "titulo": "3 - conteúdo",
-        "conteudo": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium esse, dolorum quasi nam sunt quae? Dolor nisi suscipit voluptates dicta. Minima sapiente doloremque accusantium sequi deserunt et repellendus quae at.",
+        "titulo": "3 - Elementos da linguagem Python",
+        "conteudo": "Lista. List Comprehension. Manipulação de Strings. Manipulação de Arquivos. Módulos e Pacotes. Programação Orientada a Objetos (POO). Exceções e Tratamento de Erros. Bibliotecas Populares.",
         "arquivoHTML": "./resumos/semestre2/materia1/resumo3.html"
       }
       ,
