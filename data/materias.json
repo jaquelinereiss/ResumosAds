@@ -176,14 +176,14 @@
         "arquivoHTML": "./resumos/semestre2/materia1/resumo2.html"
       },
       {
-        "titulo": "3 - Elementos da linguagem Python",
+        "titulo": "3 - Conceitos da linguagem Python",
         "conteudo": "Lista. List Comprehension. Manipulação de Strings. Manipulação de Arquivos. Módulos e Pacotes. Programação Orientada a Objetos (POO). Exceções e Tratamento de Erros. Bibliotecas Populares.",
         "arquivoHTML": "./resumos/semestre2/materia1/resumo3.html"
       }
       ,
       {
-        "titulo": "4 - conteúdo",
-        "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic iure sapiente quas, accusantium explicabo laborum non! Hic possimus nemo quis, ea unde repudiandae inventore odit ratione quos asperiores velit.",
+        "titulo": "4 - Conceitos avançados da linguagem Python",
+        "conteudo": "Comprehensions Avançadas. Manipulação de Iteráveis. Geradores e Iteradores. Decoradores. Context Managers. Expressões Regulares.",
         "arquivoHTML": "./resumos/semestre2/materia1/resumo4.html"
       }
     ]
