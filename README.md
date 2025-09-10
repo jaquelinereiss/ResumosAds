@@ -27,6 +27,7 @@ O projeto foi criado com fins de estudo, servindo como um repositório prático 
 - 🗂️ Estrutura baseada em JSON, permitindo fácil manutenção e adição de novos resumos
 - 🔄 Separação entre dados (JSON) e lógica (JavaScript) para um código mais limpo e escalável
 - 💻 Uso de query strings para identificar o semestre e a matéria selecionada via JavaScript.
+- 📑 Visualização das referências do conteúdo de forma dinâmica para cada matéria, carregadas pelo JavaScript a partir de JSON.
 
 ## 📈 Possíveis melhorias futuras
 
