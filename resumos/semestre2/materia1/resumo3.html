@@ -1,0 +1,156 @@
+<article class="conteudo">
+  <section class="python-listas">
+    <h3 class="listas-titulo titulo titulo-1">
+      <span class="mdi mdi-format-list-bulleted"></span> 
+      Listas
+    </h3>
+    <p>
+      Estrutura mutável que armazena elementos em sequência. Suporta operações
+      de adição, remoção e indexação.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># Exemplo de uso de listas</strong>
+        <strong class="keyword">frutas</strong> = [<strong class="var">'maçã'</strong>, <strong class="var">'banana'</strong>, <strong class="var">'laranja'</strong>]
+        <strong class="keyword">frutas</strong>.<strong class="func">append</strong>(<strong class="var">'uva'</strong>)       # adiciona ao final
+        <strong class="keyword">frutas</strong>.<strong class="func">insert</strong>(<strong class="number">1</strong>,<strong class="var">'pera'</strong>)    # insere na posição 1
+        <strong class="keyword">frutas</strong>.<strong class="func">remove</strong>(<strong class="var">'banana'</strong>)    # remove a primeira ocorrência
+        <strong class="func">print</strong>(<strong class="var">frutas</strong>)              # saída: ['maçã', 'pera', 'laranja', 'uva']
+    </code></pre>
+  </section>
+
+  <section class="listComprehension">
+    <h3 class="listComprehension-titulo titulo titulo-1">
+        <span class="mdi mdi-view-list"></span> 
+        List Comprehension
+    </h3>
+    <p class="listComprehension-paragrafo">
+      Sintaxe concisa para construir listas a partir de iteráveis, opcionalmente
+      com condições.
+    </p>
+   <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># Exemplo básico</strong>
+        <strong class="keyword">quadrados</strong> = [<strong class="keyword">x</strong>**<strong class="number">2</strong> <strong class="keyword">for</strong> <strong class="keyword">x</strong> <strong class="keyword">in</strong> <strong class="func">range</strong>(<strong class="number">6</strong>) <strong class="keyword">if</strong> <strong class="keyword">x</strong> % <strong class="number">2</strong> == <strong class="number">0</strong>]
+        <strong class="func">print</strong>(<strong class="var">quadrados</strong>)  <strong class="comment"># saída: [0, 4, 16]</strong>
+    </code></pre>
+  </section>
+
+  <section class="manipulacaoStrings">
+    <h3 class="manipulacaoStrings-titulo titulo titulo-1">
+        <span class="mdi mdi-code-string"></span> 
+        Manipulação de Strings
+    </h3>
+    <p class="manipulacaoStrings-paragrafo">
+      Strings são imutáveis; use métodos embutidos para transformar e dividir
+      textos.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># Métodos úteis de string</strong>
+        <strong class="var">texto</strong> = <strong class="var">"Olá, mundo"</strong>
+        <strong class="var">partes</strong> = <strong class="var">texto</strong>.<strong class="func">split</strong>(<strong class="var">","</strong>)      <strong class="comment"># ['Olá', ' mundo']</strong>
+        <strong class="var">joined</strong> = <strong class="var">"-"</strong>.<strong class="func">join</strong>([<strong class="var">"a"</strong>, <strong class="var">"b"</strong>, <strong class="var">"c"</strong>])  <strong class="comment"># 'a-b-c'</strong>
+        <strong class="func">print</strong>(<strong class="var">texto</strong>.<strong class="func">replace</strong>(<strong class="var">'mundo'</strong>, <strong class="var">'Python'</strong>))
+    </code></pre>
+  </section>
+
+  <section class="manipulacaoArquivos">
+    <h3 class="manipulacaoArquivos-titulo titulo titulo-1">
+        <span class="mdi mdi-archive-outline"></span> 
+        Manipulação de Arquivos
+    </h3>
+    <p class="manipulacaoArquivos-paragrafo">
+      Abra arquivos com o gerenciador de contexto <code>with</code> para
+      garantir fechamento automático.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># Leitura segura de arquivo</strong>
+        <strong class="keyword">with</strong> <strong class="func">open</strong>(<strong class="var">'dados.txt'</strong>, <strong class="var">'r'</strong>, <strong class="keyword">encoding</strong>=<strong class="var">'utf-8'</strong>) <strong class="keyword">as</strong> <strong class="var">f</strong>:
+            <strong class="var">conteudo</strong> = <strong class="var">f</strong>.<strong class="func">read</strong>()
+        <strong class="func">print</strong>(<strong class="var">conteudo</strong>)
+    </code></pre>
+  </section>
+
+  <section class="modulosPacotes">
+    <h3 class="modulosPacotes-titulo titulo titulo-1">
+        <span class="mdi mdi-sack"></span> 
+        Módulos e Pacotes
+    </h3>
+    <p class="modulosPacotes-paragrafo">
+      Organize código em módulos (.py) e pacotes (pastas com
+      <code>__init__.py</code>).
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># importando módulo padrão</strong>
+        <strong class="keyword">import</strong> <strong class="var">math</strong>
+        <strong class="func">print</strong>(<strong class="var">math</strong>.<strong class="func">sqrt</strong>(<strong class="number">25</strong>))  <strong class="comment"># 5.0</strong>
+
+        <strong class="comment"># importando função específica</strong>
+        <strong class="keyword">from</strong> <strong class="var">datetime</strong> <strong class="keyword">import</strong> <strong class="var">datetime</strong>
+        <strong class="func">print</strong>(<strong class="var">datetime</strong>.<strong class="func">now</strong>())
+    </code></pre>
+  </section>
+
+  <section class="poo">
+    <h3 class="poo-titulo titulo titulo-1">
+        <span class="mdi mdi-robot-excited-outline"></span> 
+        Programação Orientada a Objetos (POO)
+    </h3>
+    <p class="poo-paragrafo">Classes, instâncias, construtores, herança e polimorfismo.</p>
+
+    <pre class="bloco-codigo card-conteudo-1"><code><strong class="comment"># Exemplo básico de classe</strong>
+        <strong class="keyword">class</strong> <strong class="var">Pessoa</strong>:
+            <strong class="keyword">def</strong> <strong class="func">__init__</strong>(<strong class="var">self</strong>, <strong class="var">nome</strong>, <strong class="var">idade</strong>):
+                <strong class="var">self</strong>.<strong class="var">nome</strong> = <strong class="var">nome</strong>
+                <strong class="var">self</strong>.<strong class="var">idade</strong> = <strong class="var">idade</strong>
+
+            <strong class="keyword">def</strong> <strong class="func">apresentar</strong>(<strong class="var">self</strong>):
+            <strong class="return">return</strong> <strong class="var">f</strong>"Olá, sou {<strong class="var">self</strong>.<strong class="var">nome</strong>} e tenho {<strong class="var">self</strong>.<strong class="var">idade</strong>} anos"
+
+        <strong class="var">p</strong> = <strong class="var">Pessoa</strong>(<strong class="var">'João'</strong>, <strong class="number">30</strong>)
+        <strong class="func">print</strong>(<strong class="var">p</strong>.<strong class="func">apresentar</strong>())
+    </code></pre>
+  </section>
+
+  <section class="excessoesTratamentoErros">
+    <h3 class="excessoesTratamentoErros-titulo titulo titulo-1">
+        <span class="mdi mdi-alert-circle"></span> 
+        Exceções e Tratamento de Erros
+    </h3>
+    <p class="excessoesTratamentoErros-paragafo">
+      Use <code class="bold">try/except/finally</code> para capturar e tratar erros
+      previsíveis.
+    </p>
+    <pre class="bloco-codigo card-conteudo-1"><code>
+        <strong class="keyword">try</strong>:
+            <strong class="var">numero</strong> = <strong class="func">int</strong>(<strong class="func">input</strong>(<strong class="var">'Digite um número: '</strong>))
+        <strong class="keyword">except</strong> <strong class="var">ValueError</strong>:
+            <strong class="func">print</strong>(<strong class="var">'Entrada inválida. Informe um número inteiro.'</strong>)
+        <strong class="keyword">finally</strong>:
+            <strong class="func">print</strong>(<strong class="var">'Rotina finalizada'</strong>)
+    </code></pre>
+  </section>
+
+  <section class="bibliotecasPopulares">
+    <h3 class="bibliotecasPopulares-titulo titulo titulo-1">
+        <span class="mdi mdi-library-outline"></span> 
+        Bibliotecas Populares
+    </h3>
+    <p class="bibliotecasPopulares-paragrafo">Ferramentas essenciais para ciência de dados, web e requests HTTP.</p>
+    <ul class="bibliotecasPopulares-lista">
+      <li class="lista-item">
+        <span class="mdi mdi-circle-medium destaque-2"></span>
+        <strong class="destaque-1 bold">NumPy</strong> — arrays e operações numéricas.
+      </li>
+      <li class="lista-item">
+        <span class="mdi mdi-circle-medium destaque-2"></span>
+        <strong class="destaque-1 bold">Pandas</strong> — estruturas para análise de dados (DataFrame).
+      </li>
+      <li class="lista-item">
+        <span class="mdi mdi-circle-medium destaque-2"></span>
+        <strong class="destaque-1 bold">Matplotlib / Seaborn</strong> — visualização.
+      </li>
+      <li class="lista-item">
+        <span class="mdi mdi-circle-medium destaque-2"></span>
+        <strong class="destaque-1 bold">Requests</strong> — requisições HTTP simples.
+      </li>
+      <li class="lista-item">
+        <span class="mdi mdi-circle-medium destaque-2"></span>
+        <strong class="destaque-1 bold">Flask / Django</strong> — frameworks web.
+      </li>
+    </ul>
+  </section>
+</article>
