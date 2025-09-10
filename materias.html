@@ -2,21 +2,27 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Matérias - Resumos ADS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resumos</title>
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <main class="conteudo conteudo-page">
-    <section class="materias">
-      <h1 class="cabecalho__titulo text-center mt-1 p-1" id="titulo-semestre">Matérias</h1>
-      <h2 class="materias__titulo h2-h3">Qual matéria você está buscando?</h2>
-      <div id="lista-materias" class="materias__lista">
-        <!-- Cards das matérias aparecerão aqui via JS -->
-      </div>
+  <main class="conteudo">
+    <section class="resumos">
+      <h1 class="cabecalho__titulo mt-1 p-1" id="titulo-materia">Resumos</h1>
+      <h2 class="resumos__titulo h2-h3">Escolha um card para verificar o conteúdo</h2>
+      <div id="lista-resumos" class="resumos__lista"></div>
     </section>
   </main>
-  <script type="module" src="./assets/js/materias.js"></script>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="fechar-modal" class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
   <script type="module" src="./assets/js/header.js"></script>
   <script type="module" src="./assets/js/footer.js"></script>
 </body>
