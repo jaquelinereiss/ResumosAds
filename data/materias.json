@@ -193,24 +193,24 @@
     "materia": "Engenharia de Software",
     "resumos": [
       {
-        "titulo": "1 - conteúdo",
-        "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic iure sapiente quas, accusantium explicabo laborum non! Hic possimus nemo quis, ea unde repudiandae inventore odit ratione quos asperiores velit.",
+        "titulo": "1 - Visão Geral de Engenharia de Software",
+        "conteudo": "Conceitos-chave: Software, Produto x Processoe Stakeholders. Modelos de ciclo de vida: Waterfall (Cascata), Iterativo e incremental, Ágil (Scrum, Kanban) e DevOps. Boas práticas iniciais.",
         "arquivoHTML": "./resumos/semestre2/materia2/resumo1.html"
       },
       {
-        "titulo": "2 - conteúdo",
-        "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic iure sapiente quas, accusantium explicabo laborum non! Hic possimus nemo quis, ea unde repudiandae inventore odit ratione quos asperiores velit.",
+        "titulo": "2 - Engenharia de Requisitos",
+        "conteudo": "Fases: Elicitação, Especificação, Validação e Gerenciamento. Tipos de requisitos: Funcional, Não funcional e Requisitos de domínio. Boas práticas.",
         "arquivoHTML": "./resumos/semestre2/materia2/resumo2.html"
       },
       {
-        "titulo": "3 - conteúdo",
-        "conteudo": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium esse, dolorum quasi nam sunt quae? Dolor nisi suscipit voluptates dicta. Minima sapiente doloremque accusantium sequi deserunt et repellendus quae at.",
+        "titulo": "3 - Projeto de Software e Arquitetura",
+        "conteudo": "Princípios de design: SRP, OCP, DRY e KISS. Padrões e estilos arquiteturais: Padrões de projeto, Arquiteturas e Documentação. Qualidade arquitetural.",
         "arquivoHTML": "./resumos/semestre2/materia2/resumo3.html"
       }
       ,
       {
-        "titulo": "4 - conteúdo",
-        "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis hic iure sapiente quas, accusantium explicabo laborum non! Hic possimus nemo quis, ea unde repudiandae inventore odit ratione quos asperiores velit.",
+        "titulo": "4 - Testes, Garantia de Qualidade e Manutenção",
+        "conteudo": "Níveis e tipos de teste: Unitários, Integração, End-to-end, Teste de aceitação e Testes não-funcionais. Automação e CI/CD: Integração contínua, Entrega contínua e Ferramentas comuns. Métricas e manutenção.",
         "arquivoHTML": "./resumos/semestre2/materia2/resumo4.html"
       }
     ]

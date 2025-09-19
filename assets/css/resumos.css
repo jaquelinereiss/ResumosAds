@@ -87,6 +87,14 @@
   margin: var(--espaco-md) 0;
 }
 
+.linha-azulClaro {
+  border: none;
+  height: 1px;
+  background-color: var(--cor-terceira);
+  margin: 20px 0;
+}
+
+
 /* ======================== */
 /* Imagens                  */
 /* ======================== */
