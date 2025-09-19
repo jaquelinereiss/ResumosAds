@@ -5,11 +5,11 @@
     "referencias": [
       {
         "links": [
-            { "descricao": "Organização e Design de Computadores - Amazon", "url": "https://www.amazon.com.br/Computer-Organization-Design-RISC-V-Architecture/dp/0128201096" },
-            { "descricao": "Arquitetura de computadores - Wikipedia", "url": "https://pt.wikipedia.org/wiki/Arquitetura_de_computadores" },
-            { "descricao": "Ciência da Computação - Wikipedia", "url": "https://pt.wikipedia.org/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" },
-            { "descricao": "Ciência da Computação - Guia da Carreira", "url": "https://www.guiadacarreira.com.br/blog/ciencia-da-computacao" },
-            { "descricao": "Álgebra Booleana - Brasil Escola", "url": "https://brasilescola.uol.com.br/informatica/algebra-booleana.htm" }
+          { "descricao": "Organização e Design de Computadores - Amazon", "url": "https://www.amazon.com.br/Computer-Organization-Design-RISC-V-Architecture/dp/0128201096" },
+          { "descricao": "Arquitetura de computadores - Wikipedia", "url": "https://pt.wikipedia.org/wiki/Arquitetura_de_computadores" },
+          { "descricao": "Ciência da Computação - Wikipedia", "url": "https://pt.wikipedia.org/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o" },
+          { "descricao": "Ciência da Computação - Guia da Carreira", "url": "https://www.guiadacarreira.com.br/blog/ciencia-da-computacao" },
+          { "descricao": "Álgebra Booleana - Brasil Escola", "url": "https://brasilescola.uol.com.br/informatica/algebra-booleana.htm" }
         ]
       }
     ]
@@ -20,13 +20,13 @@
     "referencias": [
       {
         "links": [
-            { "descricao": "Comunicação de Dados – Brasil Escola", "url": "https://brasilescola.uol.com.br/informatica/comunicacao-dados.htm" },
-            { "descricao": "PDF didático", "url": "https://repositorio.ufsm.br/bitstream/handle/1/18351/Curso_Lic-Comp_Redes-Computadores.pdf" },
-            { "descricao": "Tutorialspoint", "url": "https://www.tutorialspoint.com/osi-vs-tcp-ip-reference-model" },
-            { "descricao": "Internet Reference Models - Tutorialspoint", "url": "https://www.tutorialspoint.com/internet_technologies/internet_reference_models.htm" },
-            { "descricao": "Modelo OSI – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Rede_de_%C3%A1rea_local" },
-            { "descricao": "Rede digital - Wikipédia", "url": "https://pt.wikipedia.org/wiki/Rede_digital" },
-            { "descricao": "Redes de Computadores (UFSM PDF) – Unidade 4 gerência", "url": "https://repositorio.ufsm.br/bitstream/handle/1/18351/Curso_Lic-Comp_Redes-Computadores.pdf" }
+          { "descricao": "Comunicação de Dados – Brasil Escola", "url": "https://brasilescola.uol.com.br/informatica/comunicacao-dados.htm" },
+          { "descricao": "PDF didático", "url": "https://repositorio.ufsm.br/bitstream/handle/1/18351/Curso_Lic-Comp_Redes-Computadores.pdf" },
+          { "descricao": "Tutorialspoint", "url": "https://www.tutorialspoint.com/osi-vs-tcp-ip-reference-model" },
+          { "descricao": "Internet Reference Models - Tutorialspoint", "url": "https://www.tutorialspoint.com/internet_technologies/internet_reference_models.htm" },
+          { "descricao": "Modelo OSI – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Rede_de_%C3%A1rea_local" },
+          { "descricao": "Rede digital - Wikipédia", "url": "https://pt.wikipedia.org/wiki/Rede_digital" },
+          { "descricao": "Redes de Computadores (UFSM PDF) – Unidade 4 gerência", "url": "https://repositorio.ufsm.br/bitstream/handle/1/18351/Curso_Lic-Comp_Redes-Computadores.pdf" }
         ]
       }
     ]
@@ -58,15 +58,15 @@
     "referencias": [
       {
         "links": [
-            {"descricao": "Ética kantiana – Wikipédia", "url": "https://pt.wikipedia.org/wiki/%C3%89tica_kantiana"},
-            {"descricao": "Egoísmo ético – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Ego%C3%ADsmo_%C3%A9tico"},
-            {"descricao": "Cidadania – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Cidadania"},
-            {"descricao": "Direitos políticos – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Direitos_pol%C3%ADticos"},
-            {"descricao": "Como Direitos Humanos e Cidadania estão conectados – Instituto Aurora", "url": "https://institutoaurora.org/direitos-humanos-e-cidadania/"},
-            {"descricao": "Sistema de justiça criminal e racismo institucional – ABRSD", "url": "https://revista.abrasd.com.br/index.php/rbsd/article/view/645"},
-            {"descricao": "Democracia, cidadania e direitos – Século Diário", "url": "https://www.seculodiario.com.br/colunas/democracia-cidadania-e-direitos/"},
-            {"descricao": "Pluralidade e democracia – Instituto Palavra Aberta", "url": "https://www.palavraaberta.org.br/artigo/pluralidade-e-democracia"},
-            {"descricao": "Diversidade cultural e pluralidade – Ministério da Cultura", "url": "https://www.gov.br/cultura/pt-br/assuntos/noticias/diversidade-cultural-e-pluralidade"}
+          {"descricao": "Ética kantiana – Wikipédia", "url": "https://pt.wikipedia.org/wiki/%C3%89tica_kantiana"},
+          {"descricao": "Egoísmo ético – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Ego%C3%ADsmo_%C3%A9tico"},
+          {"descricao": "Cidadania – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Cidadania"},
+          {"descricao": "Direitos políticos – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Direitos_pol%C3%ADticos"},
+          {"descricao": "Como Direitos Humanos e Cidadania estão conectados – Instituto Aurora", "url": "https://institutoaurora.org/direitos-humanos-e-cidadania/"},
+          {"descricao": "Sistema de justiça criminal e racismo institucional – ABRSD", "url": "https://revista.abrasd.com.br/index.php/rbsd/article/view/645"},
+          {"descricao": "Democracia, cidadania e direitos – Século Diário", "url": "https://www.seculodiario.com.br/colunas/democracia-cidadania-e-direitos/"},
+          {"descricao": "Pluralidade e democracia – Instituto Palavra Aberta", "url": "https://www.palavraaberta.org.br/artigo/pluralidade-e-democracia"},
+          {"descricao": "Diversidade cultural e pluralidade – Ministério da Cultura", "url": "https://www.gov.br/cultura/pt-br/assuntos/noticias/diversidade-cultural-e-pluralidade"}
         ]
       }
     ]
@@ -77,14 +77,14 @@
     "referencias": [
       {
         "links": [
-            {"descricao": "Fundamentos da IHC (CAPES Educapes PDF)", "url": "https://educapes.capes.gov.br/bitstream/capes/700018/2/Fasc%C3%ADculo%20%20-%20Fundamentos%20da%20Intera%C3%A7%C3%A3o%20Humano-Computador.pdf"},
-            {"descricao": "Interação Humano-Computador", "url": "https://www.softplan.com.br/tech-writers/ihc/"},
-            {"descricao": "Princípios de Usabilidade", "url": "https://softdesign.com.br/blog/interface-e-usabilidade-para-desenvolvedores/"},
-            {"descricao": "Usabilidade e acessibilidade em foco – Alura", "url": "https://www.alura.com.br/artigos/usabilidade-acessibilidade"},
-            {"descricao": "Acessibilidade digital – Governo Digital", "url": "https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital"},
-            {"descricao": "UX/UI Design acessível – Hand Talk", "url": "https://www.handtalk.me/br/blog/uxui-design-acessivel-tudo-o-que-voce-precisa-saber/"},
-            {"descricao": "Arquitetura da informação: importância e papel – Conversion", "url": "https://www.conversion.com.br/blog/arquitetura-da-informacao/"},
-            {"descricao": "Arquitetura da informação e usabilidade – ScriptuTex", "url": "https://www.scriptutex.pt/2018/10/08/arquitetura-de-informacao-e-usabilidade/"}
+          {"descricao": "Fundamentos da IHC (CAPES Educapes PDF)", "url": "https://educapes.capes.gov.br/bitstream/capes/700018/2/Fasc%C3%ADculo%20%20-%20Fundamentos%20da%20Intera%C3%A7%C3%A3o%20Humano-Computador.pdf"},
+          {"descricao": "Interação Humano-Computador", "url": "https://www.softplan.com.br/tech-writers/ihc/"},
+          {"descricao": "Princípios de Usabilidade", "url": "https://softdesign.com.br/blog/interface-e-usabilidade-para-desenvolvedores/"},
+          {"descricao": "Usabilidade e acessibilidade em foco – Alura", "url": "https://www.alura.com.br/artigos/usabilidade-acessibilidade"},
+          {"descricao": "Acessibilidade digital – Governo Digital", "url": "https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital"},
+          {"descricao": "UX/UI Design acessível – Hand Talk", "url": "https://www.handtalk.me/br/blog/uxui-design-acessivel-tudo-o-que-voce-precisa-saber/"},
+          {"descricao": "Arquitetura da informação: importância e papel – Conversion", "url": "https://www.conversion.com.br/blog/arquitetura-da-informacao/"},
+          {"descricao": "Arquitetura da informação e usabilidade – ScriptuTex", "url": "https://www.scriptutex.pt/2018/10/08/arquitetura-de-informacao-e-usabilidade/"}
         ]
       }
     ]
@@ -95,12 +95,12 @@
     "referencias": [
       {
         "links": [
-            {"descricao": "Cartilha de Segurança para Internet – CERT.br", "url": "https://cartilha.cert.br/"},
-            {"descricao": "ISO/IEC 27001 – Segurança da Informação", "url": "https://www.iso.org/isoiec-27001-information-security.html"},
-            {"descricao": "Auditoria de Sistemas – Portal da Educação", "url": "https://www.portaleducacao.com.br/conteudo/artigos/administracao/auditoria-de-sistemas/61564"},
-            {"descricao": "NIST Cybersecurity Framework", "url": "https://www.nist.gov/cyberframework"},
-            {"descricao": "Criptografia – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Criptografia"},
-            {"descricao": "LGPD – Lei Geral de Proteção de Dados (Brasil)", "url": "https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd"}
+          {"descricao": "Cartilha de Segurança para Internet – CERT.br", "url": "https://cartilha.cert.br/"},
+          {"descricao": "ISO/IEC 27001 – Segurança da Informação", "url": "https://www.iso.org/isoiec-27001-information-security.html"},
+          {"descricao": "Auditoria de Sistemas – Portal da Educação", "url": "https://www.portaleducacao.com.br/conteudo/artigos/administracao/auditoria-de-sistemas/61564"},
+          {"descricao": "NIST Cybersecurity Framework", "url": "https://www.nist.gov/cyberframework"},
+          {"descricao": "Criptografia – Wikipédia", "url": "https://pt.wikipedia.org/wiki/Criptografia"},
+          {"descricao": "LGPD – Lei Geral de Proteção de Dados (Brasil)", "url": "https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd"}
         ]
       }
     ]
@@ -111,11 +111,25 @@
     "referencias": [
       {
         "links": [
-            { "descricao": "Documentação oficial do Python - Python Doc", "url": "https://docs.python.org/3/" },
-            { "descricao": "Tutorial Python básico – W3Schools", "url": "https://www.w3schools.com/python/" },
-            { "descricao": "Tutorial Python completo – Programiz", "url": "https://www.programiz.com/python-programming" },
-            { "descricao": "Guia de sintaxe e conceitos – GeeksforGeeks", "url": "https://www.geeksforgeeks.org/python-programming-language/" },
-            { "descricao": "Python para Data Science – Kaggle", "url": "https://www.kaggle.com/learn/python" }
+          { "descricao": "Documentação oficial do Python - Python Doc", "url": "https://docs.python.org/3/" },
+          { "descricao": "Tutorial Python básico – W3Schools", "url": "https://www.w3schools.com/python/" },
+          { "descricao": "Tutorial Python completo – Programiz", "url": "https://www.programiz.com/python-programming" },
+          { "descricao": "Guia de sintaxe e conceitos – GeeksforGeeks", "url": "https://www.geeksforgeeks.org/python-programming-language/" },
+          { "descricao": "Python para Data Science – Kaggle", "url": "https://www.kaggle.com/learn/python" }
+        ]
+      }
+    ]
+  },
+  {
+    "semestre": 2,
+    "materia": "Engenharia de Software",
+    "referencias": [
+      {
+        "links": [
+          { "descricao": "Artigo Scrum, XP e Manifesto Ágil - DevMedia", "url": "https://www.devmedia.com.br/scrum-xp-e-manifesto-agil-como-a-agilidade-lida-com-a-complexidade/29568?gad_source=1&gad_campaignid=22326280955&gbraid=0AAAAADrVyXFqrZgE6f6F4bwKpE2XuEene&gclid=Cj0KCQjw_rPGBhCbARIsABjq9ccr8g1DssNnvCKsorHkfDV1iX3kTbNzWh6n-n7hRsEVkXinnrK_yLgaAtgdEALw_wcB" },
+          { "descricao": "Metodologias ágeis, engenharia de requisitos, testes e arquitetura de software – Alura Artigos", "url": "" },
+          { "descricao": "Artigos técnicos sobre Engenharia de Software – TI Especialistas", "url": "https://www.tiespecialistas.com.br/" },
+          { "descricao": "Conteúdos sobre arquitetura, DevOps, ágil e tendências em software – InfoQ Brasil", "url": "https://www.infoq.com/br/" }
         ]
       }
     ]
